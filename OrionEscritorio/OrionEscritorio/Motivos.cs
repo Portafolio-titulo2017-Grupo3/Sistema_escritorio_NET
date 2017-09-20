@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Orion
+namespace OrionEscritorio
 {
-    class Departamento
+    class Motivos
     {
-
     }
 }
