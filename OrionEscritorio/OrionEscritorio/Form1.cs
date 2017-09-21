@@ -21,5 +21,11 @@ namespace OrionEscritorio
         {
             Application.Exit();
         }
+
+        private void gestionDepartamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDepartamento frmDpto = new FrmDepartamento();
+            frmDpto.Show();
+        }
     }
 }

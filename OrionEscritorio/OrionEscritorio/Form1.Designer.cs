@@ -37,6 +37,7 @@
             this.tipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.motivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +56,8 @@
             // 
             // departamentoToolStripMenuItem
             // 
+            this.departamentoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gestionDepartamentosToolStripMenuItem});
             this.departamentoToolStripMenuItem.Name = "departamentoToolStripMenuItem";
             this.departamentoToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.departamentoToolStripMenuItem.Text = "Departamento";
@@ -108,6 +111,13 @@
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
+            // gestionDepartamentosToolStripMenuItem
+            // 
+            this.gestionDepartamentosToolStripMenuItem.Name = "gestionDepartamentosToolStripMenuItem";
+            this.gestionDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.gestionDepartamentosToolStripMenuItem.Text = "Gestion Departamentos";
+            this.gestionDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.gestionDepartamentosToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -135,6 +145,7 @@
         private System.Windows.Forms.ToolStripMenuItem tipoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem motivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionDepartamentosToolStripMenuItem;
     }
 }
 
