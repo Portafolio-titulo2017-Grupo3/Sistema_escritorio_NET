@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace OrionEscritorio
 {
-    class Tipo
+    class TUsuario
     {
-        public int idTipo { get; set; }
-        public string nombre { get; set; }
-        public string descripcion { get; set; }
     }
 }

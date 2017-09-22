@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -75,6 +75,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TDepartamento.cs" />
     <Compile Include="Tipo.cs" />
+    <Compile Include="TMotivo.cs" />
+    <Compile Include="TPerfil.cs" />
+    <Compile Include="TTipo.cs" />
+    <Compile Include="TUsuario.cs" />
     <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

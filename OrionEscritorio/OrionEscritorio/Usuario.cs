@@ -8,5 +8,8 @@ namespace OrionEscritorio
 {
     class Usuario
     {
+        public string nombre { get; set; }
+        public string clave { get; set; }
+        public string rut { get; set; }
     }
 }

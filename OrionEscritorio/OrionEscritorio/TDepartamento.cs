@@ -9,7 +9,7 @@ namespace OrionEscritorio
 {
     class TDepartamento
     {
-        public int ingresarDepartamento(Departamento depto)
+        /*public int ingresarDepartamento(Departamento depto)
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();//Singleton
@@ -17,7 +17,7 @@ namespace OrionEscritorio
             resp = orden.ExecuteNonQuery();
             conexion.Close();
             return resp;
-        }
+        }*/
 
     }
 }
