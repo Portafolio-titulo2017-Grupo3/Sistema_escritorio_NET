@@ -160,6 +160,7 @@
             this.btnBuscar.TabIndex = 8;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtDatoBuscar
             // 
@@ -198,6 +199,7 @@
             this.btnEliminar.TabIndex = 9;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -207,10 +209,10 @@
             this.btnModificar.TabIndex = 8;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // txtDatoEd
             // 
-            this.txtDatoEd.Enabled = false;
             this.txtDatoEd.Location = new System.Drawing.Point(153, 26);
             this.txtDatoEd.Name = "txtDatoEd";
             this.txtDatoEd.Size = new System.Drawing.Size(160, 20);

@@ -10,18 +10,6 @@ namespace OrionEscritorio
 {
     class TDepartamento
     {
-        //public int ingresarDepartamento(Departamento depto)
-        //{
-        //    int resp = 0;
-        //    OracleConnection conexion = Conexion.abrirConexion();
-        //    OracleCommand orden = new OracleCommand(string.Format("INSERT INTO TEST (DATO_QLO) VALUES (@datoqlo)", Conexion.abrirConexion()));
-        //    orden.Parameters.Add("@datoqlo", depto.nombre);
-        //    resp = orden.ExecuteNonQuery();
-        //    conexion.Close();
-        //    return resp;
-        //}
-
-        
-
+         
     }
 }
