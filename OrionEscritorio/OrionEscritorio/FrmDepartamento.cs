@@ -21,7 +21,7 @@ namespace OrionEscritorio
         {
             Departamento dpto = new Departamento();
             TDepartamento tDpto = new TDepartamento();
-            /*dpto.datoqlo = txtDato.Text;
+            dpto.nombre = txtDato.Text;
 
             int resp = tDpto.ingresarDepartamento(dpto);
             if (resp > 0)
@@ -30,7 +30,21 @@ namespace OrionEscritorio
             else
             { 
                 MessageBox.Show("Dato con problema de ingreso....!", "AVISO DE SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information); }
-            */
+            
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void FrmDepartamento_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'dataSet1.TEST' Puede moverla o quitarla según sea necesario.
+            this.tESTTableAdapter.Fill(this.dataSet1.TEST);
+            // TODO: esta línea de código carga datos en la tabla 'dataSet1.PRUEBA1' Puede moverla o quitarla según sea necesario.
+            this.pRUEBA1TableAdapter.Fill(this.dataSet1.PRUEBA1);
+
         }
     }
 }

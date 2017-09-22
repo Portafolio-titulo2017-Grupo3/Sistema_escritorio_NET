@@ -9,15 +9,20 @@ namespace OrionEscritorio
 {
     class TDepartamento
     {
-        /*public int ingresarDepartamento(Departamento depto)
+        public int ingresarDepartamento(Departamento depto)
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();//Singleton
-            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO TEST(DATO_QLO) VALUES('{0}')", depto.datoqlo), conexion);
+            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO TEST VALUES('DATO_QLO') VALUES('{0}')", depto.nombre), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
+            /*OracleDataAdapter dtaa = new OracleDataAdapter();
+            dtaa.InsertCommand = orden;
+            dtaa.InsertCommand.ExecuteNonQuery();*/
             return resp;
-        }*/
+        }
+
+        
 
     }
 }
