@@ -13,12 +13,9 @@ namespace OrionEscritorio
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();//Singleton
-            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO TEST VALUES('DATO_QLO') VALUES('{0}')", depto.nombre), conexion);
-            resp = orden.ExecuteNonQuery();
+            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO TEST (DATO_QLO) VALUES('{0}');", depto.nombre), conexion);
+            orden.ExecuteNonQuery();
             conexion.Close();
-            /*OracleDataAdapter dtaa = new OracleDataAdapter();
-            dtaa.InsertCommand = orden;
-            dtaa.InsertCommand.ExecuteNonQuery();*/
             return resp;
         }
 
