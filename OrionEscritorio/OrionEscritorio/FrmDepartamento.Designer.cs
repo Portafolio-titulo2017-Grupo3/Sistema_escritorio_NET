@@ -46,7 +46,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnListar = new System.Windows.Forms.Button();
-            this.grillaTest = new System.Windows.Forms.DataGridView();
+            this.grillaClientes = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -54,7 +54,7 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grillaTest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grillaClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -217,10 +217,10 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.btnListar);
-            this.tabPage3.Controls.Add(this.grillaTest);
+            this.tabPage3.Controls.Add(this.grillaClientes);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(594, 208);
+            this.tabPage3.Size = new System.Drawing.Size(594, 229);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Listar TEST";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -233,15 +233,14 @@
             this.btnListar.TabIndex = 1;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
-            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
-            // grillaTest
+            // grillaClientes
             // 
-            this.grillaTest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grillaTest.Location = new System.Drawing.Point(34, 56);
-            this.grillaTest.Name = "grillaTest";
-            this.grillaTest.Size = new System.Drawing.Size(617, 180);
-            this.grillaTest.TabIndex = 0;
+            this.grillaClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grillaClientes.Location = new System.Drawing.Point(34, 56);
+            this.grillaClientes.Name = "grillaClientes";
+            this.grillaClientes.Size = new System.Drawing.Size(617, 180);
+            this.grillaClientes.TabIndex = 0;
             // 
             // FrmDepartamento
             // 
@@ -261,7 +260,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grillaTest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grillaClientes)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -286,6 +285,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btnListar;
-        private System.Windows.Forms.DataGridView grillaTest;
+        private System.Windows.Forms.DataGridView grillaClientes;
     }
 }
