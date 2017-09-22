@@ -8,5 +8,16 @@ namespace OrionEscritorio
 {
     class Test
     {
+        public string datoqlo { get; set; }
+
+        public Test()
+        {
+
+        }
+
+        public Test(string datoqlo)
+        {
+            this.datoqlo = datoqlo;
+        }
     }
 }

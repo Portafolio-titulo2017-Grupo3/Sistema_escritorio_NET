@@ -47,14 +47,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnListar = new System.Windows.Forms.Button();
-            this.grillaClientes = new System.Windows.Forms.DataGridView();
-            this.dataSet1 = new OrionEscritorio.DataSet1();
+            this.grillaTest = new System.Windows.Forms.DataGridView();
+            this.tESTBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new OrionEscritorio.DataSet1();
             this.pRUEBA1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pRUEBA1TableAdapter = new OrionEscritorio.DataSet1TableAdapters.PRUEBA1TableAdapter();
-            this.tESTBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tESTTableAdapter = new OrionEscritorio.DataSet1TableAdapters.TESTTableAdapter();
-            this.dATOQLODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -62,11 +61,11 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grillaClientes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRUEBA1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grillaTest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tESTBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRUEBA1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -229,7 +228,7 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.btnListar);
-            this.tabPage3.Controls.Add(this.grillaClientes);
+            this.tabPage3.Controls.Add(this.grillaTest);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(594, 208);
@@ -247,27 +246,28 @@
             this.btnListar.UseVisualStyleBackColor = true;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
-            // grillaClientes
+            // grillaTest
             // 
-            this.grillaClientes.AutoGenerateColumns = false;
-            this.grillaClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grillaClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dATOQLODataGridViewTextBoxColumn});
-            this.grillaClientes.DataSource = this.tESTBindingSource;
-            this.grillaClientes.Location = new System.Drawing.Point(34, 56);
-            this.grillaClientes.Name = "grillaClientes";
-            this.grillaClientes.Size = new System.Drawing.Size(542, 136);
-            this.grillaClientes.TabIndex = 0;
+            this.grillaTest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grillaTest.Location = new System.Drawing.Point(34, 56);
+            this.grillaTest.Name = "grillaTest";
+            this.grillaTest.Size = new System.Drawing.Size(542, 136);
+            this.grillaTest.TabIndex = 0;
             // 
-            // dataSet1
+            // tESTBindingSource
             // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.tESTBindingSource.DataMember = "TEST";
+            this.tESTBindingSource.DataSource = this.dataSet1BindingSource;
             // 
             // dataSet1BindingSource
             // 
             this.dataSet1BindingSource.DataSource = this.dataSet1;
             this.dataSet1BindingSource.Position = 0;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // pRUEBA1BindingSource
             // 
@@ -278,20 +278,9 @@
             // 
             this.pRUEBA1TableAdapter.ClearBeforeFill = true;
             // 
-            // tESTBindingSource
-            // 
-            this.tESTBindingSource.DataMember = "TEST";
-            this.tESTBindingSource.DataSource = this.dataSet1BindingSource;
-            // 
             // tESTTableAdapter
             // 
             this.tESTTableAdapter.ClearBeforeFill = true;
-            // 
-            // dATOQLODataGridViewTextBoxColumn
-            // 
-            this.dATOQLODataGridViewTextBoxColumn.DataPropertyName = "DATO_QLO";
-            this.dATOQLODataGridViewTextBoxColumn.HeaderText = "DATO_QLO";
-            this.dATOQLODataGridViewTextBoxColumn.Name = "dATOQLODataGridViewTextBoxColumn";
             // 
             // FrmDepartamento
             // 
@@ -312,11 +301,11 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grillaClientes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRUEBA1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grillaTest)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tESTBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRUEBA1BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -341,13 +330,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btnListar;
-        private System.Windows.Forms.DataGridView grillaClientes;
+        private System.Windows.Forms.DataGridView grillaTest;
         private DataSet1 dataSet1;
         private System.Windows.Forms.BindingSource dataSet1BindingSource;
         private System.Windows.Forms.BindingSource pRUEBA1BindingSource;
         private DataSet1TableAdapters.PRUEBA1TableAdapter pRUEBA1TableAdapter;
         private System.Windows.Forms.BindingSource tESTBindingSource;
         private DataSet1TableAdapters.TESTTableAdapter tESTTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dATOQLODataGridViewTextBoxColumn;
     }
 }

@@ -4,20 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Oracle.DataAccess.Client;
+//using System.Data.OracleClient;
 
 namespace OrionEscritorio
 {
     class TDepartamento
     {
-        public int ingresarDepartamento(Departamento depto)
-        {
-            int resp = 0;
-            OracleConnection conexion = Conexion.abrirConexion();//Singleton
-            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO TEST (DATO_QLO) VALUES('{0}');", depto.nombre), conexion);
-            orden.ExecuteNonQuery();
-            conexion.Close();
-            return resp;
-        }
+        //public int ingresarDepartamento(Departamento depto)
+        //{
+        //    int resp = 0;
+        //    OracleConnection conexion = Conexion.abrirConexion();
+        //    OracleCommand orden = new OracleCommand(string.Format("INSERT INTO TEST (DATO_QLO) VALUES (@datoqlo)", Conexion.abrirConexion()));
+        //    orden.Parameters.Add("@datoqlo", depto.nombre);
+        //    resp = orden.ExecuteNonQuery();
+        //    conexion.Close();
+        //    return resp;
+        //}
 
         
 

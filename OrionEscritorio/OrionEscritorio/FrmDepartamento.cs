@@ -19,11 +19,11 @@ namespace OrionEscritorio
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            Departamento dpto = new Departamento();
-            TDepartamento tDpto = new TDepartamento();
-            dpto.nombre = txtDato.Text;
+            Test test = new Test();
+            TTest tTest = new TTest();
+            test.datoqlo = txtDato.Text;
 
-            int resp = tDpto.ingresarDepartamento(dpto);
+            int resp = tTest.ingresarTest(test);
             if (resp > 0)
             { 
                 MessageBox.Show("Dato ingresado en forma correcta....!", "AVISO DE SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information); }
@@ -35,7 +35,7 @@ namespace OrionEscritorio
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-            
+            grillaTest.DataSource = TTest.listarTest();
         }
 
         private void FrmDepartamento_Load(object sender, EventArgs e)
