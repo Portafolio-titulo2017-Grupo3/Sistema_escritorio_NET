@@ -30,5 +30,10 @@ namespace OrionEscritorio
             { MessageBox.Show("Dato con problema de ingreso....!", "AVISO DE SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information); }
 
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            grillaTest.DataSource = TDepartamento.listarTest();
+        }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Oracle.ManagedDataAccess.Client;
+using Oracle.DataAccess.Client;
 
 namespace OrionEscritorio
 {
@@ -20,22 +20,19 @@ namespace OrionEscritorio
         }
 
         
-        /*public static List<Cliente> listarClientes()
+        public static List<Departamento> listarTest()
         {
-            List<Cliente> lista = new List<Cliente>();
-            MySqlConnection conexion = Conexion.abrirConexion();//Singleton
-            MySqlCommand orden = new MySqlCommand(string.Format("SELECT * FROM CLIENTE"), conexion);
-            MySqlDataReader lector = orden.ExecuteReader();
+            List<Departamento> lista = new List<Departamento>();
+            OracleConnection conexion = Conexion.abrirConexion();//Singleton
+            OracleCommand orden = new OracleCommand(string.Format("SELECT * FROM TEST"), conexion);
+            OracleDataReader lector = orden.ExecuteReader();
             while (lector.Read())
             {
-                Cliente cliente = new Cliente();
-                cliente.rut = lector.GetString(0);
-                cliente.nombre = lector.GetString(1);
-                cliente.apel = lector.GetString(2);
-                cliente.fono = lector.GetString(3);
-                lista.Add(cliente);
+                Departamento dpto = new Departamento();
+                dpto.datoqlo = lector.GetString(0);
+                lista.Add(dpto);
             }
             return lista;
-        }*/
+        }
     }
 }
