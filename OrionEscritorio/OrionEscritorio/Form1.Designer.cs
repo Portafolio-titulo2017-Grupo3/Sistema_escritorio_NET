@@ -30,6 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.departamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.perfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administracionDeUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,7 +38,6 @@
             this.tipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.motivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gestionDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,13 @@
             this.departamentoToolStripMenuItem.Name = "departamentoToolStripMenuItem";
             this.departamentoToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.departamentoToolStripMenuItem.Text = "Departamento";
+            // 
+            // gestionDepartamentosToolStripMenuItem
+            // 
+            this.gestionDepartamentosToolStripMenuItem.Name = "gestionDepartamentosToolStripMenuItem";
+            this.gestionDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.gestionDepartamentosToolStripMenuItem.Text = "Gestion Departamentos";
+            this.gestionDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.gestionDepartamentosToolStripMenuItem_Click);
             // 
             // usuariosToolStripMenuItem
             // 
@@ -97,6 +104,7 @@
             this.tipoToolStripMenuItem.Name = "tipoToolStripMenuItem";
             this.tipoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.tipoToolStripMenuItem.Text = "Tipo";
+            this.tipoToolStripMenuItem.Click += new System.EventHandler(this.tipoToolStripMenuItem_Click);
             // 
             // motivoToolStripMenuItem
             // 
@@ -110,13 +118,6 @@
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
-            // gestionDepartamentosToolStripMenuItem
-            // 
-            this.gestionDepartamentosToolStripMenuItem.Name = "gestionDepartamentosToolStripMenuItem";
-            this.gestionDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.gestionDepartamentosToolStripMenuItem.Text = "Gestion Departamentos";
-            this.gestionDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.gestionDepartamentosToolStripMenuItem_Click);
             // 
             // Form1
             // 
