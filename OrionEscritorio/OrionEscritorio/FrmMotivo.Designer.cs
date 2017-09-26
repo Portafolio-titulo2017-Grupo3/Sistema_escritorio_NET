@@ -34,27 +34,29 @@
             this.CrearMotivo = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.CrearNMotivo = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtDmotivo = new System.Windows.Forms.TextBox();
-            this.txtNMotivo = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.ModificarMotivo = new System.Windows.Forms.TabPage();
-            this.BtnListar = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.BuscarMotivo = new System.Windows.Forms.Button();
-            this.dataListar = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.CrearMotivo.SuspendLayout();
             this.ModificarMotivo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataListar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -78,6 +80,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(583, 393);
@@ -89,12 +92,12 @@
             // 
             this.CrearMotivo.Controls.Add(this.label5);
             this.CrearMotivo.Controls.Add(this.label3);
-            this.CrearMotivo.Controls.Add(this.CrearNMotivo);
+            this.CrearMotivo.Controls.Add(this.button1);
             this.CrearMotivo.Controls.Add(this.label4);
             this.CrearMotivo.Controls.Add(this.label2);
             this.CrearMotivo.Controls.Add(this.label1);
-            this.CrearMotivo.Controls.Add(this.txtDmotivo);
-            this.CrearMotivo.Controls.Add(this.txtNMotivo);
+            this.CrearMotivo.Controls.Add(this.textBox2);
+            this.CrearMotivo.Controls.Add(this.textBox1);
             this.CrearMotivo.Location = new System.Drawing.Point(4, 22);
             this.CrearMotivo.Name = "CrearMotivo";
             this.CrearMotivo.Padding = new System.Windows.Forms.Padding(3);
@@ -125,15 +128,14 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "*Ingrese el nombre del motivo";
             // 
-            // CrearNMotivo
+            // button1
             // 
-            this.CrearNMotivo.Location = new System.Drawing.Point(210, 157);
-            this.CrearNMotivo.Name = "CrearNMotivo";
-            this.CrearNMotivo.Size = new System.Drawing.Size(136, 24);
-            this.CrearNMotivo.TabIndex = 7;
-            this.CrearNMotivo.Text = "Crear Nuevo Motivo";
-            this.CrearNMotivo.UseVisualStyleBackColor = true;
-            this.CrearNMotivo.Click += new System.EventHandler(this.CrearNMotivo_Click);
+            this.button1.Location = new System.Drawing.Point(210, 157);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 24);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Crear Nuevo Motivo";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -165,31 +167,31 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Nombre Motivo";
             // 
-            // txtDmotivo
+            // textBox2
             // 
-            this.txtDmotivo.Location = new System.Drawing.Point(210, 107);
-            this.txtDmotivo.Name = "txtDmotivo";
-            this.txtDmotivo.Size = new System.Drawing.Size(136, 20);
-            this.txtDmotivo.TabIndex = 1;
+            this.textBox2.Location = new System.Drawing.Point(210, 107);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(136, 20);
+            this.textBox2.TabIndex = 1;
             // 
-            // txtNMotivo
+            // textBox1
             // 
-            this.txtNMotivo.Location = new System.Drawing.Point(210, 74);
-            this.txtNMotivo.Name = "txtNMotivo";
-            this.txtNMotivo.Size = new System.Drawing.Size(136, 20);
-            this.txtNMotivo.TabIndex = 0;
+            this.textBox1.Location = new System.Drawing.Point(210, 74);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(136, 20);
+            this.textBox1.TabIndex = 0;
             // 
             // ModificarMotivo
             // 
-            this.ModificarMotivo.Controls.Add(this.BtnListar);
+            this.ModificarMotivo.Controls.Add(this.button4);
             this.ModificarMotivo.Controls.Add(this.button3);
             this.ModificarMotivo.Controls.Add(this.label7);
             this.ModificarMotivo.Controls.Add(this.label6);
             this.ModificarMotivo.Controls.Add(this.textBox5);
             this.ModificarMotivo.Controls.Add(this.textBox4);
             this.ModificarMotivo.Controls.Add(this.textBox3);
-            this.ModificarMotivo.Controls.Add(this.BuscarMotivo);
-            this.ModificarMotivo.Controls.Add(this.dataListar);
+            this.ModificarMotivo.Controls.Add(this.button2);
+            this.ModificarMotivo.Controls.Add(this.dataGridView1);
             this.ModificarMotivo.Location = new System.Drawing.Point(4, 22);
             this.ModificarMotivo.Name = "ModificarMotivo";
             this.ModificarMotivo.Padding = new System.Windows.Forms.Padding(3);
@@ -198,15 +200,14 @@
             this.ModificarMotivo.Text = "Modificar Motivo";
             this.ModificarMotivo.UseVisualStyleBackColor = true;
             // 
-            // BtnListar
+            // button4
             // 
-            this.BtnListar.Location = new System.Drawing.Point(39, 39);
-            this.BtnListar.Name = "BtnListar";
-            this.BtnListar.Size = new System.Drawing.Size(75, 23);
-            this.BtnListar.TabIndex = 8;
-            this.BtnListar.Text = "Listar Motivo";
-            this.BtnListar.UseVisualStyleBackColor = true;
-            this.BtnListar.Click += new System.EventHandler(this.BtnListar_Click);
+            this.button4.Location = new System.Drawing.Point(39, 39);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "Listar Motivo";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -256,23 +257,31 @@
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 2;
             // 
-            // BuscarMotivo
+            // button2
             // 
-            this.BuscarMotivo.Location = new System.Drawing.Point(445, 152);
-            this.BuscarMotivo.Name = "BuscarMotivo";
-            this.BuscarMotivo.Size = new System.Drawing.Size(110, 23);
-            this.BuscarMotivo.TabIndex = 1;
-            this.BuscarMotivo.Text = "Seleccionar Motivo";
-            this.BuscarMotivo.UseVisualStyleBackColor = true;
-            this.BuscarMotivo.Click += new System.EventHandler(this.BuscarMotivo_Click);
+            this.button2.Location = new System.Drawing.Point(445, 152);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(110, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Seleccionar Motivo";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // dataListar
+            // dataGridView1
             // 
-            this.dataListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListar.Location = new System.Drawing.Point(39, 68);
-            this.dataListar.Name = "dataListar";
-            this.dataListar.Size = new System.Drawing.Size(516, 78);
-            this.dataListar.TabIndex = 0;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(39, 68);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(516, 78);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(77, 97);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // FrmMotivo
             // 
@@ -282,14 +291,14 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmMotivo";
             this.Text = "FrmMotivo";
-            this.Load += new System.EventHandler(this.FrmMotivo_Load);
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.CrearMotivo.ResumeLayout(false);
             this.CrearMotivo.PerformLayout();
             this.ModificarMotivo.ResumeLayout(false);
             this.ModificarMotivo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataListar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -302,21 +311,22 @@
         private System.Windows.Forms.TabPage CrearMotivo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button CrearNMotivo;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtDmotivo;
-        private System.Windows.Forms.TextBox txtNMotivo;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TabPage ModificarMotivo;
-        private System.Windows.Forms.Button BtnListar;
+        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button BuscarMotivo;
-        private System.Windows.Forms.DataGridView dataListar;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button5;
     }
 }
