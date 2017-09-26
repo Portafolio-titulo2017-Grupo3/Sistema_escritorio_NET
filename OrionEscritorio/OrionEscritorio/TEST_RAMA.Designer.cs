@@ -28,9 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // TEST_RAMA
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "TEST_RAMA";
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "TEST_RAMA";
+            this.Text = "Nombre Cambiado";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
