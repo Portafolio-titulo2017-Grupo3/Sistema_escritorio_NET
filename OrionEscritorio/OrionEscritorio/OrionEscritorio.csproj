@@ -68,6 +68,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Departamento.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -75,11 +80,38 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmDepartamento.Designer.cs">
       <DependentUpon>FrmDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMotivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMotivo.Designer.cs">
+      <DependentUpon>FrmMotivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipos.Designer.cs">
+      <DependentUpon>FrmTipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Motivos.cs" />
     <Compile Include="Perfil.cs" />
@@ -103,8 +135,20 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDepartamento.resx">
       <DependentUpon>FrmDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMotivo.resx">
+      <DependentUpon>FrmMotivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPerfil.resx">
+      <DependentUpon>FrmPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,6 +172,17 @@
     </None>
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
