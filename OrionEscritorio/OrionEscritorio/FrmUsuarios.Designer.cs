@@ -1,42 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace OrionEscritorio
+﻿namespace OrionEscritorio
 {
-    public partial class FrmPerfil : Form
+    partial class FrmUsuarios
     {
-        private TabControl tabControl1;
-        private TabPage inicio;
-        private TabPage CrearUsuario;
-        private Button button1;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private TabPage ModificarUsuario;
-        private Button BtnListar;
-        private Button button3;
-        private Label label7;
-        private Label label6;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private Button BuscarMotivo;
-        private DataGridView dataListar;
-        private Panel panel1;
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-        public FrmPerfil()
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
         {
-            InitializeComponent();
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
         }
 
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.inicio = new System.Windows.Forms.TabPage();
             this.CrearUsuario = new System.Windows.Forms.TabPage();
@@ -53,13 +45,20 @@ namespace OrionEscritorio
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.BuscarMotivo = new System.Windows.Forms.Button();
             this.dataListar = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.CrearUsuario.SuspendLayout();
             this.ModificarUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListar)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.tabControl1);
+            this.panel1.Location = new System.Drawing.Point(13, 13);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(549, 444);
+            this.panel1.TabIndex = 0;
             // 
             // tabControl1
             // 
@@ -91,7 +90,7 @@ namespace OrionEscritorio
             this.CrearUsuario.Padding = new System.Windows.Forms.Padding(3);
             this.CrearUsuario.Size = new System.Drawing.Size(506, 342);
             this.CrearUsuario.TabIndex = 0;
-            this.CrearUsuario.Text = "Crear Tipo";
+            this.CrearUsuario.Text = "Crear Usuarios";
             this.CrearUsuario.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -133,7 +132,7 @@ namespace OrionEscritorio
             this.ModificarUsuario.Padding = new System.Windows.Forms.Padding(3);
             this.ModificarUsuario.Size = new System.Drawing.Size(506, 342);
             this.ModificarUsuario.TabIndex = 1;
-            this.ModificarUsuario.Text = "Modificar Tipo";
+            this.ModificarUsuario.Text = "Modificar Usuarios";
             this.ModificarUsuario.UseVisualStyleBackColor = true;
             // 
             // BtnListar
@@ -201,6 +200,7 @@ namespace OrionEscritorio
             this.BuscarMotivo.TabIndex = 1;
             this.BuscarMotivo.Text = "Seleccionar Motivo";
             this.BuscarMotivo.UseVisualStyleBackColor = true;
+            this.BuscarMotivo.Click += new System.EventHandler(this.BuscarMotivo_Click);
             // 
             // dataListar
             // 
@@ -210,28 +210,43 @@ namespace OrionEscritorio
             this.dataListar.Size = new System.Drawing.Size(422, 78);
             this.dataListar.TabIndex = 0;
             // 
-            // panel1
+            // FrmUsuarios
             // 
-            this.panel1.Controls.Add(this.tabControl1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(551, 455);
-            this.panel1.TabIndex = 1;
-            // 
-            // FrmPerfil
-            // 
-            this.ClientSize = new System.Drawing.Size(575, 479);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(586, 478);
             this.Controls.Add(this.panel1);
-            this.Name = "FrmPerfil";
+            this.Name = "FrmUsuarios";
+            this.Text = "FrmUsuarios";
+            this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.CrearUsuario.ResumeLayout(false);
             this.CrearUsuario.PerformLayout();
             this.ModificarUsuario.ResumeLayout(false);
             this.ModificarUsuario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListar)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage inicio;
+        private System.Windows.Forms.TabPage CrearUsuario;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TabPage ModificarUsuario;
+        private System.Windows.Forms.Button BtnListar;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button BuscarMotivo;
+        private System.Windows.Forms.DataGridView dataListar;
     }
 }
