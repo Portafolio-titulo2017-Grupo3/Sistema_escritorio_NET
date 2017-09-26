@@ -87,7 +87,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(594, 208);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Ingreso TEST";
+            this.tabPage1.Text = "Ingreso Departamento";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -95,7 +95,7 @@
             this.groupBox1.Controls.Add(this.btnAceptar);
             this.groupBox1.Controls.Add(this.txtDato);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(29, 34);
+            this.groupBox1.Location = new System.Drawing.Point(29, 31);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(562, 160);
             this.groupBox1.TabIndex = 0;
@@ -137,7 +137,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(594, 208);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Editar TEST";
+            this.tabPage2.Text = "Editar Departamento";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox3
@@ -235,7 +235,7 @@
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(594, 208);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Listar TEST";
+            this.tabPage3.Text = "Listar Departamento";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // btnListar
