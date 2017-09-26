@@ -5,8 +5,8 @@ Sistema de escritorio basado en C# para administrar mantenedores de la web en ja
 - Descripcion del proyecto
 - Instalación
 	- Requisitos
-	-Versión
-	-Encargados del proyecto
+	- Versión
+	- Encargados del proyecto
 - Uso
 - Documentación
 - Roadmap
