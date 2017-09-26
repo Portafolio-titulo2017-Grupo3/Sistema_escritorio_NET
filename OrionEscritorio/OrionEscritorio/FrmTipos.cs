@@ -22,18 +22,12 @@ namespace OrionEscritorio
         private TextBox textBox2;
         private TextBox textBox1;
         private TabPage ListarTipo;
-        private DataGridView dataGridView1;
         private BindingSource dataSet2BindingSource;
         private IContainer components;
-        private DataSet2 dataSet2;
+ 
         private BindingSource tIPOBindingSource;
-        private DataSet2TableAdapters.TIPOTableAdapter tIPOTableAdapter;
+ 
         private Label label4;
-        private DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn nOMBREDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn dESCRIPCIONDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn pERMISOIDPERMISODataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn eSTADOIDESTADODataGridViewTextBoxColumn;
         private TextBox textBox7;
         private TextBox textBox6;
         private TextBox textBox5;
@@ -67,38 +61,28 @@ namespace OrionEscritorio
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.ListarTipo = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nOMBREDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dESCRIPCIONDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pERMISOIDPERMISODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eSTADOIDESTADODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tIPOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet2 = new OrionEscritorio.DataSet2();
-            this.tIPOTableAdapter = new OrionEscritorio.DataSet2TableAdapters.TIPOTableAdapter();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.InicioTipos.SuspendLayout();
             this.IngresarTipo.SuspendLayout();
             this.ListarTipo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIPOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet2BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -125,7 +109,7 @@ namespace OrionEscritorio
             this.InicioTipos.Controls.Add(this.label1);
             this.InicioTipos.Location = new System.Drawing.Point(4, 22);
             this.InicioTipos.Name = "InicioTipos";
-            this.InicioTipos.Size = new System.Drawing.Size(516, 287);
+            this.InicioTipos.Size = new System.Drawing.Size(617, 379);
             this.InicioTipos.TabIndex = 3;
             this.InicioTipos.Text = "Inicio";
             this.InicioTipos.UseVisualStyleBackColor = true;
@@ -149,7 +133,7 @@ namespace OrionEscritorio
             this.IngresarTipo.Location = new System.Drawing.Point(4, 22);
             this.IngresarTipo.Name = "IngresarTipo";
             this.IngresarTipo.Padding = new System.Windows.Forms.Padding(3);
-            this.IngresarTipo.Size = new System.Drawing.Size(577, 335);
+            this.IngresarTipo.Size = new System.Drawing.Size(617, 379);
             this.IngresarTipo.TabIndex = 0;
             this.IngresarTipo.Text = "Ingresar Tipo";
             this.IngresarTipo.UseVisualStyleBackColor = true;
@@ -211,7 +195,6 @@ namespace OrionEscritorio
             this.ListarTipo.Controls.Add(this.label6);
             this.ListarTipo.Controls.Add(this.label5);
             this.ListarTipo.Controls.Add(this.label4);
-            this.ListarTipo.Controls.Add(this.dataGridView1);
             this.ListarTipo.Location = new System.Drawing.Point(4, 22);
             this.ListarTipo.Name = "ListarTipo";
             this.ListarTipo.Padding = new System.Windows.Forms.Padding(3);
@@ -220,6 +203,104 @@ namespace OrionEscritorio
             this.ListarTipo.Text = "Listar Tipo";
             this.ListarTipo.UseVisualStyleBackColor = true;
             this.ListarTipo.Click += new System.EventHandler(this.ListarTipo_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(68, 345);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "Guardar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(456, 197);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(106, 23);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Buscar y modificar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(68, 318);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 11;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(68, 291);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 10;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(68, 264);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 9;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(68, 236);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 8;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(68, 207);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 7;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(10, 321);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "label9";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 294);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "label8";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(10, 267);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "label7";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(10, 239);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(60, 13);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Descipcion";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(10, 210);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Nombre";
             // 
             // label4
             // 
@@ -231,168 +312,10 @@ namespace OrionEscritorio
             this.label4.TabIndex = 1;
             this.label4.Text = "Tipos de permiso ingresados en el sistemas";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
-            this.nOMBREDataGridViewTextBoxColumn,
-            this.dESCRIPCIONDataGridViewTextBoxColumn,
-            this.pERMISOIDPERMISODataGridViewTextBoxColumn,
-            this.eSTADOIDESTADODataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tIPOBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 46);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(552, 145);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            // 
-            // nOMBREDataGridViewTextBoxColumn
-            // 
-            this.nOMBREDataGridViewTextBoxColumn.DataPropertyName = "NOMBRE";
-            this.nOMBREDataGridViewTextBoxColumn.HeaderText = "NOMBRE";
-            this.nOMBREDataGridViewTextBoxColumn.Name = "nOMBREDataGridViewTextBoxColumn";
-            // 
-            // dESCRIPCIONDataGridViewTextBoxColumn
-            // 
-            this.dESCRIPCIONDataGridViewTextBoxColumn.DataPropertyName = "DESCRIPCION";
-            this.dESCRIPCIONDataGridViewTextBoxColumn.HeaderText = "DESCRIPCION";
-            this.dESCRIPCIONDataGridViewTextBoxColumn.Name = "dESCRIPCIONDataGridViewTextBoxColumn";
-            // 
-            // pERMISOIDPERMISODataGridViewTextBoxColumn
-            // 
-            this.pERMISOIDPERMISODataGridViewTextBoxColumn.DataPropertyName = "PERMISO_IDPERMISO";
-            this.pERMISOIDPERMISODataGridViewTextBoxColumn.HeaderText = "PERMISO_IDPERMISO";
-            this.pERMISOIDPERMISODataGridViewTextBoxColumn.Name = "pERMISOIDPERMISODataGridViewTextBoxColumn";
-            // 
-            // eSTADOIDESTADODataGridViewTextBoxColumn
-            // 
-            this.eSTADOIDESTADODataGridViewTextBoxColumn.DataPropertyName = "ESTADO_IDESTADO";
-            this.eSTADOIDESTADODataGridViewTextBoxColumn.HeaderText = "ESTADO_IDESTADO";
-            this.eSTADOIDESTADODataGridViewTextBoxColumn.Name = "eSTADOIDESTADODataGridViewTextBoxColumn";
-            // 
             // tIPOBindingSource
             // 
             this.tIPOBindingSource.DataMember = "TIPO";
             this.tIPOBindingSource.DataSource = this.dataSet2BindingSource;
-            // 
-            // dataSet2BindingSource
-            // 
-            this.dataSet2BindingSource.DataSource = this.dataSet2;
-            this.dataSet2BindingSource.Position = 0;
-            // 
-            // dataSet2
-            // 
-            this.dataSet2.DataSetName = "DataSet2";
-            this.dataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tIPOTableAdapter
-            // 
-            this.tIPOTableAdapter.ClearBeforeFill = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 210);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Nombre";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 239);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 13);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Descipcion";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 267);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "label7";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(10, 294);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "label8";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(10, 321);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "label9";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(68, 207);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(68, 236);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 8;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(68, 264);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 9;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(68, 291);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 10;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(68, 318);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 11;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(456, 197);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Buscar y modificar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(68, 345);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Guardar";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // FrmTipos
             // 
@@ -408,10 +331,8 @@ namespace OrionEscritorio
             this.IngresarTipo.PerformLayout();
             this.ListarTipo.ResumeLayout(false);
             this.ListarTipo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tIPOBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet2BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -419,7 +340,7 @@ namespace OrionEscritorio
         private void FrmTipos_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'dataSet2.TIPO' Puede moverla o quitarla según sea necesario.
-            this.tIPOTableAdapter.Fill(this.dataSet2.TIPO);
+            
 
         }
 
@@ -431,7 +352,7 @@ namespace OrionEscritorio
         
             Tipo test = new Tipo();
 
-            test.datoqlo = txtDato.Text;
+  
 
 
 
@@ -439,14 +360,7 @@ namespace OrionEscritorio
 
 
 
-            if (resp > 0)
-            {
-                MessageBox.Show("Dato ingresado en forma correcta....!", "AVISO DE SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Dato con problema de ingreso....!", "AVISO DE SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+    
 
 
 
