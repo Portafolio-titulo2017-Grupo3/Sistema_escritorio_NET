@@ -50,7 +50,7 @@
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(479, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(722, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -111,6 +111,7 @@
             this.motivoToolStripMenuItem.Name = "motivoToolStripMenuItem";
             this.motivoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.motivoToolStripMenuItem.Text = "Motivo";
+            this.motivoToolStripMenuItem.Click += new System.EventHandler(this.motivoToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -123,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(479, 254);
+            this.ClientSize = new System.Drawing.Size(722, 390);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
