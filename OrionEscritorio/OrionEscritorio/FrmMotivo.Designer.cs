@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
             this.CrearMotivo = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,22 +42,31 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.ModificarMotivo = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnListar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button6 = new System.Windows.Forms.Button();
+            this.BuscarMotivo = new System.Windows.Forms.Button();
+            this.dataListar = new System.Windows.Forms.DataGridView();
+            this.dataSet1 = new OrionEscritorio.DataSet1();
+            this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet2 = new OrionEscritorio.DataSet2();
+            this.mOTIVOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mOTIVOTableAdapter = new OrionEscritorio.DataSet2TableAdapters.MOTIVOTableAdapter();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.CrearMotivo.SuspendLayout();
             this.ModificarMotivo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mOTIVOBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -81,23 +90,12 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button6);
-            this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(583, 393);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Inicio";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(77, 97);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // CrearMotivo
             // 
@@ -194,15 +192,15 @@
             // 
             // ModificarMotivo
             // 
-            this.ModificarMotivo.Controls.Add(this.button4);
+            this.ModificarMotivo.Controls.Add(this.BtnListar);
             this.ModificarMotivo.Controls.Add(this.button3);
             this.ModificarMotivo.Controls.Add(this.label7);
             this.ModificarMotivo.Controls.Add(this.label6);
             this.ModificarMotivo.Controls.Add(this.textBox5);
             this.ModificarMotivo.Controls.Add(this.textBox4);
             this.ModificarMotivo.Controls.Add(this.textBox3);
-            this.ModificarMotivo.Controls.Add(this.button2);
-            this.ModificarMotivo.Controls.Add(this.dataGridView1);
+            this.ModificarMotivo.Controls.Add(this.BuscarMotivo);
+            this.ModificarMotivo.Controls.Add(this.dataListar);
             this.ModificarMotivo.Location = new System.Drawing.Point(4, 22);
             this.ModificarMotivo.Name = "ModificarMotivo";
             this.ModificarMotivo.Padding = new System.Windows.Forms.Padding(3);
@@ -211,14 +209,15 @@
             this.ModificarMotivo.Text = "Modificar Motivo";
             this.ModificarMotivo.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // BtnListar
             // 
-            this.button4.Location = new System.Drawing.Point(39, 39);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Listar Motivo";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BtnListar.Location = new System.Drawing.Point(39, 39);
+            this.BtnListar.Name = "BtnListar";
+            this.BtnListar.Size = new System.Drawing.Size(75, 23);
+            this.BtnListar.TabIndex = 8;
+            this.BtnListar.Text = "Listar Motivo";
+            this.BtnListar.UseVisualStyleBackColor = true;
+            this.BtnListar.Click += new System.EventHandler(this.BtnListar_Click);
             // 
             // button3
             // 
@@ -268,31 +267,54 @@
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 2;
             // 
-            // button2
+            // BuscarMotivo
             // 
-            this.button2.Location = new System.Drawing.Point(445, 152);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Seleccionar Motivo";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BuscarMotivo.Location = new System.Drawing.Point(445, 152);
+            this.BuscarMotivo.Name = "BuscarMotivo";
+            this.BuscarMotivo.Size = new System.Drawing.Size(110, 23);
+            this.BuscarMotivo.TabIndex = 1;
+            this.BuscarMotivo.Text = "Seleccionar Motivo";
+            this.BuscarMotivo.UseVisualStyleBackColor = true;
+            this.BuscarMotivo.Click += new System.EventHandler(this.BuscarMotivo_Click);
             // 
-            // dataGridView1
+            // dataListar
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 68);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(516, 78);
-            this.dataGridView1.TabIndex = 0;
+            this.dataListar.AutoGenerateColumns = false;
+            this.dataListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataListar.DataSource = this.dataSet1BindingSource1;
+            this.dataListar.Location = new System.Drawing.Point(39, 68);
+            this.dataListar.Name = "dataListar";
+            this.dataListar.Size = new System.Drawing.Size(516, 78);
+            this.dataListar.TabIndex = 0;
             // 
-            // button6
+            // dataSet1
             // 
-            this.button6.Location = new System.Drawing.Point(116, 57);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataSet1BindingSource
+            // 
+            this.dataSet1BindingSource.DataSource = this.dataSet1;
+            this.dataSet1BindingSource.Position = 0;
+            // 
+            // dataSet1BindingSource1
+            // 
+            this.dataSet1BindingSource1.DataSource = this.dataSet1;
+            this.dataSet1BindingSource1.Position = 0;
+            // 
+            // dataSet2
+            // 
+            this.dataSet2.DataSetName = "DataSet2";
+            this.dataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mOTIVOBindingSource
+            // 
+            this.mOTIVOBindingSource.DataMember = "MOTIVO";
+            this.mOTIVOBindingSource.DataSource = this.dataSet2;
+            // 
+            // mOTIVOTableAdapter
+            // 
+            this.mOTIVOTableAdapter.ClearBeforeFill = true;
             // 
             // FrmMotivo
             // 
@@ -302,14 +324,19 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmMotivo";
             this.Text = "FrmMotivo";
+            this.Load += new System.EventHandler(this.FrmMotivo_Load);
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
             this.CrearMotivo.ResumeLayout(false);
             this.CrearMotivo.PerformLayout();
             this.ModificarMotivo.ResumeLayout(false);
             this.ModificarMotivo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mOTIVOBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -329,16 +356,20 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TabPage ModificarMotivo;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BtnListar;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button BuscarMotivo;
+        private System.Windows.Forms.DataGridView dataListar;
+        private System.Windows.Forms.BindingSource dataSet1BindingSource1;
+        private DataSet1 dataSet1;
+        private System.Windows.Forms.BindingSource dataSet1BindingSource;
+        private DataSet2 dataSet2;
+        private System.Windows.Forms.BindingSource mOTIVOBindingSource;
+        private DataSet2TableAdapters.MOTIVOTableAdapter mOTIVOTableAdapter;
     }
 }
