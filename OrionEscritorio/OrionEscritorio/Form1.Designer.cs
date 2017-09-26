@@ -111,6 +111,7 @@
             this.motivoToolStripMenuItem.Name = "motivoToolStripMenuItem";
             this.motivoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.motivoToolStripMenuItem.Text = "Motivo";
+            this.motivoToolStripMenuItem.Click += new System.EventHandler(this.motivoToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 

@@ -32,5 +32,11 @@ namespace OrionEscritorio
         {
 
         }
+
+        private void motivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMotivo frmMotivo = new FrmMotivo();
+            frmMotivo.Show();
+        }
     }
 }
