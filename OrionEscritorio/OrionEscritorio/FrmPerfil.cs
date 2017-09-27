@@ -15,9 +15,9 @@ namespace OrionEscritorio
         private TabControl tabControl1;
         private TabPage inicio;
         private TabPage CrearUsuario;
-        private Button button1;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private Button CrearTipo;
+        private TextBox txtdescTipo;
+        private TextBox txtNombreTipo;
         private TabPage ModificarUsuario;
         private Button BtnListar;
         private Button button3;
@@ -40,9 +40,9 @@ namespace OrionEscritorio
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.inicio = new System.Windows.Forms.TabPage();
             this.CrearUsuario = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CrearTipo = new System.Windows.Forms.Button();
+            this.txtdescTipo = new System.Windows.Forms.TextBox();
+            this.txtNombreTipo = new System.Windows.Forms.TextBox();
             this.ModificarUsuario = new System.Windows.Forms.TabPage();
             this.BtnListar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -83,9 +83,9 @@ namespace OrionEscritorio
             // 
             // CrearUsuario
             // 
-            this.CrearUsuario.Controls.Add(this.button1);
-            this.CrearUsuario.Controls.Add(this.textBox2);
-            this.CrearUsuario.Controls.Add(this.textBox1);
+            this.CrearUsuario.Controls.Add(this.CrearTipo);
+            this.CrearUsuario.Controls.Add(this.txtdescTipo);
+            this.CrearUsuario.Controls.Add(this.txtNombreTipo);
             this.CrearUsuario.Location = new System.Drawing.Point(4, 22);
             this.CrearUsuario.Name = "CrearUsuario";
             this.CrearUsuario.Padding = new System.Windows.Forms.Padding(3);
@@ -94,28 +94,29 @@ namespace OrionEscritorio
             this.CrearUsuario.Text = "Crear Tipo";
             this.CrearUsuario.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // CrearTipo
             // 
-            this.button1.Location = new System.Drawing.Point(165, 156);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 24);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Crear Nuevo Motivo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.CrearTipo.Location = new System.Drawing.Point(165, 146);
+            this.CrearTipo.Name = "CrearTipo";
+            this.CrearTipo.Size = new System.Drawing.Size(136, 24);
+            this.CrearTipo.TabIndex = 7;
+            this.CrearTipo.Text = "Crear Nuevo Tipo";
+            this.CrearTipo.UseVisualStyleBackColor = true;
+            this.CrearTipo.Click += new System.EventHandler(this.CrearTipo_Click);
             // 
-            // textBox2
+            // txtdescTipo
             // 
-            this.textBox2.Location = new System.Drawing.Point(165, 106);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(136, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtdescTipo.Location = new System.Drawing.Point(165, 106);
+            this.txtdescTipo.Name = "txtdescTipo";
+            this.txtdescTipo.Size = new System.Drawing.Size(136, 20);
+            this.txtdescTipo.TabIndex = 1;
             // 
-            // textBox1
+            // txtNombreTipo
             // 
-            this.textBox1.Location = new System.Drawing.Point(165, 73);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtNombreTipo.Location = new System.Drawing.Point(165, 73);
+            this.txtNombreTipo.Name = "txtNombreTipo";
+            this.txtNombreTipo.Size = new System.Drawing.Size(136, 20);
+            this.txtNombreTipo.TabIndex = 0;
             // 
             // ModificarUsuario
             // 
@@ -231,6 +232,11 @@ namespace OrionEscritorio
             ((System.ComponentModel.ISupportInitialize)(this.dataListar)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+
+        }
+
+        private void CrearTipo_Click(object sender, EventArgs e)
+        {
 
         }
     }
