@@ -47,6 +47,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnListar = new System.Windows.Forms.Button();
             this.grillaTest = new System.Windows.Forms.DataGridView();
+            this.dataSet1 = new OrionEscritorio.DataSet1();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -55,6 +56,7 @@
             this.groupBox2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaTest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -245,6 +247,11 @@
             this.grillaTest.Size = new System.Drawing.Size(542, 136);
             this.grillaTest.TabIndex = 0;
             // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // FrmDepartamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,6 +272,7 @@
             this.groupBox2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grillaTest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -290,5 +298,6 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.DataGridView grillaTest;
+        private DataSet1 dataSet1;
     }
 }
