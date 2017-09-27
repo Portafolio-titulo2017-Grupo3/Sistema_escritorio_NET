@@ -51,9 +51,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.BuscarMotivo = new System.Windows.Forms.Button();
             this.dataListar = new System.Windows.Forms.DataGridView();
+            this.dataSet1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1 = new OrionEscritorio.DataSet1();
             this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet2 = new OrionEscritorio.DataSet2();
             this.mOTIVOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mOTIVOTableAdapter = new OrionEscritorio.DataSet2TableAdapters.MOTIVOTableAdapter();
@@ -62,9 +62,9 @@
             this.CrearMotivo.SuspendLayout();
             this.ModificarMotivo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mOTIVOBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -279,13 +279,16 @@
             // 
             // dataListar
             // 
-            this.dataListar.AutoGenerateColumns = false;
             this.dataListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListar.DataSource = this.dataSet1BindingSource1;
             this.dataListar.Location = new System.Drawing.Point(39, 68);
             this.dataListar.Name = "dataListar";
             this.dataListar.Size = new System.Drawing.Size(516, 78);
             this.dataListar.TabIndex = 0;
+            // 
+            // dataSet1BindingSource1
+            // 
+            this.dataSet1BindingSource1.DataSource = this.dataSet1;
+            this.dataSet1BindingSource1.Position = 0;
             // 
             // dataSet1
             // 
@@ -296,11 +299,6 @@
             // 
             this.dataSet1BindingSource.DataSource = this.dataSet1;
             this.dataSet1BindingSource.Position = 0;
-            // 
-            // dataSet1BindingSource1
-            // 
-            this.dataSet1BindingSource1.DataSource = this.dataSet1;
-            this.dataSet1BindingSource1.Position = 0;
             // 
             // dataSet2
             // 
@@ -332,9 +330,9 @@
             this.ModificarMotivo.ResumeLayout(false);
             this.ModificarMotivo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mOTIVOBindingSource)).EndInit();
             this.ResumeLayout(false);
