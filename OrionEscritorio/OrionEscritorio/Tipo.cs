@@ -12,19 +12,19 @@ namespace OrionEscritorio
         public int idTipo { get; set; }
         public string nombre { get; set; }
         public string descripcion { get; set; }
+        public int permiso_id { get; set; }
 
-
-        public int ingresarTipo(Test test)
+        public Tipo()
         {
-            int resp = 0;
-            OracleConnection conexion = Conexion.abrirConexion();
-            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO Tipo(ID,NOMBRE,DESCRIPCION,PERMISO_IDPERMISO,ESTADO_IDESTADO) VALUES('')", test.datoqlo), conexion);
-            resp = orden.ExecuteNonQuery();
-            conexion.Close();
-            return resp;
+
         }
 
-
+        public Tipo(int idTipo, string nombre, string descripcion)
+        {
+            this.idTipo = idTipo;
+            this.nombre = nombre;
+            this.descripcion = descripcion;
+        }
     }
 
 

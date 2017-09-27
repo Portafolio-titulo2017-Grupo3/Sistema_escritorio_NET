@@ -19,7 +19,7 @@ namespace OrionEscritorio
 
         private void BtnListar_Click(object sender, EventArgs e)
         {
-            dataListar.DataSource = TMotivo.listarTest();
+            dataListar.DataSource = TMotivo.listarMotivo();
         }
 
         private void BuscarMotivo_Click(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace OrionEscritorio
         private void FrmMotivo_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'dataSet2.MOTIVO' Puede moverla o quitarla según sea necesario.
-            this.mOTIVOTableAdapter.Fill(this.dataSet2.MOTIVO);
+            //this.mOTIVOTableAdapter.Fill(this.dataSet2.MOTIVO);
 
         }
     }
