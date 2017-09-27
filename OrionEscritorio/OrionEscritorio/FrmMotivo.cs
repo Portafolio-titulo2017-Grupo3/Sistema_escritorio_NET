@@ -44,5 +44,20 @@ namespace OrionEscritorio
             //this.mOTIVOTableAdapter.Fill(this.dataSet2.MOTIVO);
 
         }
+
+        private void CrearNMotivo_Click(object sender, EventArgs e)
+        {
+
+            Motivos motivos = new Motivos();
+            TMotivo tmotivo = new TMotivo();
+
+            motivos.nombre = txtNMotivo.Text;
+            motivos.descripcion = txtDmotivo.Text;
+            tmotivo.ingresarMotivo(motivos);
+
+
+
+
+        }
     }
 }

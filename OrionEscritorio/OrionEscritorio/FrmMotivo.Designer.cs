@@ -34,12 +34,12 @@
             this.CrearMotivo = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.CrearNMotivo = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDmotivo = new System.Windows.Forms.TextBox();
+            this.txtNMotivo = new System.Windows.Forms.TextBox();
             this.ModificarMotivo = new System.Windows.Forms.TabPage();
             this.BtnListar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -89,12 +89,12 @@
             // 
             this.CrearMotivo.Controls.Add(this.label5);
             this.CrearMotivo.Controls.Add(this.label3);
-            this.CrearMotivo.Controls.Add(this.button1);
+            this.CrearMotivo.Controls.Add(this.CrearNMotivo);
             this.CrearMotivo.Controls.Add(this.label4);
             this.CrearMotivo.Controls.Add(this.label2);
             this.CrearMotivo.Controls.Add(this.label1);
-            this.CrearMotivo.Controls.Add(this.textBox2);
-            this.CrearMotivo.Controls.Add(this.textBox1);
+            this.CrearMotivo.Controls.Add(this.txtDmotivo);
+            this.CrearMotivo.Controls.Add(this.txtNMotivo);
             this.CrearMotivo.Location = new System.Drawing.Point(4, 22);
             this.CrearMotivo.Name = "CrearMotivo";
             this.CrearMotivo.Padding = new System.Windows.Forms.Padding(3);
@@ -125,14 +125,15 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "*Ingrese el nombre del motivo";
             // 
-            // button1
+            // CrearNMotivo
             // 
-            this.button1.Location = new System.Drawing.Point(210, 157);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 24);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Crear Nuevo Motivo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.CrearNMotivo.Location = new System.Drawing.Point(210, 157);
+            this.CrearNMotivo.Name = "CrearNMotivo";
+            this.CrearNMotivo.Size = new System.Drawing.Size(136, 24);
+            this.CrearNMotivo.TabIndex = 7;
+            this.CrearNMotivo.Text = "Crear Nuevo Motivo";
+            this.CrearNMotivo.UseVisualStyleBackColor = true;
+            this.CrearNMotivo.Click += new System.EventHandler(this.CrearNMotivo_Click);
             // 
             // label4
             // 
@@ -164,19 +165,19 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Nombre Motivo";
             // 
-            // textBox2
+            // txtDmotivo
             // 
-            this.textBox2.Location = new System.Drawing.Point(210, 107);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(136, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtDmotivo.Location = new System.Drawing.Point(210, 107);
+            this.txtDmotivo.Name = "txtDmotivo";
+            this.txtDmotivo.Size = new System.Drawing.Size(136, 20);
+            this.txtDmotivo.TabIndex = 1;
             // 
-            // textBox1
+            // txtNMotivo
             // 
-            this.textBox1.Location = new System.Drawing.Point(210, 74);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtNMotivo.Location = new System.Drawing.Point(210, 74);
+            this.txtNMotivo.Name = "txtNMotivo";
+            this.txtNMotivo.Size = new System.Drawing.Size(136, 20);
+            this.txtNMotivo.TabIndex = 0;
             // 
             // ModificarMotivo
             // 
@@ -301,12 +302,12 @@
         private System.Windows.Forms.TabPage CrearMotivo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button CrearNMotivo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDmotivo;
+        private System.Windows.Forms.TextBox txtNMotivo;
         private System.Windows.Forms.TabPage ModificarMotivo;
         private System.Windows.Forms.Button BtnListar;
         private System.Windows.Forms.Button button3;
