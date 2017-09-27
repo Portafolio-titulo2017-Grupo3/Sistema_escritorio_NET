@@ -9,7 +9,6 @@ namespace OrionEscritorio
 {
     class TUsuario
     {
-
         public static List<Usuario> listarUsuario()
         {
             List<Usuario> lista = new List<Usuario>();
