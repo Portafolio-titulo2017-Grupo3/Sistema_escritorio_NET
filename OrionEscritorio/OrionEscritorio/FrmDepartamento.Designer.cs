@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -48,12 +47,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnListar = new System.Windows.Forms.Button();
             this.grillaTest = new System.Windows.Forms.DataGridView();
-            this.tESTBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1 = new OrionEscritorio.DataSet1();
-            this.pRUEBA1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pRUEBA1TableAdapter = new OrionEscritorio.DataSet1TableAdapters.PRUEBA1TableAdapter();
-            this.tESTTableAdapter = new OrionEscritorio.DataSet1TableAdapters.TESTTableAdapter();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -62,10 +56,7 @@
             this.groupBox2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaTest)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tESTBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRUEBA1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -256,33 +247,10 @@
             this.grillaTest.Size = new System.Drawing.Size(542, 136);
             this.grillaTest.TabIndex = 0;
             // 
-            // tESTBindingSource
-            // 
-            this.tESTBindingSource.DataMember = "TEST";
-            this.tESTBindingSource.DataSource = this.dataSet1BindingSource;
-            // 
-            // dataSet1BindingSource
-            // 
-            this.dataSet1BindingSource.DataSource = this.dataSet1;
-            this.dataSet1BindingSource.Position = 0;
-            // 
             // dataSet1
             // 
             this.dataSet1.DataSetName = "DataSet1";
             this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pRUEBA1BindingSource
-            // 
-            this.pRUEBA1BindingSource.DataMember = "PRUEBA1";
-            this.pRUEBA1BindingSource.DataSource = this.dataSet1BindingSource;
-            // 
-            // pRUEBA1TableAdapter
-            // 
-            this.pRUEBA1TableAdapter.ClearBeforeFill = true;
-            // 
-            // tESTTableAdapter
-            // 
-            this.tESTTableAdapter.ClearBeforeFill = true;
             // 
             // FrmDepartamento
             // 
@@ -304,10 +272,7 @@
             this.groupBox2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grillaTest)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tESTBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRUEBA1BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -334,10 +299,5 @@
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.DataGridView grillaTest;
         private DataSet1 dataSet1;
-        private System.Windows.Forms.BindingSource dataSet1BindingSource;
-        private System.Windows.Forms.BindingSource pRUEBA1BindingSource;
-        private DataSet1TableAdapters.PRUEBA1TableAdapter pRUEBA1TableAdapter;
-        private System.Windows.Forms.BindingSource tESTBindingSource;
-        private DataSet1TableAdapters.TESTTableAdapter tESTTableAdapter;
     }
 }
