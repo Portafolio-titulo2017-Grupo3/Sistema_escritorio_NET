@@ -57,7 +57,7 @@
             this.tabControl1.Controls.Add(this.inicio);
             this.tabControl1.Controls.Add(this.CrearTipo);
             this.tabControl1.Controls.Add(this.ModificarTipo);
-            this.tabControl1.Location = new System.Drawing.Point(20, 45);
+            this.tabControl1.Location = new System.Drawing.Point(19, 45);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(514, 368);
@@ -124,7 +124,7 @@
             this.ModificarTipo.Padding = new System.Windows.Forms.Padding(3);
             this.ModificarTipo.Size = new System.Drawing.Size(506, 342);
             this.ModificarTipo.TabIndex = 1;
-            this.ModificarTipo.Text = "Modificar Usuarios";
+            this.ModificarTipo.Text = "Modificar Tipo";
             this.ModificarTipo.UseVisualStyleBackColor = true;
             // 
             // BtnListar
@@ -133,8 +133,9 @@
             this.BtnListar.Name = "BtnListar";
             this.BtnListar.Size = new System.Drawing.Size(75, 23);
             this.BtnListar.TabIndex = 8;
-            this.BtnListar.Text = "Listar Motivo";
+            this.BtnListar.Text = "Listar Tipo";
             this.BtnListar.UseVisualStyleBackColor = true;
+            this.BtnListar.Click += new System.EventHandler(this.BtnListar_Click);
             // 
             // button3
             // 
@@ -142,7 +143,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 23);
             this.button3.TabIndex = 7;
-            this.button3.Text = "Modificar Motivo";
+            this.button3.Text = "Modificar Tipo";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // label7
@@ -190,7 +191,7 @@
             this.BuscarMotivo.Name = "BuscarMotivo";
             this.BuscarMotivo.Size = new System.Drawing.Size(110, 23);
             this.BuscarMotivo.TabIndex = 1;
-            this.BuscarMotivo.Text = "Seleccionar Motivo";
+            this.BuscarMotivo.Text = "Seleccionar Tipo";
             this.BuscarMotivo.UseVisualStyleBackColor = true;
             // 
             // dataListar
@@ -217,7 +218,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmTipos";
             this.Text = "FrmTipos";
-        
             this.tabControl1.ResumeLayout(false);
             this.CrearTipo.ResumeLayout(false);
             this.CrearTipo.PerformLayout();

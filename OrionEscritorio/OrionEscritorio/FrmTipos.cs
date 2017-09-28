@@ -17,6 +17,9 @@ namespace OrionEscritorio
             InitializeComponent();
         }
 
-   
+        private void BtnListar_Click(object sender, EventArgs e)
+        {
+            dataListar.DataSource = TTipo.listarTipo();
+        }
     }
 }

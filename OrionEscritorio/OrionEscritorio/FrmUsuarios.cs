@@ -38,5 +38,10 @@ namespace OrionEscritorio
             tusuario.ingresarUsuario(usuario);
 
         }
+
+        private void BtnListar_Click(object sender, EventArgs e)
+        {
+            dataListar.DataSource = TUsuario.listarUsuario();
+        }
     }
 }

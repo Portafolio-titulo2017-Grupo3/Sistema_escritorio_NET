@@ -91,7 +91,7 @@ namespace OrionEscritorio
             this.CrearUsuario.Padding = new System.Windows.Forms.Padding(3);
             this.CrearUsuario.Size = new System.Drawing.Size(506, 342);
             this.CrearUsuario.TabIndex = 0;
-            this.CrearUsuario.Text = "Crear Tipo";
+            this.CrearUsuario.Text = "Crear Perfil";
             this.CrearUsuario.UseVisualStyleBackColor = true;
             // 
             // CrearTipo
@@ -134,7 +134,7 @@ namespace OrionEscritorio
             this.ModificarUsuario.Padding = new System.Windows.Forms.Padding(3);
             this.ModificarUsuario.Size = new System.Drawing.Size(506, 342);
             this.ModificarUsuario.TabIndex = 1;
-            this.ModificarUsuario.Text = "Modificar Tipo";
+            this.ModificarUsuario.Text = "Modificar Perfil";
             this.ModificarUsuario.UseVisualStyleBackColor = true;
             // 
             // BtnListar
@@ -143,8 +143,9 @@ namespace OrionEscritorio
             this.BtnListar.Name = "BtnListar";
             this.BtnListar.Size = new System.Drawing.Size(75, 23);
             this.BtnListar.TabIndex = 8;
-            this.BtnListar.Text = "Listar Motivo";
+            this.BtnListar.Text = "Listar Perfil";
             this.BtnListar.UseVisualStyleBackColor = true;
+            this.BtnListar.Click += new System.EventHandler(this.BtnListar_Click);
             // 
             // button3
             // 
@@ -152,7 +153,7 @@ namespace OrionEscritorio
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 23);
             this.button3.TabIndex = 7;
-            this.button3.Text = "Modificar Motivo";
+            this.button3.Text = "Modificar Perfil";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // label7
@@ -200,7 +201,7 @@ namespace OrionEscritorio
             this.BuscarMotivo.Name = "BuscarMotivo";
             this.BuscarMotivo.Size = new System.Drawing.Size(110, 23);
             this.BuscarMotivo.TabIndex = 1;
-            this.BuscarMotivo.Text = "Seleccionar Motivo";
+            this.BuscarMotivo.Text = "Seleccionar Perfil";
             this.BuscarMotivo.UseVisualStyleBackColor = true;
             // 
             // dataListar
@@ -238,6 +239,11 @@ namespace OrionEscritorio
         private void CrearTipo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnListar_Click(object sender, EventArgs e)
+        {
+            dataListar.DataSource = TPerfil.listarPerfil();
         }
     }
 }
