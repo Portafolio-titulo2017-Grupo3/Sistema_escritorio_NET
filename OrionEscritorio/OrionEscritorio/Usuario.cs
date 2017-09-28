@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace OrionEscritorio
 {
     class Usuario
@@ -20,14 +19,13 @@ namespace OrionEscritorio
 
         }
 
-        
-        public Usuario(int idUsuario, string nombre, string clave, string rut_funcionario,int perfil)
+        public Usuario(int idUsuario, string nombre, string clave, string rut_funcionario)
         {
-            this.idUsuario = 0;
+            this.idUsuario = idUsuario;
             this.nombre = nombre;
             this.clave = clave;
             this.rut_funcionario = rut_funcionario;
-            this.perfil_id = perfil;
+            this.perfil_id = 0;
         }
     }
 }

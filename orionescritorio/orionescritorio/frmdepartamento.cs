@@ -19,12 +19,23 @@ namespace OrionEscritorio
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-                      
+            Test test = new Test();
+            TTest tTest = new TTest();
+            test.datoqlo = txtDato.Text;
+
+            int resp = tTest.ingresarTest(test);
+            if (resp > 0)
+            { 
+                MessageBox.Show("Dato ingresado en forma correcta....!", "AVISO DE SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+            else
+            { 
+                MessageBox.Show("Dato con problema de ingreso....!", "AVISO DE SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+            
         }
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-            
+            grillaTest.DataSource = TTest.listarTest();
         }
 
         private void FrmDepartamento_Load(object sender, EventArgs e)
@@ -36,20 +47,37 @@ namespace OrionEscritorio
 
         }
 
-
-        private void btnMDpto_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
+            TTest tTest = new TTest();
+            Test test = new Test();
+            string dato = txtDatoBuscar.Text;
+            test = tTest.buscarTest(dato);
+            txtDatoEd.Text = test.datoqlo;
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            TTest tTest = new TTest();
+            string dato = txtDatoBuscar.Text;
+            int resp = tTest.eliminarTest(dato);
+            if (resp > 0)
+            { MessageBox.Show("Dato Elimina en forma correcta....!", "AVISO DE SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+            else
+            { MessageBox.Show("Dato No Existe...verifique!", "AVISO DE SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information); }
 
         }
 
-        private void BtnListar_Click_1(object sender, EventArgs e)
+        private void btnModificar_Click(object sender, EventArgs e)
         {
-            dataListar.DataSource = TDepartamento.listarDepartamento();
-        }
-
-        private void BuscarDepartamento_Click(object sender, EventArgs e)
-        {
-
+            Test test = new Test();
+            TTest tTest = new TTest();
+            test.datoqlo = txtDatoEd.Text;
+            int resp = tTest.modificarTest(test);
+            if (resp > 0)
+            { MessageBox.Show("Dato Modificado en forma correcta....!", "AVISO DE SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+            else
+            { MessageBox.Show("Dato con problema de actualizacion....!", "AVISO DE SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
     }
 }
