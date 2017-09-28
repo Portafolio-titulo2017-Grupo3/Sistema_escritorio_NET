@@ -28,6 +28,7 @@ namespace OrionEscritorio
 
                 lista.Add(usu);
             }
+
             return lista;
         }
 
