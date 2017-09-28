@@ -30,13 +30,26 @@ namespace OrionEscritorio
 
         private void tipoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FrmTipos frmTipo = new FrmTipos();
+            frmTipo.Show();
         }
 
         private void motivoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmMotivo formotivo = new FrmMotivo();
             formotivo.Show();
+        }
+
+        private void perfilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPerfil perfil = new FrmPerfil();
+            perfil.Show();
+        }
+
+        private void administracionDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsuarios usuario = new FrmUsuarios();
+            usuario.Show();
         }
     }
 }
