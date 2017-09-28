@@ -35,7 +35,7 @@ namespace OrionEscritorio
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();
-            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO USUARIO(ID_MOTIVO, NOMBRE_USUARIO, CLAVE_USUARIO, FUNCIONARIO_RUT_FUNCIONARIO, PERFIL_ID_PERFIL) VALUES('{0}', '{1}', '{2}', NULL)", usu.idUsuario, usu.nombre, usu.clave, usu.rut_funcionario), conexion);
+            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO USUARIO(ID_USUARIO, NOMBRE_USUARIO, CLAVE_USUARIO, FUNCIONARIO_RUT_FUNCIONARIO, PERFIL_ID_PERFIL) VALUES('{0}', '{1}', '{2}', NULL)", usu.idUsuario, usu.nombre, usu.clave, usu.rut_funcionario), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
             return resp;
@@ -45,7 +45,7 @@ namespace OrionEscritorio
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();//Singleton  
-            OracleCommand orden = new OracleCommand(string.Format("UPDATE MOTIVO SET CLAVE_MOTIVO='{0}' WHERE NOMBRE_USUARIO='{1}'", usu.clave, usu.nombre), conexion);
+            OracleCommand orden = new OracleCommand(string.Format("UPDATE USUARIO SET CLAVE_USUARIO='{0}' WHERE NOMBRE_USUARIO='{1}'", usu.clave, usu.nombre), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
             return resp;
