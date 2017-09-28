@@ -42,7 +42,7 @@
             this.txtNDpto = new System.Windows.Forms.TextBox();
             this.ModificarMotivo = new System.Windows.Forms.TabPage();
             this.BtnListar = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnMDpto = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtMDptoDesc = new System.Windows.Forms.TextBox();
@@ -181,7 +181,7 @@
             // ModificarMotivo
             // 
             this.ModificarMotivo.Controls.Add(this.BtnListar);
-            this.ModificarMotivo.Controls.Add(this.button3);
+            this.ModificarMotivo.Controls.Add(this.btnMDpto);
             this.ModificarMotivo.Controls.Add(this.label7);
             this.ModificarMotivo.Controls.Add(this.label6);
             this.ModificarMotivo.Controls.Add(this.txtMDptoDesc);
@@ -203,17 +203,19 @@
             this.BtnListar.Name = "BtnListar";
             this.BtnListar.Size = new System.Drawing.Size(75, 23);
             this.BtnListar.TabIndex = 8;
-            this.BtnListar.Text = "Listar Motivo";
+            this.BtnListar.Text = "Listar Dpto";
             this.BtnListar.UseVisualStyleBackColor = true;
+            this.BtnListar.Click += new System.EventHandler(this.BtnListar_Click_1);
             // 
-            // button3
+            // btnMDpto
             // 
-            this.button3.Location = new System.Drawing.Point(156, 287);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Modificar Dpto";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnMDpto.Location = new System.Drawing.Point(156, 287);
+            this.btnMDpto.Name = "btnMDpto";
+            this.btnMDpto.Size = new System.Drawing.Size(100, 23);
+            this.btnMDpto.TabIndex = 7;
+            this.btnMDpto.Text = "Modificar Dpto";
+            this.btnMDpto.UseVisualStyleBackColor = true;
+            this.btnMDpto.Click += new System.EventHandler(this.btnMDpto_Click);
             // 
             // label7
             // 
@@ -262,6 +264,7 @@
             this.BuscarDepartamento.TabIndex = 1;
             this.BuscarDepartamento.Text = "Seleccionar Dpto";
             this.BuscarDepartamento.UseVisualStyleBackColor = true;
+            this.BuscarDepartamento.Click += new System.EventHandler(this.BuscarDepartamento_Click);
             // 
             // dataListar
             // 
@@ -307,7 +310,7 @@
         private System.Windows.Forms.TextBox txtNDpto;
         private System.Windows.Forms.TabPage ModificarMotivo;
         private System.Windows.Forms.Button BtnListar;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnMDpto;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtMDptoDesc;
