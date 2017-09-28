@@ -15,6 +15,12 @@ namespace OrionEscritorio
         public FrmUsuarios()
         {
             InitializeComponent();
+
+            TUsuario test = new TUsuario();
+
+            cbxPerfil.DataSource = test.llenarItem();
+            cbxPerfil.DisplayMember = "NOMBRE_PERFIL";
+            cbxPerfil.ValueMember = "ID_PERFIL";
         }
 
         private void BuscarMotivo_Click(object sender, EventArgs e)
@@ -28,7 +34,7 @@ namespace OrionEscritorio
             String Usuario = txtUsuario.Text.ToString();
             String Password = txtPassword.Text.ToString();
             String IdFunc = txtFuncionario.Text.ToString();
-            int perfil = Convert.ToInt32(cbxPerfil.ToString());
+            int perfil = Convert.ToInt32(cbxPerfil.SelectedIndex.ToString());
             TUsuario tusuario = new TUsuario();
             Usuario usuario = new Usuario();
             usuario.nombre = Usuario;
@@ -43,5 +49,8 @@ namespace OrionEscritorio
         {
             dataListar.DataSource = TUsuario.listarUsuario();
         }
+
+        
+    
     }
 }

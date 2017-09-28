@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Oracle.DataAccess.Client;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace OrionEscritorio
 {
@@ -31,14 +34,30 @@ namespace OrionEscritorio
             return lista;
         }
 
+
+        public DataTable llenarItem()
+        {
+
+            DataTable dt = new DataTable();
+            OracleConnection conexion = Conexion.abrirConexion();
+            OracleCommand orden = new OracleCommand("SELECT * FROM PERFIL", conexion);
+            OracleDataAdapter dc = new OracleDataAdapter(orden);
+            dc.Fill(dt);
+
+
+            return dt;
+        }
+
+
         public int ingresarUsuario(Usuario usu)
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();
-            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO USUARIO(ID_MOTIVO, NOMBRE_USUARIO, CLAVE_USUARIO, FUNCIONARIO_RUT_FUNCIONARIO, PERFIL_ID_PERFIL) VALUES('{0}', '{1}', '{2}', NULL)", usu.idUsuario, usu.nombre, usu.clave, usu.rut_funcionario), conexion);
-            resp = orden.ExecuteNonQuery();
+            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO USUARIO(ID_USUARIO, NOMBRE_USUARIO, CLAVE_USUARIO, PERFIL_ID_PERFIL, FUNCIONARIO_RUT_FUNCIONARIO) VALUES(SEQ_ID.nextval, '2DMIN', 'ADMIN',  1, '89999999-9')"), conexion);
+            resp =orden.ExecuteNonQuery();
             conexion.Close();
             return resp;
+           
         }
 
         public int modificarUsuario(Usuario usu)
