@@ -83,12 +83,14 @@
             this.perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
             this.perfilToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.perfilToolStripMenuItem.Text = "Perfil";
+            this.perfilToolStripMenuItem.Click += new System.EventHandler(this.perfilToolStripMenuItem_Click);
             // 
             // administracionDeUsuariosToolStripMenuItem
             // 
             this.administracionDeUsuariosToolStripMenuItem.Name = "administracionDeUsuariosToolStripMenuItem";
             this.administracionDeUsuariosToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.administracionDeUsuariosToolStripMenuItem.Text = "Administracion de Usuarios";
+            this.administracionDeUsuariosToolStripMenuItem.Click += new System.EventHandler(this.administracionDeUsuariosToolStripMenuItem_Click);
             // 
             // permisosToolStripMenuItem
             // 
