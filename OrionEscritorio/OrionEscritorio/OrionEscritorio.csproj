@@ -103,6 +103,7 @@
     <Compile Include="FrmUsuarios.Designer.cs">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs" />
     <Compile Include="Motivos.cs" />
     <Compile Include="Perfil.cs" />
     <Compile Include="Program.cs" />

@@ -44,14 +44,14 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.ModificarUsuario = new System.Windows.Forms.TabPage();
             this.BtnListar = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnModUsu = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.BuscarMotivo = new System.Windows.Forms.Button();
+            this.txtModPass = new System.Windows.Forms.TextBox();
+            this.txtModUsu = new System.Windows.Forms.TextBox();
+            this.txtBUser = new System.Windows.Forms.TextBox();
             this.dataListar = new System.Windows.Forms.DataGridView();
+            this.btnBuscarUsu = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.CrearUsuario.SuspendLayout();
@@ -128,9 +128,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(50, 175);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 13);
+            this.label4.Size = new System.Drawing.Size(96, 13);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Id del funcionario";
+            this.label4.Text = "Rut del funcionario";
             // 
             // cbxPerfil
             // 
@@ -175,7 +175,7 @@
             this.btnCUsuario.Name = "btnCUsuario";
             this.btnCUsuario.Size = new System.Drawing.Size(136, 24);
             this.btnCUsuario.TabIndex = 7;
-            this.btnCUsuario.Text = "Crear Nuevo Motivo";
+            this.btnCUsuario.Text = "Crear Nuevo Usuario";
             this.btnCUsuario.UseVisualStyleBackColor = true;
             this.btnCUsuario.Click += new System.EventHandler(this.btnCUsuario_Click);
             // 
@@ -195,14 +195,14 @@
             // 
             // ModificarUsuario
             // 
+            this.ModificarUsuario.Controls.Add(this.btnBuscarUsu);
             this.ModificarUsuario.Controls.Add(this.BtnListar);
-            this.ModificarUsuario.Controls.Add(this.button3);
+            this.ModificarUsuario.Controls.Add(this.btnModUsu);
             this.ModificarUsuario.Controls.Add(this.label7);
             this.ModificarUsuario.Controls.Add(this.label6);
-            this.ModificarUsuario.Controls.Add(this.textBox5);
-            this.ModificarUsuario.Controls.Add(this.textBox4);
-            this.ModificarUsuario.Controls.Add(this.textBox3);
-            this.ModificarUsuario.Controls.Add(this.BuscarMotivo);
+            this.ModificarUsuario.Controls.Add(this.txtModPass);
+            this.ModificarUsuario.Controls.Add(this.txtModUsu);
+            this.ModificarUsuario.Controls.Add(this.txtBUser);
             this.ModificarUsuario.Controls.Add(this.dataListar);
             this.ModificarUsuario.Location = new System.Drawing.Point(4, 22);
             this.ModificarUsuario.Name = "ModificarUsuario";
@@ -222,63 +222,55 @@
             this.BtnListar.UseVisualStyleBackColor = true;
             this.BtnListar.Click += new System.EventHandler(this.BtnListar_Click);
             // 
-            // button3
+            // btnModUsu
             // 
-            this.button3.Location = new System.Drawing.Point(156, 287);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Modificar Usuario";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnModUsu.Location = new System.Drawing.Point(156, 287);
+            this.btnModUsu.Name = "btnModUsu";
+            this.btnModUsu.Size = new System.Drawing.Size(100, 23);
+            this.btnModUsu.TabIndex = 7;
+            this.btnModUsu.Text = "Modificar Usuario";
+            this.btnModUsu.UseVisualStyleBackColor = true;
+            this.btnModUsu.Click += new System.EventHandler(this.btnModUsu_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(36, 249);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 13);
+            this.label7.Size = new System.Drawing.Size(34, 13);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Descripcion Motivo";
+            this.label7.Text = "Clave";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(36, 215);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 13);
+            this.label6.Size = new System.Drawing.Size(83, 13);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Nombre Motivo";
+            this.label6.Text = "Nombre Usuario";
             // 
-            // textBox5
+            // txtModPass
             // 
-            this.textBox5.Location = new System.Drawing.Point(156, 246);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 4;
+            this.txtModPass.Location = new System.Drawing.Point(156, 246);
+            this.txtModPass.Name = "txtModPass";
+            this.txtModPass.Size = new System.Drawing.Size(100, 20);
+            this.txtModPass.TabIndex = 4;
             // 
-            // textBox4
+            // txtModUsu
             // 
-            this.textBox4.Location = new System.Drawing.Point(156, 208);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
+            this.txtModUsu.Enabled = false;
+            this.txtModUsu.Location = new System.Drawing.Point(156, 208);
+            this.txtModUsu.Name = "txtModUsu";
+            this.txtModUsu.Size = new System.Drawing.Size(100, 20);
+            this.txtModUsu.TabIndex = 3;
             // 
-            // textBox3
+            // txtBUser
             // 
-            this.textBox3.Location = new System.Drawing.Point(265, 167);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
-            // 
-            // BuscarMotivo
-            // 
-            this.BuscarMotivo.Location = new System.Drawing.Point(371, 165);
-            this.BuscarMotivo.Name = "BuscarMotivo";
-            this.BuscarMotivo.Size = new System.Drawing.Size(110, 23);
-            this.BuscarMotivo.TabIndex = 1;
-            this.BuscarMotivo.Text = "Seleccionar Usuario";
-            this.BuscarMotivo.UseVisualStyleBackColor = true;
-            this.BuscarMotivo.Click += new System.EventHandler(this.BuscarMotivo_Click);
+            this.txtBUser.Location = new System.Drawing.Point(265, 167);
+            this.txtBUser.Name = "txtBUser";
+            this.txtBUser.Size = new System.Drawing.Size(100, 20);
+            this.txtBUser.TabIndex = 2;
             // 
             // dataListar
             // 
@@ -287,6 +279,16 @@
             this.dataListar.Name = "dataListar";
             this.dataListar.Size = new System.Drawing.Size(422, 78);
             this.dataListar.TabIndex = 0;
+            // 
+            // btnBuscarUsu
+            // 
+            this.btnBuscarUsu.Location = new System.Drawing.Point(372, 167);
+            this.btnBuscarUsu.Name = "btnBuscarUsu";
+            this.btnBuscarUsu.Size = new System.Drawing.Size(89, 23);
+            this.btnBuscarUsu.TabIndex = 9;
+            this.btnBuscarUsu.Text = "Buscar Rut";
+            this.btnBuscarUsu.UseVisualStyleBackColor = true;
+            this.btnBuscarUsu.Click += new System.EventHandler(this.btnBuscarUsu_Click);
             // 
             // FrmUsuarios
             // 
@@ -318,13 +320,12 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TabPage ModificarUsuario;
         private System.Windows.Forms.Button BtnListar;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnModUsu;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button BuscarMotivo;
+        private System.Windows.Forms.TextBox txtModPass;
+        private System.Windows.Forms.TextBox txtModUsu;
+        private System.Windows.Forms.TextBox txtBUser;
         private System.Windows.Forms.DataGridView dataListar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtFuncionario;
@@ -333,5 +334,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnBuscarUsu;
     }
 }
