@@ -63,5 +63,10 @@ namespace OrionEscritorio
             tusuario.modificarUsuario(usuario);
 
         }
+
+        private void CrearUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

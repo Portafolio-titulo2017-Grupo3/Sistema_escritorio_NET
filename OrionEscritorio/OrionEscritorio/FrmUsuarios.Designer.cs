@@ -106,6 +106,7 @@
             this.CrearUsuario.TabIndex = 0;
             this.CrearUsuario.Text = "Crear Usuarios";
             this.CrearUsuario.UseVisualStyleBackColor = true;
+            this.CrearUsuario.Click += new System.EventHandler(this.CrearUsuario_Click);
             // 
             // label5
             // 

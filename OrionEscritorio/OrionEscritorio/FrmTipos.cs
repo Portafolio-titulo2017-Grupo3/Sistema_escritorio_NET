@@ -17,6 +17,9 @@ namespace OrionEscritorio
             InitializeComponent();
         }
 
-   
+        private void BuscarMotivo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

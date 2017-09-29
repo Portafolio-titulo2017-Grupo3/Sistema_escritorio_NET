@@ -30,7 +30,8 @@ namespace OrionEscritorio
 
         private void tipoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FrmPerfilV2 frmperfil = new FrmPerfilV2();
+            frmperfil.Show();
         }
 
         private void motivoToolStripMenuItem_Click(object sender, EventArgs e)
