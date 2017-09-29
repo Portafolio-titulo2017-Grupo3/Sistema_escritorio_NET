@@ -19,11 +19,12 @@ namespace OrionEscritorio
 
         }
 
-        public Tipo(int idTipo, string nombre, string descripcion)
+        public Tipo(int idTipo, string nombre, string descripcion, int permiso_id)
         {
             this.idTipo = idTipo;
             this.nombre = nombre;
             this.descripcion = descripcion;
+            this.permiso_id = permiso_id;
         }
     }
 

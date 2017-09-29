@@ -33,7 +33,7 @@ namespace OrionEscritorio
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();
-            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO TIPO(ID_TIPO, NOMBRE_TIPO, DESCRIPCION_TIPO, PERMISO_ID_PERMISO) VALUES('{0}', '{1}', '{2}', NULL)", tipo.idTipo, tipo.nombre, tipo.descripcion), conexion);
+            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO TIPO(ID_TIPO, NOMBRE_TIPO, DESCRIPCION_TIPO, PERMISO_ID_PERMISO) VALUES('{0}', '{1}', '{2}', '{3}')", tipo.idTipo, tipo.nombre, tipo.descripcion, tipo.permiso_id), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
             return resp;

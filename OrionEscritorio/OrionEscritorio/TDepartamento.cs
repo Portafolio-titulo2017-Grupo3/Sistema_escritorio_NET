@@ -31,20 +31,19 @@ namespace OrionEscritorio
 
         public int ingresarDepartamento(Departamento dpto)
         {
-            int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();
-            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO MOTIVO(ID_DEPTO, NOMBRE_DEPTO) VALUES('{0}', '{1}')", dpto.idDepto, dpto.nombre), conexion);
-            resp = orden.ExecuteNonQuery();
-            conexion.Close();
-            return resp;
-        }
+            OracleCommand orden = new OracleCommand(String.Format("select max(id_depto) from departamento"), conexion);
+            OracleDataReader lector = orden.ExecuteReader();
+            if (lector.Read())
+            {
+                dpto.idDepto = 1 + lector.GetInt32(0);
+            }
 
-        public int modificarDepartamento(Departamento dpto)
-        {
+
             int resp = 0;
-            OracleConnection conexion = Conexion.abrirConexion();//Singleton  
-            OracleCommand orden = new OracleCommand(string.Format("UPDATE DEPARTAMENTO SET NOMBRE='{0}' WHERE ID_DEPTO='{1}'", dpto.nombre, dpto.idDepto), conexion);
-            resp = orden.ExecuteNonQuery();
+
+            OracleCommand orden2 = new OracleCommand(string.Format("INSERT INTO DEPARTAMENTO(ID_DEPTO, NOMBRE_DEPTO) VALUES('{0}', '{1}')", dpto.idDepto, dpto.nombre), conexion);
+            resp = orden2.ExecuteNonQuery();
             conexion.Close();
             return resp;
         }
@@ -61,20 +60,48 @@ namespace OrionEscritorio
 
 
         //Queries
-        public Departamento buscarDepartamento(int idDpto)
+        public Departamento buscarDepartamento(Departamento dpto)
         {
-            Departamento dpto = new Departamento();
+            //Departamento dpto = new Departamento();
             OracleConnection conexion = Conexion.abrirConexion();
-            OracleCommand orden = new OracleCommand(String.Format("SELECT * FROM DEPARTAMENTO WHERE ID_DEPTO=@idDpto"), conexion);
-            orden.Parameters.Add("@ID_DEPTO", idDpto);
+            OracleCommand orden = new OracleCommand(String.Format("SELECT * FROM DEPARTAMENTO WHERE ID_DEPTO='{0}'", dpto.idDepto), conexion);
+            //orden.Parameters.Add("@ID_DEPTO", idDpto);
             OracleDataReader lector = orden.ExecuteReader();
             if (lector.Read())
             {
-                dpto.idDepto = lector.GetInt32(0);
                 dpto.nombre = lector.GetString(1);
             }
             conexion.Close();
             return dpto;
         }
+
+        public int modBuscar(Departamento dpto)
+        {
+            int resp = 0;
+
+
+            OracleConnection conexion = Conexion.abrirConexion();
+            OracleCommand orden = new OracleCommand(String.Format("select * from DEPARTAMENTO where ID_DEPTO =" + "'" + dpto.idDepto + "'"), conexion);
+            OracleDataReader lector = orden.ExecuteReader();
+            if (lector.Read())
+            {
+                dpto.nombre = lector.GetString(1);
+            }
+
+
+            return resp;
+
+        }
+
+        public int modificarDepartamento(Departamento dpto)
+        {
+            int resp = 0;
+            OracleConnection conexion = Conexion.abrirConexion();//Singleton
+            OracleCommand orden = new OracleCommand(string.Format("UPDATE DEPARTAMENTO SET NOMBRE_DEPTO='"+ dpto.nombre + "' WHERE ID_DEPTO='"+ dpto.idDepto + "'"), conexion);
+            resp = orden.ExecuteNonQuery();
+            conexion.Close();
+            return resp;
+        }
+
     }
 }

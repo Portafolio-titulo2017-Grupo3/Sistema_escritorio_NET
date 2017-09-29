@@ -39,7 +39,11 @@ namespace OrionEscritorio
 
         private void btnMDpto_Click(object sender, EventArgs e)
         {
-
+            TDepartamento tDpto = new TDepartamento();
+            Departamento dpto = new Departamento();
+            dpto.nombre = txtMDptoNom.Text;
+            dpto.idDepto = int.Parse(txtBuscarDpto.Text);
+            tDpto.modificarDepartamento(dpto);
         }
 
         private void BtnListar_Click_1(object sender, EventArgs e)
@@ -47,8 +51,30 @@ namespace OrionEscritorio
             dataListar.DataSource = TDepartamento.listarDepartamento();
         }
 
-        private void BuscarDepartamento_Click(object sender, EventArgs e)
+
+        private void CrearNDepto_Click(object sender, EventArgs e)
         {
+            Departamento dpto = new Departamento();
+            TDepartamento tDpto = new TDepartamento();
+            dpto.nombre = txtNomDpto.Text;
+            int resp = tDpto.ingresarDepartamento(dpto);
+            if (resp > 0)
+            { MessageBox.Show("Departamento ingresado en forma correcta....!", "AVISO DE SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+            else
+            { MessageBox.Show("Departamento con problema de ingreso....!", "AVISO DE SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+        }
+
+        private void btnBuscarDpto_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtBuscarDpto.Text);
+
+            TDepartamento tDpto = new TDepartamento();
+            Departamento dpto = new Departamento();
+
+            dpto.idDepto = id;
+            tDpto.modBuscar(dpto);
+            txtMDptoNom.Text = dpto.nombre;
+
 
         }
     }

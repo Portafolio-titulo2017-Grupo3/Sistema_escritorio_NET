@@ -32,24 +32,18 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.CrearMotivo = new System.Windows.Forms.TabPage();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.CrearNDepto = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtDDpto = new System.Windows.Forms.TextBox();
-            this.txtNDpto = new System.Windows.Forms.TextBox();
+            this.txtNomDpto = new System.Windows.Forms.TextBox();
             this.ModificarMotivo = new System.Windows.Forms.TabPage();
             this.BtnListar = new System.Windows.Forms.Button();
             this.btnMDpto = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtMDptoDesc = new System.Windows.Forms.TextBox();
             this.txtMDptoNom = new System.Windows.Forms.TextBox();
             this.txtBuscarDpto = new System.Windows.Forms.TextBox();
-            this.BuscarDepartamento = new System.Windows.Forms.Button();
             this.dataListar = new System.Windows.Forms.DataGridView();
+            this.btnBuscarDpto = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.CrearMotivo.SuspendLayout();
@@ -87,14 +81,10 @@
             // 
             // CrearMotivo
             // 
-            this.CrearMotivo.Controls.Add(this.label5);
-            this.CrearMotivo.Controls.Add(this.label3);
             this.CrearMotivo.Controls.Add(this.CrearNDepto);
             this.CrearMotivo.Controls.Add(this.label4);
             this.CrearMotivo.Controls.Add(this.label2);
-            this.CrearMotivo.Controls.Add(this.label1);
-            this.CrearMotivo.Controls.Add(this.txtDDpto);
-            this.CrearMotivo.Controls.Add(this.txtNDpto);
+            this.CrearMotivo.Controls.Add(this.txtNomDpto);
             this.CrearMotivo.Location = new System.Drawing.Point(4, 22);
             this.CrearMotivo.Name = "CrearMotivo";
             this.CrearMotivo.Padding = new System.Windows.Forms.Padding(3);
@@ -103,36 +93,15 @@
             this.CrearMotivo.Text = "Crear Departamento";
             this.CrearMotivo.UseVisualStyleBackColor = true;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(352, 106);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 17);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "*Ingrese una descripcion";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(352, 74);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(184, 17);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "*Ingrese el nombre del Dpto";
-            // 
             // CrearNDepto
             // 
-            this.CrearNDepto.Location = new System.Drawing.Point(192, 155);
+            this.CrearNDepto.Location = new System.Drawing.Point(219, 153);
             this.CrearNDepto.Name = "CrearNDepto";
             this.CrearNDepto.Size = new System.Drawing.Size(169, 24);
             this.CrearNDepto.TabIndex = 7;
             this.CrearNDepto.Text = "Crear Nuevo Departamento";
             this.CrearNDepto.UseVisualStyleBackColor = true;
+            this.CrearNDepto.Click += new System.EventHandler(this.CrearNDepto_Click);
             // 
             // label4
             // 
@@ -148,46 +117,27 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 107);
+            this.label2.Location = new System.Drawing.Point(38, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 22);
+            this.label2.Size = new System.Drawing.Size(126, 22);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Descripcion Depto";
+            this.label2.Text = "Nombre Depto";
             // 
-            // label1
+            // txtNomDpto
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 74);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 22);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Nombre Departamento";
-            // 
-            // txtDDpto
-            // 
-            this.txtDDpto.Location = new System.Drawing.Point(210, 107);
-            this.txtDDpto.Name = "txtDDpto";
-            this.txtDDpto.Size = new System.Drawing.Size(136, 20);
-            this.txtDDpto.TabIndex = 1;
-            // 
-            // txtNDpto
-            // 
-            this.txtNDpto.Location = new System.Drawing.Point(210, 74);
-            this.txtNDpto.Name = "txtNDpto";
-            this.txtNDpto.Size = new System.Drawing.Size(136, 20);
-            this.txtNDpto.TabIndex = 0;
+            this.txtNomDpto.Location = new System.Drawing.Point(192, 75);
+            this.txtNomDpto.Name = "txtNomDpto";
+            this.txtNomDpto.Size = new System.Drawing.Size(232, 20);
+            this.txtNomDpto.TabIndex = 1;
             // 
             // ModificarMotivo
             // 
+            this.ModificarMotivo.Controls.Add(this.btnBuscarDpto);
             this.ModificarMotivo.Controls.Add(this.BtnListar);
             this.ModificarMotivo.Controls.Add(this.btnMDpto);
-            this.ModificarMotivo.Controls.Add(this.label7);
             this.ModificarMotivo.Controls.Add(this.label6);
-            this.ModificarMotivo.Controls.Add(this.txtMDptoDesc);
             this.ModificarMotivo.Controls.Add(this.txtMDptoNom);
             this.ModificarMotivo.Controls.Add(this.txtBuscarDpto);
-            this.ModificarMotivo.Controls.Add(this.BuscarDepartamento);
             this.ModificarMotivo.Controls.Add(this.dataListar);
             this.ModificarMotivo.Location = new System.Drawing.Point(4, 22);
             this.ModificarMotivo.Name = "ModificarMotivo";
@@ -217,30 +167,14 @@
             this.btnMDpto.UseVisualStyleBackColor = true;
             this.btnMDpto.Click += new System.EventHandler(this.btnMDpto_Click);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(36, 249);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Descripcion Dpto";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(36, 215);
+            this.label6.Location = new System.Drawing.Point(36, 211);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "Nombre Dpto";
-            // 
-            // txtMDptoDesc
-            // 
-            this.txtMDptoDesc.Location = new System.Drawing.Point(156, 246);
-            this.txtMDptoDesc.Name = "txtMDptoDesc";
-            this.txtMDptoDesc.Size = new System.Drawing.Size(100, 20);
-            this.txtMDptoDesc.TabIndex = 4;
             // 
             // txtMDptoNom
             // 
@@ -256,16 +190,6 @@
             this.txtBuscarDpto.Size = new System.Drawing.Size(100, 20);
             this.txtBuscarDpto.TabIndex = 2;
             // 
-            // BuscarDepartamento
-            // 
-            this.BuscarDepartamento.Location = new System.Drawing.Point(445, 152);
-            this.BuscarDepartamento.Name = "BuscarDepartamento";
-            this.BuscarDepartamento.Size = new System.Drawing.Size(110, 23);
-            this.BuscarDepartamento.TabIndex = 1;
-            this.BuscarDepartamento.Text = "Seleccionar Dpto";
-            this.BuscarDepartamento.UseVisualStyleBackColor = true;
-            this.BuscarDepartamento.Click += new System.EventHandler(this.BuscarDepartamento_Click);
-            // 
             // dataListar
             // 
             this.dataListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -273,6 +197,16 @@
             this.dataListar.Name = "dataListar";
             this.dataListar.Size = new System.Drawing.Size(516, 78);
             this.dataListar.TabIndex = 0;
+            // 
+            // btnBuscarDpto
+            // 
+            this.btnBuscarDpto.Location = new System.Drawing.Point(446, 150);
+            this.btnBuscarDpto.Name = "btnBuscarDpto";
+            this.btnBuscarDpto.Size = new System.Drawing.Size(109, 23);
+            this.btnBuscarDpto.TabIndex = 9;
+            this.btnBuscarDpto.Text = "Buscar Dpto";
+            this.btnBuscarDpto.UseVisualStyleBackColor = true;
+            this.btnBuscarDpto.Click += new System.EventHandler(this.btnBuscarDpto_Click);
             // 
             // FrmDepartamento
             // 
@@ -300,23 +234,17 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage CrearMotivo;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button CrearNDepto;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtDDpto;
-        private System.Windows.Forms.TextBox txtNDpto;
+        private System.Windows.Forms.TextBox txtNomDpto;
         private System.Windows.Forms.TabPage ModificarMotivo;
         private System.Windows.Forms.Button BtnListar;
         private System.Windows.Forms.Button btnMDpto;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtMDptoDesc;
         private System.Windows.Forms.TextBox txtMDptoNom;
         private System.Windows.Forms.TextBox txtBuscarDpto;
-        private System.Windows.Forms.Button BuscarDepartamento;
         private System.Windows.Forms.DataGridView dataListar;
+        private System.Windows.Forms.Button btnBuscarDpto;
     }
 }
