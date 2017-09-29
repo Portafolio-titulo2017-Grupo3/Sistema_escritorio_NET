@@ -38,5 +38,13 @@ namespace OrionEscritorio
             FrmMotivo formotivo = new FrmMotivo();
             formotivo.Show();
         }
+
+        private void administracionDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsuarios formus = new FrmUsuarios();
+            formus.Show();
+
+
+        }
     }
 }

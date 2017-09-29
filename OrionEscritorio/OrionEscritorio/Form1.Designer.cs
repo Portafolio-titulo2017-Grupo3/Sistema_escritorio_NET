@@ -89,6 +89,7 @@
             this.administracionDeUsuariosToolStripMenuItem.Name = "administracionDeUsuariosToolStripMenuItem";
             this.administracionDeUsuariosToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.administracionDeUsuariosToolStripMenuItem.Text = "Administracion de Usuarios";
+            this.administracionDeUsuariosToolStripMenuItem.Click += new System.EventHandler(this.administracionDeUsuariosToolStripMenuItem_Click);
             // 
             // permisosToolStripMenuItem
             // 
