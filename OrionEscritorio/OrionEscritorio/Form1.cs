@@ -30,8 +30,13 @@ namespace OrionEscritorio
 
         private void tipoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             FrmTipos frmTipo = new FrmTipos();
             frmTipo.Show();
+=======
+            FrmPerfilV2 frmperfil = new FrmPerfilV2();
+            frmperfil.Show();
+>>>>>>> origin/final_Esteban
         }
 
         private void motivoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -40,6 +45,7 @@ namespace OrionEscritorio
             formotivo.Show();
         }
 
+<<<<<<< HEAD
         private void perfilToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmPerfil perfil = new FrmPerfil();
@@ -50,6 +56,14 @@ namespace OrionEscritorio
         {
             FrmUsuarios usuario = new FrmUsuarios();
             usuario.Show();
+=======
+        private void administracionDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsuarios formus = new FrmUsuarios();
+            formus.Show();
+
+
+>>>>>>> origin/final_Esteban
         }
     }
 }

@@ -19,13 +19,13 @@ namespace OrionEscritorio
 
         }
 
-        public Usuario(int idUsuario, string nombre, string clave, string rut_funcionario)
+        public Usuario(int idUsuario, string nombre, string clave, string rut_funcionario,int perfil)
         {
             this.idUsuario = idUsuario;
             this.nombre = nombre;
             this.clave = clave;
             this.rut_funcionario = rut_funcionario;
-            this.perfil_id = 0;
+            this.perfil_id = perfil;
         }
     }
 }

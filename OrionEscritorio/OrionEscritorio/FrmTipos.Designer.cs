@@ -45,6 +45,7 @@
             this.BuscarMotivo = new System.Windows.Forms.Button();
             this.dataListar = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.CrearTipo.SuspendLayout();
             this.ModificarTipo.SuspendLayout();
@@ -110,6 +111,7 @@
             // 
             // ModificarTipo
             // 
+            this.ModificarTipo.Controls.Add(this.textBox6);
             this.ModificarTipo.Controls.Add(this.BtnListar);
             this.ModificarTipo.Controls.Add(this.button3);
             this.ModificarTipo.Controls.Add(this.label7);
@@ -193,6 +195,7 @@
             this.BuscarMotivo.TabIndex = 1;
             this.BuscarMotivo.Text = "Seleccionar Tipo";
             this.BuscarMotivo.UseVisualStyleBackColor = true;
+            this.BuscarMotivo.Click += new System.EventHandler(this.BuscarMotivo_Click);
             // 
             // dataListar
             // 
@@ -209,6 +212,13 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(549, 444);
             this.panel1.TabIndex = 1;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(303, 194);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 9;
             // 
             // FrmTipos
             // 
@@ -248,5 +258,6 @@
         private System.Windows.Forms.Button BuscarMotivo;
         private System.Windows.Forms.DataGridView dataListar;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }

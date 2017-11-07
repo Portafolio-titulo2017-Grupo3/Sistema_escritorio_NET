@@ -17,9 +17,15 @@ namespace OrionEscritorio
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void BtnListar_Click(object sender, EventArgs e)
         {
             dataListar.DataSource = TTipo.listarTipo();
+=======
+        private void BuscarMotivo_Click(object sender, EventArgs e)
+        {
+
+>>>>>>> origin/final_Esteban
         }
     }
 }
