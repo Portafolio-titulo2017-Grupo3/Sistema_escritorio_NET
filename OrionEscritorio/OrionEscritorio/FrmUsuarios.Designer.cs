@@ -287,14 +287,14 @@
             // 
             // btnModUsu
             // 
-<<<<<<< HEAD
-            this.button3.Location = new System.Drawing.Point(156, 287);
+
+            /*this.button3.Location = new System.Drawing.Point(156, 287);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 23);
             this.button3.TabIndex = 7;
             this.button3.Text = "Modificar Usuario";
-            this.button3.UseVisualStyleBackColor = true;
-=======
+            this.button3.UseVisualStyleBackColor = true;*/
+
             this.btnModUsu.Location = new System.Drawing.Point(156, 287);
             this.btnModUsu.Name = "btnModUsu";
             this.btnModUsu.Size = new System.Drawing.Size(100, 23);
@@ -302,7 +302,7 @@
             this.btnModUsu.Text = "Modificar Motivo";
             this.btnModUsu.UseVisualStyleBackColor = true;
             this.btnModUsu.Click += new System.EventHandler(this.btnModUsu_Click);
->>>>>>> origin/final_Esteban
+
             // 
             // label7
             // 
@@ -345,15 +345,15 @@
             // 
             // btnBuscarUsu
             // 
-<<<<<<< HEAD
-            this.BuscarMotivo.Location = new System.Drawing.Point(371, 165);
+
+            /*this.BuscarMotivo.Location = new System.Drawing.Point(371, 165);
             this.BuscarMotivo.Name = "BuscarMotivo";
             this.BuscarMotivo.Size = new System.Drawing.Size(110, 23);
             this.BuscarMotivo.TabIndex = 1;
             this.BuscarMotivo.Text = "Seleccionar Usuario";
             this.BuscarMotivo.UseVisualStyleBackColor = true;
             this.BuscarMotivo.Click += new System.EventHandler(this.BuscarMotivo_Click);
-=======
+            */
             this.btnBuscarUsu.Location = new System.Drawing.Point(371, 165);
             this.btnBuscarUsu.Name = "btnBuscarUsu";
             this.btnBuscarUsu.Size = new System.Drawing.Size(110, 23);
@@ -361,7 +361,7 @@
             this.btnBuscarUsu.Text = "Seleccionar Motivo";
             this.btnBuscarUsu.UseVisualStyleBackColor = true;
             this.btnBuscarUsu.Click += new System.EventHandler(this.BuscarMotivo_Click);
->>>>>>> origin/final_Esteban
+
             // 
             // dataListar
             // 

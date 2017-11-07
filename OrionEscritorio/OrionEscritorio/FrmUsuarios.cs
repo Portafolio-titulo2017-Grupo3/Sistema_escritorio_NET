@@ -54,11 +54,11 @@ namespace OrionEscritorio
 
         }
 
-<<<<<<< HEAD
+
         private void BtnListar_Click(object sender, EventArgs e)
         {
             dataListar.DataSource = TUsuario.listarUsuario();
-=======
+        }
         private void btnModUsu_Click(object sender, EventArgs e)
         {
             TUsuario tusuario = new TUsuario();
@@ -72,7 +72,7 @@ namespace OrionEscritorio
         private void CrearUsuario_Click(object sender, EventArgs e)
         {
 
->>>>>>> origin/final_Esteban
+
         }
     }
 }
