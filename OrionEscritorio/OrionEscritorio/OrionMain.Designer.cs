@@ -31,48 +31,48 @@
             this.components = new System.ComponentModel.Container();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl2 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage6 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage7 = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl3 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage8 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage9 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage10 = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl4 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage11 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage12 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage13 = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl5 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage14 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage15 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage16 = new MetroFramework.Controls.MetroTabPage();
-            this.StyleMain = new MetroFramework.Components.MetroStyleManager(this.components);
             this.metroTabPage17 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl6 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage18 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage19 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage20 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage21 = new MetroFramework.Controls.MetroTabPage();
-            this.btnOscuro = new MetroFramework.Controls.MetroButton();
-            this.btnClaro = new MetroFramework.Controls.MetroButton();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.btnClaro = new MetroFramework.Controls.MetroButton();
+            this.btnOscuro = new MetroFramework.Controls.MetroButton();
+            this.StyleMain = new MetroFramework.Components.MetroStyleManager(this.components);
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
-            this.metroTabPage2.SuspendLayout();
-            this.metroTabPage3.SuspendLayout();
-            this.metroTabPage4.SuspendLayout();
             this.metroTabControl2.SuspendLayout();
+            this.metroTabPage2.SuspendLayout();
             this.metroTabControl3.SuspendLayout();
+            this.metroTabPage3.SuspendLayout();
             this.metroTabControl4.SuspendLayout();
+            this.metroTabPage4.SuspendLayout();
             this.metroTabControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StyleMain)).BeginInit();
             this.metroTabPage17.SuspendLayout();
             this.metroTabControl6.SuspendLayout();
             this.metroTabPage21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StyleMain)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -85,7 +85,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage21);
             this.metroTabControl1.Location = new System.Drawing.Point(6, 52);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 5;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(881, 425);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
@@ -105,59 +105,14 @@
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
             // 
-            // metroTabPage2
-            // 
-            this.metroTabPage2.Controls.Add(this.metroTabControl3);
-            this.metroTabPage2.HorizontalScrollbarBarColor = true;
-            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 10;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(873, 383);
-            this.metroTabPage2.TabIndex = 1;
-            this.metroTabPage2.Text = "Departamento";
-            this.metroTabPage2.VerticalScrollbarBarColor = true;
-            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 10;
-            // 
-            // metroTabPage3
-            // 
-            this.metroTabPage3.Controls.Add(this.metroTabControl4);
-            this.metroTabPage3.HorizontalScrollbarBarColor = true;
-            this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.HorizontalScrollbarSize = 10;
-            this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(873, 383);
-            this.metroTabPage3.TabIndex = 2;
-            this.metroTabPage3.Text = "Motivo";
-            this.metroTabPage3.VerticalScrollbarBarColor = true;
-            this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.VerticalScrollbarSize = 10;
-            // 
-            // metroTabPage4
-            // 
-            this.metroTabPage4.Controls.Add(this.metroTabControl5);
-            this.metroTabPage4.HorizontalScrollbarBarColor = true;
-            this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.HorizontalScrollbarSize = 10;
-            this.metroTabPage4.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage4.Name = "metroTabPage4";
-            this.metroTabPage4.Size = new System.Drawing.Size(873, 383);
-            this.metroTabPage4.TabIndex = 3;
-            this.metroTabPage4.Text = "Perfil";
-            this.metroTabPage4.VerticalScrollbarBarColor = true;
-            this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.VerticalScrollbarSize = 10;
-            // 
             // metroTabControl2
             // 
             this.metroTabControl2.Controls.Add(this.metroTabPage5);
             this.metroTabControl2.Controls.Add(this.metroTabPage6);
             this.metroTabControl2.Controls.Add(this.metroTabPage7);
-            this.metroTabControl2.Location = new System.Drawing.Point(0, -2);
+            this.metroTabControl2.Location = new System.Drawing.Point(13, 0);
             this.metroTabControl2.Name = "metroTabControl2";
-            this.metroTabControl2.SelectedIndex = 0;
+            this.metroTabControl2.SelectedIndex = 1;
             this.metroTabControl2.Size = new System.Drawing.Size(880, 409);
             this.metroTabControl2.TabIndex = 2;
             this.metroTabControl2.UseSelectable = true;
@@ -204,6 +159,21 @@
             this.metroTabPage7.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage7.VerticalScrollbarSize = 10;
             // 
+            // metroTabPage2
+            // 
+            this.metroTabPage2.Controls.Add(this.metroTabControl3);
+            this.metroTabPage2.HorizontalScrollbarBarColor = true;
+            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.HorizontalScrollbarSize = 10;
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage2.Name = "metroTabPage2";
+            this.metroTabPage2.Size = new System.Drawing.Size(873, 383);
+            this.metroTabPage2.TabIndex = 1;
+            this.metroTabPage2.Text = "Departamento";
+            this.metroTabPage2.VerticalScrollbarBarColor = true;
+            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.VerticalScrollbarSize = 10;
+            // 
             // metroTabControl3
             // 
             this.metroTabControl3.Controls.Add(this.metroTabPage8);
@@ -235,9 +205,9 @@
             this.metroTabPage9.HorizontalScrollbarBarColor = true;
             this.metroTabPage9.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage9.HorizontalScrollbarSize = 10;
-            this.metroTabPage9.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage9.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage9.Name = "metroTabPage9";
-            this.metroTabPage9.Size = new System.Drawing.Size(872, 370);
+            this.metroTabPage9.Size = new System.Drawing.Size(872, 367);
             this.metroTabPage9.TabIndex = 1;
             this.metroTabPage9.Text = "Modificar";
             this.metroTabPage9.VerticalScrollbarBarColor = true;
@@ -249,14 +219,29 @@
             this.metroTabPage10.HorizontalScrollbarBarColor = true;
             this.metroTabPage10.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage10.HorizontalScrollbarSize = 10;
-            this.metroTabPage10.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage10.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage10.Name = "metroTabPage10";
-            this.metroTabPage10.Size = new System.Drawing.Size(872, 370);
+            this.metroTabPage10.Size = new System.Drawing.Size(872, 367);
             this.metroTabPage10.TabIndex = 2;
             this.metroTabPage10.Text = "Desactivar";
             this.metroTabPage10.VerticalScrollbarBarColor = true;
             this.metroTabPage10.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage10.VerticalScrollbarSize = 10;
+            // 
+            // metroTabPage3
+            // 
+            this.metroTabPage3.Controls.Add(this.metroTabControl4);
+            this.metroTabPage3.HorizontalScrollbarBarColor = true;
+            this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.HorizontalScrollbarSize = 10;
+            this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage3.Name = "metroTabPage3";
+            this.metroTabPage3.Size = new System.Drawing.Size(873, 383);
+            this.metroTabPage3.TabIndex = 2;
+            this.metroTabPage3.Text = "Motivo";
+            this.metroTabPage3.VerticalScrollbarBarColor = true;
+            this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.VerticalScrollbarSize = 10;
             // 
             // metroTabControl4
             // 
@@ -289,9 +274,9 @@
             this.metroTabPage12.HorizontalScrollbarBarColor = true;
             this.metroTabPage12.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage12.HorizontalScrollbarSize = 10;
-            this.metroTabPage12.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage12.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage12.Name = "metroTabPage12";
-            this.metroTabPage12.Size = new System.Drawing.Size(872, 370);
+            this.metroTabPage12.Size = new System.Drawing.Size(869, 367);
             this.metroTabPage12.TabIndex = 1;
             this.metroTabPage12.Text = "Modificar";
             this.metroTabPage12.VerticalScrollbarBarColor = true;
@@ -303,14 +288,29 @@
             this.metroTabPage13.HorizontalScrollbarBarColor = true;
             this.metroTabPage13.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage13.HorizontalScrollbarSize = 10;
-            this.metroTabPage13.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage13.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage13.Name = "metroTabPage13";
-            this.metroTabPage13.Size = new System.Drawing.Size(872, 370);
+            this.metroTabPage13.Size = new System.Drawing.Size(869, 367);
             this.metroTabPage13.TabIndex = 2;
             this.metroTabPage13.Text = "Desactivar";
             this.metroTabPage13.VerticalScrollbarBarColor = true;
             this.metroTabPage13.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage13.VerticalScrollbarSize = 10;
+            // 
+            // metroTabPage4
+            // 
+            this.metroTabPage4.Controls.Add(this.metroTabControl5);
+            this.metroTabPage4.HorizontalScrollbarBarColor = true;
+            this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage4.HorizontalScrollbarSize = 10;
+            this.metroTabPage4.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage4.Name = "metroTabPage4";
+            this.metroTabPage4.Size = new System.Drawing.Size(873, 383);
+            this.metroTabPage4.TabIndex = 3;
+            this.metroTabPage4.Text = "Perfil";
+            this.metroTabPage4.VerticalScrollbarBarColor = true;
+            this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage4.VerticalScrollbarSize = 10;
             // 
             // metroTabControl5
             // 
@@ -343,9 +343,9 @@
             this.metroTabPage15.HorizontalScrollbarBarColor = true;
             this.metroTabPage15.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage15.HorizontalScrollbarSize = 10;
-            this.metroTabPage15.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage15.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage15.Name = "metroTabPage15";
-            this.metroTabPage15.Size = new System.Drawing.Size(872, 370);
+            this.metroTabPage15.Size = new System.Drawing.Size(872, 367);
             this.metroTabPage15.TabIndex = 1;
             this.metroTabPage15.Text = "Modificar";
             this.metroTabPage15.VerticalScrollbarBarColor = true;
@@ -357,20 +357,14 @@
             this.metroTabPage16.HorizontalScrollbarBarColor = true;
             this.metroTabPage16.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage16.HorizontalScrollbarSize = 10;
-            this.metroTabPage16.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage16.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage16.Name = "metroTabPage16";
-            this.metroTabPage16.Size = new System.Drawing.Size(872, 370);
+            this.metroTabPage16.Size = new System.Drawing.Size(872, 367);
             this.metroTabPage16.TabIndex = 2;
             this.metroTabPage16.Text = "Desactivar";
             this.metroTabPage16.VerticalScrollbarBarColor = true;
             this.metroTabPage16.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage16.VerticalScrollbarSize = 10;
-            // 
-            // StyleMain
-            // 
-            this.StyleMain.Owner = this;
-            this.StyleMain.Style = MetroFramework.MetroColorStyle.Orange;
-            this.StyleMain.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // metroTabPage17
             // 
@@ -418,9 +412,9 @@
             this.metroTabPage19.HorizontalScrollbarBarColor = true;
             this.metroTabPage19.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage19.HorizontalScrollbarSize = 10;
-            this.metroTabPage19.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage19.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage19.Name = "metroTabPage19";
-            this.metroTabPage19.Size = new System.Drawing.Size(872, 370);
+            this.metroTabPage19.Size = new System.Drawing.Size(872, 367);
             this.metroTabPage19.TabIndex = 1;
             this.metroTabPage19.Text = "Modificar";
             this.metroTabPage19.VerticalScrollbarBarColor = true;
@@ -432,9 +426,9 @@
             this.metroTabPage20.HorizontalScrollbarBarColor = true;
             this.metroTabPage20.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage20.HorizontalScrollbarSize = 10;
-            this.metroTabPage20.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage20.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage20.Name = "metroTabPage20";
-            this.metroTabPage20.Size = new System.Drawing.Size(872, 370);
+            this.metroTabPage20.Size = new System.Drawing.Size(872, 367);
             this.metroTabPage20.TabIndex = 2;
             this.metroTabPage20.Text = "Desactivar";
             this.metroTabPage20.VerticalScrollbarBarColor = true;
@@ -458,15 +452,14 @@
             this.metroTabPage21.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage21.VerticalScrollbarSize = 10;
             // 
-            // btnOscuro
+            // metroLabel1
             // 
-            this.btnOscuro.Location = new System.Drawing.Point(213, 59);
-            this.btnOscuro.Name = "btnOscuro";
-            this.btnOscuro.Size = new System.Drawing.Size(75, 23);
-            this.btnOscuro.TabIndex = 2;
-            this.btnOscuro.Text = "Oscuro";
-            this.btnOscuro.UseSelectable = true;
-            this.btnOscuro.Click += new System.EventHandler(this.btnOscuro_Click);
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(213, 26);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(152, 19);
+            this.metroLabel1.TabIndex = 4;
+            this.metroLabel1.Text = "Cambiar Tema de Orion";
             // 
             // btnClaro
             // 
@@ -478,14 +471,20 @@
             this.btnClaro.UseSelectable = true;
             this.btnClaro.Click += new System.EventHandler(this.btnClaro_Click);
             // 
-            // metroLabel1
+            // btnOscuro
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(213, 26);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(152, 19);
-            this.metroLabel1.TabIndex = 4;
-            this.metroLabel1.Text = "Cambiar Tema de Orion";
+            this.btnOscuro.Location = new System.Drawing.Point(213, 59);
+            this.btnOscuro.Name = "btnOscuro";
+            this.btnOscuro.Size = new System.Drawing.Size(75, 23);
+            this.btnOscuro.TabIndex = 2;
+            this.btnOscuro.Text = "Oscuro";
+            this.btnOscuro.UseSelectable = true;
+            this.btnOscuro.Click += new System.EventHandler(this.btnOscuro_Click);
+            // 
+            // StyleMain
+            // 
+            this.StyleMain.Owner = this;
+            this.StyleMain.Style = MetroFramework.MetroColorStyle.Orange;
             // 
             // OrionMain
             // 
@@ -496,22 +495,21 @@
             this.Name = "OrionMain";
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "OrionMain";
-            this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.OrionMain_Load);
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
-            this.metroTabPage2.ResumeLayout(false);
-            this.metroTabPage3.ResumeLayout(false);
-            this.metroTabPage4.ResumeLayout(false);
             this.metroTabControl2.ResumeLayout(false);
+            this.metroTabPage2.ResumeLayout(false);
             this.metroTabControl3.ResumeLayout(false);
+            this.metroTabPage3.ResumeLayout(false);
             this.metroTabControl4.ResumeLayout(false);
+            this.metroTabPage4.ResumeLayout(false);
             this.metroTabControl5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.StyleMain)).EndInit();
             this.metroTabPage17.ResumeLayout(false);
             this.metroTabControl6.ResumeLayout(false);
             this.metroTabPage21.ResumeLayout(false);
             this.metroTabPage21.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StyleMain)).EndInit();
             this.ResumeLayout(false);
 
         }
