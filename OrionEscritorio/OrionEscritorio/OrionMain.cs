@@ -49,15 +49,36 @@ namespace OrionEscritorio
             //String Usuario = txtUsuario.Text.ToString();
             //String Password = txtPassword.Text.ToString();
             //String IdFunc = txtFuncionario.Text.ToString();
-            
-            int perfil = 0;
 
-            if (cbxPerfil.SelectedIndex.ToString()=="20")
+            int perfil;
+
+            //if (cbxPerfil.SelectedIndex==0)
+            //{
+            //    perfil = 20;
+            //}
+
+            perfil = cbxPerfil.SelectedIndex;
+
+            switch (perfil)
             {
-                perfil = 22;
+                case 0:
+                    perfil = 20;
+                    break;
+                case 1:
+                    perfil = 21;
+                    break;
+                case 2:
+                    perfil = 22;
+                    break;
+                case 3:
+                    perfil = 23;
+                    break;
+                case 4:
+                    perfil = 24;
+                    break;
             }
 
-             
+
 
             TUsuario tusuario = new TUsuario();
             Usuario usuario = new Usuario();
