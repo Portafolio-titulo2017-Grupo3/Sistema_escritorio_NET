@@ -46,9 +46,9 @@ namespace OrionEscritorio
 
         private void btnCUsuario_Click(object sender, EventArgs e)
         {
-            String Usuario = txtUsuario.Text.ToString();
-            String Password = txtPassword.Text.ToString();
-            String IdFunc = txtFuncionario.Text.ToString();
+            //String Usuario = txtUsuario.Text.ToString();
+            //String Password = txtPassword.Text.ToString();
+            //String IdFunc = txtFuncionario.Text.ToString();
             
             int perfil = 0;
 
@@ -61,9 +61,9 @@ namespace OrionEscritorio
 
             TUsuario tusuario = new TUsuario();
             Usuario usuario = new Usuario();
-            usuario.nombre = Usuario;
-            usuario.clave = Password;
-            usuario.rut_funcionario = IdFunc;
+            usuario.nombre = txtUsuario.Text;
+            usuario.clave = txtPassword.Text;
+            usuario.rut_funcionario = txtFuncionario.Text;
             usuario.perfil_id = perfil;
             tusuario.ingresarUsuario(usuario);
         }
