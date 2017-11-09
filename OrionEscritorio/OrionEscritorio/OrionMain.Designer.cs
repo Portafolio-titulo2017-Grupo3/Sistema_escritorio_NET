@@ -142,6 +142,8 @@
             this.txtPerfilDesac = new System.Windows.Forms.TextBox();
             this.btnBuscarPerfilDesac = new System.Windows.Forms.Button();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.cbxModPerfil = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabControl2.SuspendLayout();
@@ -214,7 +216,7 @@
             this.metroTabControl2.Controls.Add(this.metroTabPage7);
             this.metroTabControl2.Location = new System.Drawing.Point(3, 0);
             this.metroTabControl2.Name = "metroTabControl2";
-            this.metroTabControl2.SelectedIndex = 0;
+            this.metroTabControl2.SelectedIndex = 1;
             this.metroTabControl2.Size = new System.Drawing.Size(880, 409);
             this.metroTabControl2.TabIndex = 2;
             this.metroTabControl2.UseSelectable = true;
@@ -245,6 +247,8 @@
             // 
             // metroTabPage6
             // 
+            this.metroTabPage6.Controls.Add(this.label23);
+            this.metroTabPage6.Controls.Add(this.cbxModPerfil);
             this.metroTabPage6.Controls.Add(this.BtnListar);
             this.metroTabPage6.Controls.Add(this.btnModUsu);
             this.metroTabPage6.Controls.Add(this.label7);
@@ -745,6 +749,7 @@
             this.btnCUsuario.TabIndex = 17;
             this.btnCUsuario.Text = "Crear Nuevo Usuario";
             this.btnCUsuario.UseVisualStyleBackColor = true;
+            this.btnCUsuario.Click += new System.EventHandler(this.btnCUsuario_Click);
             // 
             // txtPassword
             // 
@@ -762,35 +767,37 @@
             // 
             // BtnListar
             // 
-            this.BtnListar.Location = new System.Drawing.Point(151, 3);
+            this.BtnListar.Location = new System.Drawing.Point(48, 3);
             this.BtnListar.Name = "BtnListar";
             this.BtnListar.Size = new System.Drawing.Size(95, 23);
             this.BtnListar.TabIndex = 17;
             this.BtnListar.Text = "Listar Usuario";
             this.BtnListar.UseVisualStyleBackColor = true;
+            this.BtnListar.Click += new System.EventHandler(this.BtnListar_Click);
             // 
             // btnModUsu
             // 
-            this.btnModUsu.Location = new System.Drawing.Point(268, 251);
+            this.btnModUsu.Location = new System.Drawing.Point(211, 241);
             this.btnModUsu.Name = "btnModUsu";
             this.btnModUsu.Size = new System.Drawing.Size(100, 23);
             this.btnModUsu.TabIndex = 16;
             this.btnModUsu.Text = "Modificar Usuario";
             this.btnModUsu.UseVisualStyleBackColor = true;
+            this.btnModUsu.Click += new System.EventHandler(this.btnModUsu_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(148, 213);
+            this.label7.Location = new System.Drawing.Point(110, 220);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 13);
+            this.label7.Size = new System.Drawing.Size(86, 13);
             this.label7.TabIndex = 15;
-            this.label7.Text = "Descripcion Usuario";
+            this.label7.Text = "Perfil del Usuario";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(148, 179);
+            this.label6.Location = new System.Drawing.Point(113, 166);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(83, 13);
             this.label6.TabIndex = 14;
@@ -798,40 +805,42 @@
             // 
             // txtModUsuPass
             // 
-            this.txtModUsuPass.Location = new System.Drawing.Point(268, 210);
+            this.txtModUsuPass.Location = new System.Drawing.Point(211, 186);
             this.txtModUsuPass.Name = "txtModUsuPass";
-            this.txtModUsuPass.Size = new System.Drawing.Size(100, 20);
+            this.txtModUsuPass.Size = new System.Drawing.Size(121, 20);
             this.txtModUsuPass.TabIndex = 13;
             // 
             // txtModUsu
             // 
-            this.txtModUsu.Location = new System.Drawing.Point(268, 172);
+            this.txtModUsu.Enabled = false;
+            this.txtModUsu.Location = new System.Drawing.Point(211, 159);
             this.txtModUsu.Name = "txtModUsu";
-            this.txtModUsu.Size = new System.Drawing.Size(100, 20);
+            this.txtModUsu.Size = new System.Drawing.Size(121, 20);
             this.txtModUsu.TabIndex = 12;
             // 
             // txtBUser
             // 
-            this.txtBUser.Location = new System.Drawing.Point(377, 131);
+            this.txtBUser.Location = new System.Drawing.Point(349, 129);
             this.txtBUser.Name = "txtBUser";
             this.txtBUser.Size = new System.Drawing.Size(100, 20);
             this.txtBUser.TabIndex = 11;
             // 
             // btnBuscarUsu
             // 
-            this.btnBuscarUsu.Location = new System.Drawing.Point(483, 129);
+            this.btnBuscarUsu.Location = new System.Drawing.Point(455, 127);
             this.btnBuscarUsu.Name = "btnBuscarUsu";
-            this.btnBuscarUsu.Size = new System.Drawing.Size(110, 23);
+            this.btnBuscarUsu.Size = new System.Drawing.Size(154, 23);
             this.btnBuscarUsu.TabIndex = 10;
-            this.btnBuscarUsu.Text = "Seleccionar Usuario";
+            this.btnBuscarUsu.Text = "Seleccionar ID del Usuario";
             this.btnBuscarUsu.UseVisualStyleBackColor = true;
+            this.btnBuscarUsu.Click += new System.EventHandler(this.btnBuscarUsu_Click);
             // 
             // dataListar
             // 
             this.dataListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListar.Location = new System.Drawing.Point(151, 32);
+            this.dataListar.Location = new System.Drawing.Point(48, 32);
             this.dataListar.Name = "dataListar";
-            this.dataListar.Size = new System.Drawing.Size(422, 78);
+            this.dataListar.Size = new System.Drawing.Size(561, 78);
             this.dataListar.TabIndex = 9;
             // 
             // BtnListUsuDesc
@@ -1347,6 +1356,23 @@
             this.dataGridView7.Size = new System.Drawing.Size(422, 78);
             this.dataGridView7.TabIndex = 27;
             // 
+            // cbxModPerfil
+            // 
+            this.cbxModPerfil.FormattingEnabled = true;
+            this.cbxModPerfil.Location = new System.Drawing.Point(211, 212);
+            this.cbxModPerfil.Name = "cbxModPerfil";
+            this.cbxModPerfil.Size = new System.Drawing.Size(121, 21);
+            this.cbxModPerfil.TabIndex = 18;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(108, 193);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(88, 13);
+            this.label23.TabIndex = 19;
+            this.label23.Text = "Clave de Usuario";
+            // 
             // OrionMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1521,5 +1547,7 @@
         private System.Windows.Forms.TextBox txtPerfilDesac;
         private System.Windows.Forms.Button btnBuscarPerfilDesac;
         private System.Windows.Forms.DataGridView dataGridView7;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.ComboBox cbxModPerfil;
     }
 }

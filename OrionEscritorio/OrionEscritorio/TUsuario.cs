@@ -22,9 +22,10 @@ namespace OrionEscritorio
                 Usuario usu = new Usuario();
 
                 usu.idUsuario = lector.GetInt32(0);
-                usu.nombre = lector.GetString(1);
-                usu.clave = lector.GetString(2);
+                usu.nombre = lector.GetString(2);
+                usu.clave = lector.GetString(1);
                 usu.rut_funcionario = lector.GetString(3);
+                usu.perfil_id = lector.GetInt32(4);
 
 
                 lista.Add(usu);
@@ -52,24 +53,9 @@ namespace OrionEscritorio
 
 
             OracleConnection conexion = Conexion.abrirConexion();
-            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO USUARIO(ID_USUARIO, NOMBRE_USUARIO, CLAVE_USUARIO, FUNCIONARIO_RUT_FUNCIONARIO, PERFIL_ID_PERFIL) VALUES('{0}', '{1}', '{2}', NULL)", usu.idUsuario, usu.nombre, usu.clave, usu.rut_funcionario), conexion);
-            resp = orden.ExecuteNonQuery();
-
-
-
-            //OracleConnection conexion = Conexion.abrirConexion();
-            OracleCommand orden2 = new OracleCommand(String.Format("select max(id_usuario) from usuario"), conexion);
-            OracleDataReader lector = orden.ExecuteReader();
-            if (lector.Read())
-            {
-                usu.idUsuario = 1+lector.GetInt32(0);
-            }
-
-
-               
-        
-            OracleCommand orden3 = new OracleCommand(string.Format("INSERT INTO USUARIO(ID_USUARIO, NOMBRE_USUARIO, CLAVE_USUARIO,PERFIL_ID_PERFIL ,FUNCIONARIO_RUT_FUNCIONARIO) VALUES('{0}', '{1}', '{2}', '{3}','{4}')", usu.idUsuario, usu.nombre, usu.clave, usu.perfil_id, usu.rut_funcionario), conexion);
-            resp = orden2.ExecuteNonQuery();
+            
+            OracleCommand orden3 = new OracleCommand(string.Format("INSERT INTO USUARIO(ID_USUARIO,CLAVE_USUARIO, NOMBRE_USUARIO, PERFIL_ID_PERFIL ,FUNCIONARIO_RUT_FUNCIONARIO) VALUES('{0}', '{1}', '{2}', '{3}','{4}')", "", usu.clave, usu.nombre, usu.perfil_id, usu.rut_funcionario), conexion);
+            resp = orden3.ExecuteNonQuery();
 
             conexion.Close();
             return resp;
@@ -82,7 +68,7 @@ namespace OrionEscritorio
 
 
             OracleConnection conexion = Conexion.abrirConexion();
-            OracleCommand orden = new OracleCommand(String.Format("select * from Usuario where FUNCIONARIO_RUT_FUNCIONARIO =" + "'" + usu.rut_funcionario+"'"), conexion);
+            OracleCommand orden = new OracleCommand(String.Format("select * from Usuario where ID_USUARIO =" + "'" + usu.idUsuario+"'"), conexion);
             OracleDataReader lector = orden.ExecuteReader();
             if (lector.Read())
             {
@@ -99,7 +85,7 @@ namespace OrionEscritorio
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();//Singleton  
-            OracleCommand orden = new OracleCommand(string.Format("UPDATE USUARIO SET CLAVE_USUARIO='{0}' WHERE NOMBRE_USUARIO='{1}'", usu.clave, usu.nombre), conexion);
+            OracleCommand orden = new OracleCommand(string.Format("UPDATE USUARIO SET CLAVE_USUARIO='{0}',PERFIL_ID_PERFIL='{1}' WHERE ID_USUARIO='{2}'", usu.clave, usu.perfil_id,usu.idUsuario), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
             return resp;
