@@ -20,7 +20,7 @@ namespace OrionEscritorio
 
         private void OrionMain_Load(object sender, EventArgs e)
         {
-
+            metroTabControl2.ImageList = imageList1;
         }
 
         private void btnClaro_Click(object sender, EventArgs e)
