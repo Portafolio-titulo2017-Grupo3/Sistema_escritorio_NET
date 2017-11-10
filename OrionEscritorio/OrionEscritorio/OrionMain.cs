@@ -96,10 +96,34 @@ namespace OrionEscritorio
 
         private void btnModUsu_Click(object sender, EventArgs e)
         {
+
+           int perfil = cbxModPerfil.SelectedIndex;
+
+            switch (perfil)
+            {
+                case 0:
+                    perfil = 20;
+                    break;
+                case 1:
+                    perfil = 21;
+                    break;
+                case 2:
+                    perfil = 22;
+                    break;
+                case 3:
+                    perfil = 23;
+                    break;
+                case 4:
+                    perfil = 24;
+                    break;
+            }
+
+
+
             int idusurio = Convert.ToInt32(txtBUser.Text);
             TUsuario tusuario = new TUsuario();
             Usuario usuario = new Usuario();
-            int perfil = Convert.ToInt32(cbxModPerfil.SelectedIndex.ToString());
+           
             usuario.clave = txtModUsuPass.Text;
             usuario.perfil_id = perfil;
             usuario.idUsuario = idusurio;
@@ -119,6 +143,35 @@ namespace OrionEscritorio
             buscaUsu.modBuscar(usuario);
             txtModUsu.Text = usuario.nombre;
             txtModUsuPass.Text = usuario.clave;
+        }
+
+        private void CrearNDepto_Click(object sender, EventArgs e)
+        {
+            TDepartamento Tdepart = new TDepartamento();
+            Departamento depart = new Departamento();
+
+            depart.nombre = txtNDpto.Text;
+            Tdepart.ingresarDepartamento(depart);
+        }
+
+        private void ListModDpto_Click(object sender, EventArgs e)
+        {
+            dgvDepto.DataSource = TDepartamento.listarDepartamento();
+        }
+
+        private void btnMDpto_Click(object sender, EventArgs e)
+        {
+           string nombreDept=txtMDptoNom.Text;
+           int iddept= Int32.Parse(txtBuscarDpto.Text);
+
+
+            TDepartamento Tdepart = new TDepartamento();
+            Departamento depart = new Departamento();
+
+            depart.idDepto = iddept;
+            depart.nombre = nombreDept;
+            Tdepart.modificarDepartamento(depart);
+
         }
     }
 }

@@ -54,7 +54,7 @@ namespace OrionEscritorio
 
             OracleConnection conexion = Conexion.abrirConexion();
             
-            OracleCommand orden3 = new OracleCommand(string.Format("INSERT INTO USUARIO(CLAVE_USUARIO, NOMBRE_USUARIO, FUNCIONARIO_RUT_FUNCIONARIO, PERFIL_ID_PERFIL) VALUES('{0}', '{1}', '{2}', '{3}')", usu.clave, usu.nombre, usu.rut_funcionario, usu.perfil_id), conexion);
+            OracleCommand orden3 = new OracleCommand(string.Format("INSERT INTO USUARIO(CLAVE_USUARIO, NOMBRE_USUARIO, FUNCIONARIO_RUT_FUNCIONARIO, PERFIL_ID_PERFIL) VALUES('{0}', '{1}', '{2}', '{3}','{4}')", usu.clave, usu.nombre, usu.rut_funcionario, usu.perfil_id), conexion);
             resp = orden3.ExecuteNonQuery();
 
             conexion.Close();

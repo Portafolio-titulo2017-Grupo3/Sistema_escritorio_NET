@@ -33,7 +33,7 @@ namespace OrionEscritorio
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();
-            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO MOTIVO(ID_DEPTO, NOMBRE_DEPTO) VALUES('{0}', '{1}')", dpto.idDepto, dpto.nombre), conexion);
+            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO DEPARTAMENTO(NOMBRE_DEPTO) VALUES('{0}')", dpto.nombre), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
             return resp;
@@ -43,7 +43,7 @@ namespace OrionEscritorio
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();//Singleton  
-            OracleCommand orden = new OracleCommand(string.Format("UPDATE DEPARTAMENTO SET NOMBRE='{0}' WHERE ID_DEPTO='{1}'", dpto.nombre, dpto.idDepto), conexion);
+            OracleCommand orden = new OracleCommand(string.Format("UPDATE DEPARTAMENTO SET NOMBRE_DEPTO='{0}' WHERE ID_DEPTO='{1}'", dpto.nombre, dpto.idDepto), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
             return resp;

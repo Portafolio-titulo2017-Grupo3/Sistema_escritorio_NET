@@ -133,6 +133,7 @@
             this.CrearNDepto.TabIndex = 7;
             this.CrearNDepto.Text = "Crear Nuevo Departamento";
             this.CrearNDepto.UseVisualStyleBackColor = true;
+            this.CrearNDepto.Click += new System.EventHandler(this.CrearNDepto_Click);
             // 
             // label4
             // 

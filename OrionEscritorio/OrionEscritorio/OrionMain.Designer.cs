@@ -71,15 +71,13 @@
             this.txtDDpto = new System.Windows.Forms.TextBox();
             this.txtNDpto = new System.Windows.Forms.TextBox();
             this.metroTabPage9 = new MetroFramework.Controls.MetroTabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ListModDpto = new System.Windows.Forms.Button();
             this.btnMDpto = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtMDptoDesc = new System.Windows.Forms.TextBox();
             this.txtMDptoNom = new System.Windows.Forms.TextBox();
             this.txtBuscarDpto = new System.Windows.Forms.TextBox();
             this.BuscarDepartamento = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvDepto = new System.Windows.Forms.DataGridView();
             this.metroTabPage10 = new MetroFramework.Controls.MetroTabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -156,7 +154,7 @@
             this.metroTabControl3.SuspendLayout();
             this.metroTabPage8.SuspendLayout();
             this.metroTabPage9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDepto)).BeginInit();
             this.metroTabPage10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.metroTabPage3.SuspendLayout();
@@ -187,10 +185,10 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage4);
             this.metroTabControl1.Controls.Add(this.metroTabPage17);
             this.metroTabControl1.Controls.Add(this.metroTabPage21);
-            this.metroTabControl1.Location = new System.Drawing.Point(9, 63);
+            this.metroTabControl1.Location = new System.Drawing.Point(8, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(881, 425);
+            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.Size = new System.Drawing.Size(721, 350);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
             // 
@@ -202,7 +200,7 @@
             this.metroTabPage1.HorizontalScrollbarSize = 10;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(873, 383);
+            this.metroTabPage1.Size = new System.Drawing.Size(713, 308);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Usuario";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
@@ -214,10 +212,10 @@
             this.metroTabControl2.Controls.Add(this.metroTabPage5);
             this.metroTabControl2.Controls.Add(this.metroTabPage6);
             this.metroTabControl2.Controls.Add(this.metroTabPage7);
-            this.metroTabControl2.Location = new System.Drawing.Point(3, 0);
+            this.metroTabControl2.Location = new System.Drawing.Point(3, 3);
             this.metroTabControl2.Name = "metroTabControl2";
             this.metroTabControl2.SelectedIndex = 0;
-            this.metroTabControl2.Size = new System.Drawing.Size(880, 409);
+            this.metroTabControl2.Size = new System.Drawing.Size(715, 308);
             this.metroTabControl2.TabIndex = 2;
             this.metroTabControl2.UseSelectable = true;
             // 
@@ -238,7 +236,7 @@
             this.metroTabPage5.HorizontalScrollbarSize = 10;
             this.metroTabPage5.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage5.Name = "metroTabPage5";
-            this.metroTabPage5.Size = new System.Drawing.Size(872, 367);
+            this.metroTabPage5.Size = new System.Drawing.Size(707, 266);
             this.metroTabPage5.TabIndex = 0;
             this.metroTabPage5.Text = "Ingresar";
             this.metroTabPage5.VerticalScrollbarBarColor = true;
@@ -350,7 +348,7 @@
             this.metroTabPage6.HorizontalScrollbarSize = 10;
             this.metroTabPage6.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage6.Name = "metroTabPage6";
-            this.metroTabPage6.Size = new System.Drawing.Size(872, 367);
+            this.metroTabPage6.Size = new System.Drawing.Size(707, 266);
             this.metroTabPage6.TabIndex = 1;
             this.metroTabPage6.Text = "Modificar";
             this.metroTabPage6.VerticalScrollbarBarColor = true;
@@ -463,7 +461,7 @@
             this.metroTabPage7.HorizontalScrollbarSize = 10;
             this.metroTabPage7.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage7.Name = "metroTabPage7";
-            this.metroTabPage7.Size = new System.Drawing.Size(872, 367);
+            this.metroTabPage7.Size = new System.Drawing.Size(707, 266);
             this.metroTabPage7.TabIndex = 2;
             this.metroTabPage7.Text = "Desactivar";
             this.metroTabPage7.VerticalScrollbarBarColor = true;
@@ -511,7 +509,7 @@
             this.metroTabPage2.HorizontalScrollbarSize = 10;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(873, 383);
+            this.metroTabPage2.Size = new System.Drawing.Size(713, 308);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Departamento";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
@@ -523,10 +521,10 @@
             this.metroTabControl3.Controls.Add(this.metroTabPage8);
             this.metroTabControl3.Controls.Add(this.metroTabPage9);
             this.metroTabControl3.Controls.Add(this.metroTabPage10);
-            this.metroTabControl3.Location = new System.Drawing.Point(0, -2);
+            this.metroTabControl3.Location = new System.Drawing.Point(3, 3);
             this.metroTabControl3.Name = "metroTabControl3";
-            this.metroTabControl3.SelectedIndex = 0;
-            this.metroTabControl3.Size = new System.Drawing.Size(880, 409);
+            this.metroTabControl3.SelectedIndex = 1;
+            this.metroTabControl3.Size = new System.Drawing.Size(701, 299);
             this.metroTabControl3.TabIndex = 3;
             this.metroTabControl3.UseSelectable = true;
             // 
@@ -543,7 +541,7 @@
             this.metroTabPage8.HorizontalScrollbarSize = 10;
             this.metroTabPage8.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage8.Name = "metroTabPage8";
-            this.metroTabPage8.Size = new System.Drawing.Size(872, 367);
+            this.metroTabPage8.Size = new System.Drawing.Size(693, 257);
             this.metroTabPage8.TabIndex = 0;
             this.metroTabPage8.Text = "Ingresar";
             this.metroTabPage8.VerticalScrollbarBarColor = true;
@@ -558,12 +556,13 @@
             this.CrearNDepto.TabIndex = 13;
             this.CrearNDepto.Text = "Crear Nuevo Departamento";
             this.CrearNDepto.UseVisualStyleBackColor = true;
+            this.CrearNDepto.Click += new System.EventHandler(this.CrearNDepto_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(264, 27);
+            this.label10.Location = new System.Drawing.Point(232, 26);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(251, 25);
             this.label10.TabIndex = 12;
@@ -605,69 +604,53 @@
             // 
             // metroTabPage9
             // 
-            this.metroTabPage9.Controls.Add(this.button1);
+            this.metroTabPage9.Controls.Add(this.ListModDpto);
             this.metroTabPage9.Controls.Add(this.btnMDpto);
-            this.metroTabPage9.Controls.Add(this.label8);
             this.metroTabPage9.Controls.Add(this.label9);
-            this.metroTabPage9.Controls.Add(this.txtMDptoDesc);
             this.metroTabPage9.Controls.Add(this.txtMDptoNom);
             this.metroTabPage9.Controls.Add(this.txtBuscarDpto);
             this.metroTabPage9.Controls.Add(this.BuscarDepartamento);
-            this.metroTabPage9.Controls.Add(this.dataGridView2);
+            this.metroTabPage9.Controls.Add(this.dgvDepto);
             this.metroTabPage9.HorizontalScrollbarBarColor = true;
             this.metroTabPage9.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage9.HorizontalScrollbarSize = 10;
             this.metroTabPage9.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage9.Name = "metroTabPage9";
-            this.metroTabPage9.Size = new System.Drawing.Size(872, 367);
+            this.metroTabPage9.Size = new System.Drawing.Size(693, 257);
             this.metroTabPage9.TabIndex = 1;
             this.metroTabPage9.Text = "Modificar";
             this.metroTabPage9.VerticalScrollbarBarColor = true;
             this.metroTabPage9.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage9.VerticalScrollbarSize = 10;
             // 
-            // button1
+            // ListModDpto
             // 
-            this.button1.Location = new System.Drawing.Point(119, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Listar Dpto";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ListModDpto.Location = new System.Drawing.Point(119, 3);
+            this.ListModDpto.Name = "ListModDpto";
+            this.ListModDpto.Size = new System.Drawing.Size(75, 23);
+            this.ListModDpto.TabIndex = 17;
+            this.ListModDpto.Text = "Listar Dpto";
+            this.ListModDpto.UseVisualStyleBackColor = true;
+            this.ListModDpto.Click += new System.EventHandler(this.ListModDpto_Click);
             // 
             // btnMDpto
             // 
-            this.btnMDpto.Location = new System.Drawing.Point(236, 251);
+            this.btnMDpto.Location = new System.Drawing.Point(220, 198);
             this.btnMDpto.Name = "btnMDpto";
-            this.btnMDpto.Size = new System.Drawing.Size(100, 23);
+            this.btnMDpto.Size = new System.Drawing.Size(131, 23);
             this.btnMDpto.TabIndex = 16;
-            this.btnMDpto.Text = "Modificar Dpto";
+            this.btnMDpto.Text = "Modificar Departamento";
             this.btnMDpto.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(116, 213);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 13);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Descripcion Dpto";
+            this.btnMDpto.Click += new System.EventHandler(this.btnMDpto_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(116, 179);
+            this.label9.Location = new System.Drawing.Point(99, 175);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 13);
+            this.label9.Size = new System.Drawing.Size(131, 13);
             this.label9.TabIndex = 14;
-            this.label9.Text = "Nombre Dpto";
-            // 
-            // txtMDptoDesc
-            // 
-            this.txtMDptoDesc.Location = new System.Drawing.Point(236, 210);
-            this.txtMDptoDesc.Name = "txtMDptoDesc";
-            this.txtMDptoDesc.Size = new System.Drawing.Size(100, 20);
-            this.txtMDptoDesc.TabIndex = 13;
+            this.label9.Text = "Nombre del Departamento";
             // 
             // txtMDptoNom
             // 
@@ -692,13 +675,13 @@
             this.BuscarDepartamento.Text = "Seleccionar Dpto";
             this.BuscarDepartamento.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // dgvDepto
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(119, 32);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(516, 78);
-            this.dataGridView2.TabIndex = 9;
+            this.dgvDepto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDepto.Location = new System.Drawing.Point(119, 32);
+            this.dgvDepto.Name = "dgvDepto";
+            this.dgvDepto.Size = new System.Drawing.Size(516, 78);
+            this.dgvDepto.TabIndex = 9;
             // 
             // metroTabPage10
             // 
@@ -711,7 +694,7 @@
             this.metroTabPage10.HorizontalScrollbarSize = 10;
             this.metroTabPage10.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage10.Name = "metroTabPage10";
-            this.metroTabPage10.Size = new System.Drawing.Size(872, 367);
+            this.metroTabPage10.Size = new System.Drawing.Size(693, 257);
             this.metroTabPage10.TabIndex = 2;
             this.metroTabPage10.Text = "Desactivar";
             this.metroTabPage10.VerticalScrollbarBarColor = true;
@@ -759,7 +742,7 @@
             this.metroTabPage3.HorizontalScrollbarSize = 10;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(873, 383);
+            this.metroTabPage3.Size = new System.Drawing.Size(713, 308);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "Motivo";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
@@ -1007,7 +990,7 @@
             this.metroTabPage4.HorizontalScrollbarSize = 10;
             this.metroTabPage4.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage4.Name = "metroTabPage4";
-            this.metroTabPage4.Size = new System.Drawing.Size(873, 383);
+            this.metroTabPage4.Size = new System.Drawing.Size(713, 308);
             this.metroTabPage4.TabIndex = 3;
             this.metroTabPage4.Text = "Perfil";
             this.metroTabPage4.VerticalScrollbarBarColor = true;
@@ -1255,7 +1238,7 @@
             this.metroTabPage17.HorizontalScrollbarSize = 10;
             this.metroTabPage17.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage17.Name = "metroTabPage17";
-            this.metroTabPage17.Size = new System.Drawing.Size(873, 383);
+            this.metroTabPage17.Size = new System.Drawing.Size(713, 308);
             this.metroTabPage17.TabIndex = 4;
             this.metroTabPage17.Text = "Tipo";
             this.metroTabPage17.VerticalScrollbarBarColor = true;
@@ -1326,7 +1309,7 @@
             this.metroTabPage21.HorizontalScrollbarSize = 10;
             this.metroTabPage21.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage21.Name = "metroTabPage21";
-            this.metroTabPage21.Size = new System.Drawing.Size(873, 383);
+            this.metroTabPage21.Size = new System.Drawing.Size(713, 308);
             this.metroTabPage21.TabIndex = 5;
             this.metroTabPage21.Text = "Configuración";
             this.metroTabPage21.VerticalScrollbarBarColor = true;
@@ -1400,7 +1383,7 @@
             this.metroTabPage8.PerformLayout();
             this.metroTabPage9.ResumeLayout(false);
             this.metroTabPage9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDepto)).EndInit();
             this.metroTabPage10.ResumeLayout(false);
             this.metroTabPage10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
@@ -1490,15 +1473,13 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button btnDesacUsu;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ListModDpto;
         private System.Windows.Forms.Button btnMDpto;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtMDptoDesc;
         private System.Windows.Forms.TextBox txtMDptoNom;
         private System.Windows.Forms.TextBox txtBuscarDpto;
         private System.Windows.Forms.Button BuscarDepartamento;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvDepto;
         private System.Windows.Forms.Button CrearNDepto;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
