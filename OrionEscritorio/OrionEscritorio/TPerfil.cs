@@ -20,8 +20,9 @@ namespace OrionEscritorio
                 Perfil perfil = new Perfil();
 
                 perfil.idPerfil = lector.GetInt32(0);
-                perfil.nombre = lector.GetString(1);
-                perfil.descripcion = lector.GetString(2);
+                perfil.descripcion = lector.GetString(1);
+                perfil.nombre = lector.GetString(2);
+               
                 //motivo.permiso_id = lector.GetInt32(3);
 
                 lista.Add(perfil);
@@ -39,10 +40,8 @@ namespace OrionEscritorio
             OracleDataReader lector = orden.ExecuteReader();
             if (lector.Read())
             {
-                perf.idPerfil = lector.GetInt32(0);
-                perf.nombre = lector.GetString(1);
-                perf.descripcion = lector.GetString(2);
-               
+                perf.descripcion = lector.GetString(1);
+                perf.nombre = lector.GetString(2);
             }
 
 
@@ -54,16 +53,11 @@ namespace OrionEscritorio
         {
 
             OracleConnection conexion = Conexion.abrirConexion();
-            OracleCommand orden = new OracleCommand(String.Format("select max(id_perfil) from perfil"), conexion);
-            OracleDataReader lector = orden.ExecuteReader();
-            if (lector.Read())
-            {
-                perfil.idPerfil = 1 + lector.GetInt32(0);
-            }
+       
 
             int resp = 0;
             
-            OracleCommand orden2 = new OracleCommand(string.Format("INSERT INTO PERFIL(ID_PERFIL, NOMBRE_PERFIL, DESCRIPCION_PERFIL) VALUES('{0}', '{1}', '{2}')", perfil.idPerfil, perfil.nombre, perfil.descripcion), conexion);
+            OracleCommand orden2 = new OracleCommand(string.Format("INSERT INTO PERFIL(DESCRIPCION_PERFIL,NOMBRE_PERFIL) VALUES('{0}', '{1}')", perfil.descripcion, perfil.nombre), conexion);
             resp = orden2.ExecuteNonQuery();
             conexion.Close();
             return resp;
@@ -73,7 +67,7 @@ namespace OrionEscritorio
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();//Singleton  
-            OracleCommand orden = new OracleCommand(string.Format("UPDATE PERFIL SET NOMBRE_PERFIL='{0}',DESCRIPCION_PERFIL={1} WHERE ID_PERFIL={3}", perfil.nombre, perfil.descripcion, perfil.idPerfil), conexion);
+            OracleCommand orden = new OracleCommand(string.Format("UPDATE PERFIL SET NOMBRE_PERFIL='{0}',DESCRIPCION_PERFIL='{1}' WHERE ID_PERFIL='{2}'", perfil.nombre, perfil.descripcion, perfil.idPerfil), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
             return resp;

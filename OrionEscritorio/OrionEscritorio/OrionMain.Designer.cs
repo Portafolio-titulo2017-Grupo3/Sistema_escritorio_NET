@@ -117,15 +117,15 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.metroTabPage15 = new MetroFramework.Controls.MetroTabPage();
-            this.listar = new System.Windows.Forms.Button();
+            this.listarPerfil = new System.Windows.Forms.Button();
             this.btnModPerfil = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.txtModDesc = new System.Windows.Forms.TextBox();
-            this.txtModNom = new System.Windows.Forms.TextBox();
+            this.txtModDescPerfil = new System.Windows.Forms.TextBox();
+            this.txtModNomPerfil = new System.Windows.Forms.TextBox();
             this.txtBPerfil = new System.Windows.Forms.TextBox();
             this.btnBuscarPerfil = new System.Windows.Forms.Button();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.dgwPerfil = new System.Windows.Forms.DataGridView();
             this.metroTabPage16 = new MetroFramework.Controls.MetroTabPage();
             this.listPerfilDesac = new System.Windows.Forms.Button();
             this.txtPerfilDesac = new System.Windows.Forms.TextBox();
@@ -168,7 +168,7 @@
             this.metroTabControl5.SuspendLayout();
             this.metroTabPage14.SuspendLayout();
             this.metroTabPage15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwPerfil)).BeginInit();
             this.metroTabPage16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             this.metroTabPage17.SuspendLayout();
@@ -187,7 +187,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage21);
             this.metroTabControl1.Location = new System.Drawing.Point(8, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.SelectedIndex = 3;
             this.metroTabControl1.Size = new System.Drawing.Size(721, 350);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
@@ -214,7 +214,7 @@
             this.metroTabControl2.Controls.Add(this.metroTabPage7);
             this.metroTabControl2.Location = new System.Drawing.Point(3, 3);
             this.metroTabControl2.Name = "metroTabControl2";
-            this.metroTabControl2.SelectedIndex = 0;
+            this.metroTabControl2.SelectedIndex = 1;
             this.metroTabControl2.Size = new System.Drawing.Size(715, 308);
             this.metroTabControl2.TabIndex = 2;
             this.metroTabControl2.UseSelectable = true;
@@ -1038,6 +1038,7 @@
             this.btnNPerfil.TabIndex = 13;
             this.btnNPerfil.Text = "Crear Nuevo Perfil";
             this.btnNPerfil.UseVisualStyleBackColor = true;
+            this.btnNPerfil.Click += new System.EventHandler(this.btnNPerfil_Click);
             // 
             // label18
             // 
@@ -1083,15 +1084,15 @@
             // 
             // metroTabPage15
             // 
-            this.metroTabPage15.Controls.Add(this.listar);
+            this.metroTabPage15.Controls.Add(this.listarPerfil);
             this.metroTabPage15.Controls.Add(this.btnModPerfil);
             this.metroTabPage15.Controls.Add(this.label21);
             this.metroTabPage15.Controls.Add(this.label22);
-            this.metroTabPage15.Controls.Add(this.txtModDesc);
-            this.metroTabPage15.Controls.Add(this.txtModNom);
+            this.metroTabPage15.Controls.Add(this.txtModDescPerfil);
+            this.metroTabPage15.Controls.Add(this.txtModNomPerfil);
             this.metroTabPage15.Controls.Add(this.txtBPerfil);
             this.metroTabPage15.Controls.Add(this.btnBuscarPerfil);
-            this.metroTabPage15.Controls.Add(this.dataGridView6);
+            this.metroTabPage15.Controls.Add(this.dgwPerfil);
             this.metroTabPage15.HorizontalScrollbarBarColor = true;
             this.metroTabPage15.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage15.HorizontalScrollbarSize = 10;
@@ -1104,23 +1105,25 @@
             this.metroTabPage15.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage15.VerticalScrollbarSize = 10;
             // 
-            // listar
+            // listarPerfil
             // 
-            this.listar.Location = new System.Drawing.Point(132, 3);
-            this.listar.Name = "listar";
-            this.listar.Size = new System.Drawing.Size(75, 23);
-            this.listar.TabIndex = 26;
-            this.listar.Text = "Listar Perfil";
-            this.listar.UseVisualStyleBackColor = true;
+            this.listarPerfil.Location = new System.Drawing.Point(132, 3);
+            this.listarPerfil.Name = "listarPerfil";
+            this.listarPerfil.Size = new System.Drawing.Size(75, 23);
+            this.listarPerfil.TabIndex = 26;
+            this.listarPerfil.Text = "Listar Perfil";
+            this.listarPerfil.UseVisualStyleBackColor = true;
+            this.listarPerfil.Click += new System.EventHandler(this.listarPerfil_Click);
             // 
             // btnModPerfil
             // 
-            this.btnModPerfil.Location = new System.Drawing.Point(249, 251);
+            this.btnModPerfil.Location = new System.Drawing.Point(249, 236);
             this.btnModPerfil.Name = "btnModPerfil";
             this.btnModPerfil.Size = new System.Drawing.Size(100, 23);
             this.btnModPerfil.TabIndex = 25;
             this.btnModPerfil.Text = "Modificar Perfil";
             this.btnModPerfil.UseVisualStyleBackColor = true;
+            this.btnModPerfil.Click += new System.EventHandler(this.btnModPerfil_Click);
             // 
             // label21
             // 
@@ -1140,19 +1143,19 @@
             this.label22.TabIndex = 23;
             this.label22.Text = "Nombre Motivo";
             // 
-            // txtModDesc
+            // txtModDescPerfil
             // 
-            this.txtModDesc.Location = new System.Drawing.Point(249, 210);
-            this.txtModDesc.Name = "txtModDesc";
-            this.txtModDesc.Size = new System.Drawing.Size(100, 20);
-            this.txtModDesc.TabIndex = 22;
+            this.txtModDescPerfil.Location = new System.Drawing.Point(249, 210);
+            this.txtModDescPerfil.Name = "txtModDescPerfil";
+            this.txtModDescPerfil.Size = new System.Drawing.Size(100, 20);
+            this.txtModDescPerfil.TabIndex = 22;
             // 
-            // txtModNom
+            // txtModNomPerfil
             // 
-            this.txtModNom.Location = new System.Drawing.Point(249, 172);
-            this.txtModNom.Name = "txtModNom";
-            this.txtModNom.Size = new System.Drawing.Size(100, 20);
-            this.txtModNom.TabIndex = 21;
+            this.txtModNomPerfil.Location = new System.Drawing.Point(249, 172);
+            this.txtModNomPerfil.Name = "txtModNomPerfil";
+            this.txtModNomPerfil.Size = new System.Drawing.Size(100, 20);
+            this.txtModNomPerfil.TabIndex = 21;
             // 
             // txtBPerfil
             // 
@@ -1169,15 +1172,16 @@
             this.btnBuscarPerfil.TabIndex = 19;
             this.btnBuscarPerfil.Text = "Seleccionar Perfil";
             this.btnBuscarPerfil.UseVisualStyleBackColor = true;
+            this.btnBuscarPerfil.Click += new System.EventHandler(this.btnBuscarPerfil_Click);
             // 
-            // dataGridView6
+            // dgwPerfil
             // 
-            this.dataGridView6.AllowUserToOrderColumns = true;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(132, 32);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(422, 78);
-            this.dataGridView6.TabIndex = 18;
+            this.dgwPerfil.AllowUserToOrderColumns = true;
+            this.dgwPerfil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwPerfil.Location = new System.Drawing.Point(132, 32);
+            this.dgwPerfil.Name = "dgwPerfil";
+            this.dgwPerfil.Size = new System.Drawing.Size(422, 78);
+            this.dgwPerfil.TabIndex = 18;
             // 
             // metroTabPage16
             // 
@@ -1404,7 +1408,7 @@
             this.metroTabPage14.PerformLayout();
             this.metroTabPage15.ResumeLayout(false);
             this.metroTabPage15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwPerfil)).EndInit();
             this.metroTabPage16.ResumeLayout(false);
             this.metroTabPage16.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
@@ -1516,15 +1520,15 @@
         private System.Windows.Forms.TextBox txtNPerfil;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button listar;
+        private System.Windows.Forms.Button listarPerfil;
         private System.Windows.Forms.Button btnModPerfil;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox txtModDesc;
-        private System.Windows.Forms.TextBox txtModNom;
+        private System.Windows.Forms.TextBox txtModDescPerfil;
+        private System.Windows.Forms.TextBox txtModNomPerfil;
         private System.Windows.Forms.TextBox txtBPerfil;
         private System.Windows.Forms.Button btnBuscarPerfil;
-        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.DataGridView dgwPerfil;
         private System.Windows.Forms.Button listPerfilDesac;
         private System.Windows.Forms.TextBox txtPerfilDesac;
         private System.Windows.Forms.Button btnBuscarPerfilDesac;

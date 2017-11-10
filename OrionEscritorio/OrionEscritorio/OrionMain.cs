@@ -186,5 +186,51 @@ namespace OrionEscritorio
          
 
         }
+
+        private void btnNPerfil_Click(object sender, EventArgs e)
+        {
+            string nombrePerfil=txtNPerfil.Text;
+            string descripPerfil=txtDPerfil.Text;
+
+            Perfil perfil = new Perfil();
+            TPerfil Tperfil = new TPerfil();
+
+            perfil.nombre = nombrePerfil;
+            perfil.descripcion = descripPerfil;
+
+            Tperfil.ingresarPerfil(perfil);
+        }
+
+        private void listarPerfil_Click(object sender, EventArgs e)
+        {
+            dgwPerfil.DataSource = TPerfil.listarPerfil();
+        }
+
+        private void btnBuscarPerfil_Click(object sender, EventArgs e)
+        {
+
+
+            int iddperfil = Int32.Parse(txtBPerfil.Text);
+
+            TPerfil Tperfil = new TPerfil();
+            Perfil perfil = new Perfil();
+            perfil.idPerfil = iddperfil;
+            Tperfil.modBuscar(perfil);
+            txtModNomPerfil.Text = perfil.nombre;
+            txtModDescPerfil.Text = perfil.descripcion;
+        }
+
+        private void btnModPerfil_Click(object sender, EventArgs e)
+        {
+            int iddperfil = Convert.ToInt32(txtBPerfil.Text);
+            TPerfil Tperfil = new TPerfil();
+            Perfil perfil = new Perfil();
+          
+
+            perfil.idPerfil = iddperfil;
+            perfil.nombre = txtModNomPerfil.Text;
+            perfil.descripcion = txtModDescPerfil.Text;
+            Tperfil.modificarPerfil(perfil);
+        }
     }
 }
