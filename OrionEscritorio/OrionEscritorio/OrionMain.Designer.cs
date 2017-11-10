@@ -89,19 +89,15 @@
             this.CrearNMotivo = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.txtDmotivo = new System.Windows.Forms.TextBox();
-            this.txtNMotivo = new System.Windows.Forms.TextBox();
             this.metroTabPage12 = new MetroFramework.Controls.MetroTabPage();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnListarMotivo = new System.Windows.Forms.Button();
+            this.btnModMotivo = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtModDescMotivo = new System.Windows.Forms.TextBox();
+            this.txtBuscarMotivo = new System.Windows.Forms.TextBox();
             this.BuscarMotivo = new System.Windows.Forms.Button();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.gridMotivo = new System.Windows.Forms.DataGridView();
             this.metroTabPage13 = new MetroFramework.Controls.MetroTabPage();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -161,7 +157,7 @@
             this.metroTabControl4.SuspendLayout();
             this.metroTabPage11.SuspendLayout();
             this.metroTabPage12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridMotivo)).BeginInit();
             this.metroTabPage13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.metroTabPage4.SuspendLayout();
@@ -187,7 +183,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage21);
             this.metroTabControl1.Location = new System.Drawing.Point(8, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.SelectedIndex = 2;
             this.metroTabControl1.Size = new System.Drawing.Size(721, 350);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
@@ -755,10 +751,10 @@
             this.metroTabControl4.Controls.Add(this.metroTabPage11);
             this.metroTabControl4.Controls.Add(this.metroTabPage12);
             this.metroTabControl4.Controls.Add(this.metroTabPage13);
-            this.metroTabControl4.Location = new System.Drawing.Point(0, -2);
+            this.metroTabControl4.Location = new System.Drawing.Point(3, 3);
             this.metroTabControl4.Name = "metroTabControl4";
-            this.metroTabControl4.SelectedIndex = 2;
-            this.metroTabControl4.Size = new System.Drawing.Size(877, 409);
+            this.metroTabControl4.SelectedIndex = 1;
+            this.metroTabControl4.Size = new System.Drawing.Size(714, 309);
             this.metroTabControl4.TabIndex = 3;
             this.metroTabControl4.UseSelectable = true;
             // 
@@ -767,15 +763,13 @@
             this.metroTabPage11.Controls.Add(this.CrearNMotivo);
             this.metroTabPage11.Controls.Add(this.label13);
             this.metroTabPage11.Controls.Add(this.label14);
-            this.metroTabPage11.Controls.Add(this.label15);
             this.metroTabPage11.Controls.Add(this.txtDmotivo);
-            this.metroTabPage11.Controls.Add(this.txtNMotivo);
             this.metroTabPage11.HorizontalScrollbarBarColor = true;
             this.metroTabPage11.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage11.HorizontalScrollbarSize = 10;
             this.metroTabPage11.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage11.Name = "metroTabPage11";
-            this.metroTabPage11.Size = new System.Drawing.Size(869, 367);
+            this.metroTabPage11.Size = new System.Drawing.Size(706, 267);
             this.metroTabPage11.TabIndex = 0;
             this.metroTabPage11.Text = "Ingresar";
             this.metroTabPage11.VerticalScrollbarBarColor = true;
@@ -784,12 +778,13 @@
             // 
             // CrearNMotivo
             // 
-            this.CrearNMotivo.Location = new System.Drawing.Point(301, 178);
+            this.CrearNMotivo.Location = new System.Drawing.Point(305, 142);
             this.CrearNMotivo.Name = "CrearNMotivo";
             this.CrearNMotivo.Size = new System.Drawing.Size(136, 24);
             this.CrearNMotivo.TabIndex = 13;
             this.CrearNMotivo.Text = "Crear Nuevo Motivo";
             this.CrearNMotivo.UseVisualStyleBackColor = true;
+            this.CrearNMotivo.Click += new System.EventHandler(this.CrearNMotivo_Click);
             // 
             // label13
             // 
@@ -805,115 +800,82 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(116, 127);
+            this.label14.Location = new System.Drawing.Point(120, 91);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(161, 22);
             this.label14.TabIndex = 11;
             this.label14.Text = "Descripcion Motivo";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(130, 93);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(130, 22);
-            this.label15.TabIndex = 10;
-            this.label15.Text = "Nombre Motivo";
-            // 
             // txtDmotivo
             // 
-            this.txtDmotivo.Location = new System.Drawing.Point(301, 128);
+            this.txtDmotivo.Location = new System.Drawing.Point(305, 92);
             this.txtDmotivo.Name = "txtDmotivo";
             this.txtDmotivo.Size = new System.Drawing.Size(136, 20);
             this.txtDmotivo.TabIndex = 9;
             // 
-            // txtNMotivo
-            // 
-            this.txtNMotivo.Location = new System.Drawing.Point(301, 95);
-            this.txtNMotivo.Name = "txtNMotivo";
-            this.txtNMotivo.Size = new System.Drawing.Size(136, 20);
-            this.txtNMotivo.TabIndex = 8;
-            // 
             // metroTabPage12
             // 
-            this.metroTabPage12.Controls.Add(this.button4);
-            this.metroTabPage12.Controls.Add(this.button5);
+            this.metroTabPage12.Controls.Add(this.btnListarMotivo);
+            this.metroTabPage12.Controls.Add(this.btnModMotivo);
             this.metroTabPage12.Controls.Add(this.label16);
-            this.metroTabPage12.Controls.Add(this.label17);
-            this.metroTabPage12.Controls.Add(this.textBox5);
-            this.metroTabPage12.Controls.Add(this.textBox4);
-            this.metroTabPage12.Controls.Add(this.textBox2);
+            this.metroTabPage12.Controls.Add(this.txtModDescMotivo);
+            this.metroTabPage12.Controls.Add(this.txtBuscarMotivo);
             this.metroTabPage12.Controls.Add(this.BuscarMotivo);
-            this.metroTabPage12.Controls.Add(this.dataGridView4);
+            this.metroTabPage12.Controls.Add(this.gridMotivo);
             this.metroTabPage12.HorizontalScrollbarBarColor = true;
             this.metroTabPage12.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage12.HorizontalScrollbarSize = 10;
             this.metroTabPage12.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage12.Name = "metroTabPage12";
-            this.metroTabPage12.Size = new System.Drawing.Size(869, 367);
+            this.metroTabPage12.Size = new System.Drawing.Size(706, 267);
             this.metroTabPage12.TabIndex = 1;
             this.metroTabPage12.Text = "Modificar";
             this.metroTabPage12.VerticalScrollbarBarColor = true;
             this.metroTabPage12.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage12.VerticalScrollbarSize = 10;
             // 
-            // button4
+            // btnListarMotivo
             // 
-            this.button4.Location = new System.Drawing.Point(112, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Listar Motivo";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnListarMotivo.Location = new System.Drawing.Point(112, 3);
+            this.btnListarMotivo.Name = "btnListarMotivo";
+            this.btnListarMotivo.Size = new System.Drawing.Size(75, 23);
+            this.btnListarMotivo.TabIndex = 17;
+            this.btnListarMotivo.Text = "Listar Motivo";
+            this.btnListarMotivo.UseVisualStyleBackColor = true;
+            this.btnListarMotivo.Click += new System.EventHandler(this.btnListarMotivo_Click);
             // 
-            // button5
+            // btnModMotivo
             // 
-            this.button5.Location = new System.Drawing.Point(229, 251);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 23);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "Modificar Motivo";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnModMotivo.Location = new System.Drawing.Point(231, 191);
+            this.btnModMotivo.Name = "btnModMotivo";
+            this.btnModMotivo.Size = new System.Drawing.Size(100, 23);
+            this.btnModMotivo.TabIndex = 16;
+            this.btnModMotivo.Text = "Modificar Motivo";
+            this.btnModMotivo.UseVisualStyleBackColor = true;
+            this.btnModMotivo.Click += new System.EventHandler(this.btnModMotivo_Click);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(109, 213);
+            this.label16.Location = new System.Drawing.Point(111, 160);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(98, 13);
             this.label16.TabIndex = 15;
             this.label16.Text = "Descripcion Motivo";
             // 
-            // label17
+            // txtModDescMotivo
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(109, 179);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(79, 13);
-            this.label17.TabIndex = 14;
-            this.label17.Text = "Nombre Motivo";
+            this.txtModDescMotivo.Location = new System.Drawing.Point(231, 157);
+            this.txtModDescMotivo.Name = "txtModDescMotivo";
+            this.txtModDescMotivo.Size = new System.Drawing.Size(100, 20);
+            this.txtModDescMotivo.TabIndex = 13;
             // 
-            // textBox5
+            // txtBuscarMotivo
             // 
-            this.textBox5.Location = new System.Drawing.Point(229, 210);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 13;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(229, 172);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 12;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(412, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 11;
+            this.txtBuscarMotivo.Location = new System.Drawing.Point(412, 118);
+            this.txtBuscarMotivo.Name = "txtBuscarMotivo";
+            this.txtBuscarMotivo.Size = new System.Drawing.Size(100, 20);
+            this.txtBuscarMotivo.TabIndex = 11;
             // 
             // BuscarMotivo
             // 
@@ -923,14 +885,15 @@
             this.BuscarMotivo.TabIndex = 10;
             this.BuscarMotivo.Text = "Seleccionar Motivo";
             this.BuscarMotivo.UseVisualStyleBackColor = true;
+            this.BuscarMotivo.Click += new System.EventHandler(this.BuscarMotivo_Click);
             // 
-            // dataGridView4
+            // gridMotivo
             // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(112, 32);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(516, 78);
-            this.dataGridView4.TabIndex = 9;
+            this.gridMotivo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridMotivo.Location = new System.Drawing.Point(112, 32);
+            this.gridMotivo.Name = "gridMotivo";
+            this.gridMotivo.Size = new System.Drawing.Size(516, 78);
+            this.gridMotivo.TabIndex = 9;
             // 
             // metroTabPage13
             // 
@@ -943,7 +906,7 @@
             this.metroTabPage13.HorizontalScrollbarSize = 10;
             this.metroTabPage13.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage13.Name = "metroTabPage13";
-            this.metroTabPage13.Size = new System.Drawing.Size(869, 367);
+            this.metroTabPage13.Size = new System.Drawing.Size(706, 267);
             this.metroTabPage13.TabIndex = 2;
             this.metroTabPage13.Text = "Desactivar";
             this.metroTabPage13.VerticalScrollbarBarColor = true;
@@ -1394,7 +1357,7 @@
             this.metroTabPage11.PerformLayout();
             this.metroTabPage12.ResumeLayout(false);
             this.metroTabPage12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridMotivo)).EndInit();
             this.metroTabPage13.ResumeLayout(false);
             this.metroTabPage13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
@@ -1494,18 +1457,14 @@
         private System.Windows.Forms.Button CrearNMotivo;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtDmotivo;
-        private System.Windows.Forms.TextBox txtNMotivo;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnListarMotivo;
+        private System.Windows.Forms.Button btnModMotivo;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtModDescMotivo;
+        private System.Windows.Forms.TextBox txtBuscarMotivo;
         private System.Windows.Forms.Button BuscarMotivo;
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView gridMotivo;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button7;

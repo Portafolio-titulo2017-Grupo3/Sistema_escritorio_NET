@@ -48,12 +48,12 @@ namespace OrionEscritorio
         private void CrearNMotivo_Click(object sender, EventArgs e)
         {
 
-            Motivos motivos = new Motivos();
-            TMotivo tmotivo = new TMotivo();
+            //Motivos motivos = new Motivos();
+            //TMotivo tmotivo = new TMotivo();
 
-            motivos.nombre = txtNMotivo.Text;
-            motivos.descripcion = txtDmotivo.Text;
-            tmotivo.ingresarMotivo(motivos);
+            //motivos.nombre = txtNMotivo.Text;
+            //motivos.descripcion = txtDmotivo.Text;
+            //tmotivo.ingresarMotivo(motivos);
 
 
 

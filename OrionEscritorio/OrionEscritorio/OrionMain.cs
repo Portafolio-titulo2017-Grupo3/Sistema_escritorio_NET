@@ -186,5 +186,42 @@ namespace OrionEscritorio
          
 
         }
+
+        private void CrearNMotivo_Click(object sender, EventArgs e)
+        {
+            TMotivo tMotivo = new TMotivo();
+            Motivos motivo = new Motivos();
+
+            motivo.descripcion = txtDmotivo.Text;
+            tMotivo.ingresarMotivo(motivo);
+        }
+
+        private void btnListarMotivo_Click(object sender, EventArgs e)
+        {
+            gridMotivo.DataSource = TMotivo.listarMotivo();
+        }
+
+        private void BuscarMotivo_Click(object sender, EventArgs e)
+        {
+            int idMotivo = Convert.ToInt32(txtBuscarMotivo.Text);
+
+            TMotivo tMotivo = new TMotivo();
+            Motivos motivo = new Motivos();
+
+            motivo.idMotivo = idMotivo;
+            tMotivo.buscarMotivo(motivo);
+            txtModDescMotivo.Text = motivo.descripcion;
+        }
+
+        private void btnModMotivo_Click(object sender, EventArgs e)
+        {
+            int idMotivo = Convert.ToInt32(txtBuscarMotivo.Text);
+
+            TMotivo tMotivo = new TMotivo();
+            Motivos motivo = new Motivos();
+            motivo.idMotivo = idMotivo;
+            motivo.descripcion = txtModDescMotivo.Text;
+            tMotivo.modificarMotivo(motivo);
+        }
     }
 }
