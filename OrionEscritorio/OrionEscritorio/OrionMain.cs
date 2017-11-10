@@ -173,5 +173,18 @@ namespace OrionEscritorio
             Tdepart.modificarDepartamento(depart);
 
         }
+
+        private void BuscarDepartamento_Click(object sender, EventArgs e)
+        {
+            int iddept = Int32.Parse(txtBuscarDpto.Text);
+
+            TDepartamento Tdepart = new TDepartamento();
+            Departamento depart = new Departamento();
+            
+            Tdepart.modBuscar(depart);
+            txtMDptoNom.Text = depart.nombre;
+         
+
+        }
     }
 }

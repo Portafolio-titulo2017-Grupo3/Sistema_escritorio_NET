@@ -51,5 +51,10 @@ namespace OrionEscritorio
         {
 
         }
+
+        private void CrearNDepto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

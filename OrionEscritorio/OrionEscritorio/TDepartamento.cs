@@ -76,5 +76,23 @@ namespace OrionEscritorio
             conexion.Close();
             return dpto;
         }
+
+        public int modBuscar(Departamento dpto)
+        {
+            int resp = 0;
+
+
+            OracleConnection conexion = Conexion.abrirConexion();
+            OracleCommand orden = new OracleCommand(String.Format("select * from DEPARTAMENTO where ID_DEPTO =" + "'" + dpto.idDepto + "'"), conexion);
+            OracleDataReader lector = orden.ExecuteReader();
+            if (lector.Read())
+            {
+                dpto.nombre = lector.GetString(1);
+            }
+
+
+            return resp;
+
+        }
     }
 }

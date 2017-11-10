@@ -674,6 +674,7 @@
             this.BuscarDepartamento.TabIndex = 10;
             this.BuscarDepartamento.Text = "Seleccionar Dpto";
             this.BuscarDepartamento.UseVisualStyleBackColor = true;
+            this.BuscarDepartamento.Click += new System.EventHandler(this.BuscarDepartamento_Click);
             // 
             // dgvDepto
             // 
