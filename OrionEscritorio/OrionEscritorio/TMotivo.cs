@@ -41,7 +41,7 @@ namespace OrionEscritorio
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();//Singleton  
-            OracleCommand orden = new OracleCommand(string.Format("UPDATE MOTIVO SET DESCRIPCION_MOTIVO={0} WHERE ID_MOTIVO='{1}'", motivo.descripcion, motivo.idMotivo), conexion);
+            OracleCommand orden = new OracleCommand(string.Format("UPDATE MOTIVO SET DESCRIPCION_MOTIVO='{0}' WHERE ID_MOTIVO='{1}'", motivo.descripcion, motivo.idMotivo), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
             return resp;

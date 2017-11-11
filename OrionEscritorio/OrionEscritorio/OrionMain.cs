@@ -232,5 +232,54 @@ namespace OrionEscritorio
             perfil.descripcion = txtModDescPerfil.Text;
             Tperfil.modificarPerfil(perfil);
         }
+
+        private void CrearNMotivo_Click(object sender, EventArgs e)
+        {
+            Motivos motivo = new Motivos();
+            TMotivo tmotivo = new TMotivo();
+            
+            string descripcion = txtDmotivo.Text;
+
+            motivo.descripcion = descripcion;
+
+            tmotivo.ingresarMotivo(motivo);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            dgwMotivo.DataSource = TMotivo.listarMotivo();
+
+
+
+        }
+
+        private void BuscarMotivo_Click(object sender, EventArgs e)
+        {
+
+            Motivos motivo = new Motivos();
+            TMotivo tmotivo = new TMotivo();
+            int idmotivo = Int32.Parse(txtbuscarMotivo.Text);
+
+            motivo.idMotivo = idmotivo;
+
+            tmotivo.buscarMotivo(motivo);
+
+            txtModMotivo.Text = motivo.descripcion;
+
+
+        }
+
+        private void txtModMot_Click(object sender, EventArgs e)
+        {
+
+            Motivos motivo = new Motivos();
+            TMotivo tmotivo = new TMotivo();
+            motivo.idMotivo = Int32.Parse(txtbuscarMotivo.Text);
+            motivo.descripcion = txtModMotivo.Text;
+
+            tmotivo.modificarMotivo(motivo);
+
+
+        }
     }
 }
