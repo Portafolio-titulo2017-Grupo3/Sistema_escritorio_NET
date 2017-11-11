@@ -26,6 +26,16 @@ namespace OrionEscritorio
             cbxModPerfil.ValueMember = "ID_PERFIL"; //valor que capturas
 
         }
+        
+        protected override CreateParams CreateParams {
+            get {
+
+                CreateParams parms = base.CreateParams;
+                parms.ClassStyle |= 0x200; 
+
+                return parms;
+            }
+            }
 
         private void OrionMain_Load(object sender, EventArgs e)
         {
@@ -279,6 +289,52 @@ namespace OrionEscritorio
 
             tmotivo.modificarMotivo(motivo);
 
+
+        }
+
+        private void btnNTipo_Click(object sender, EventArgs e)
+        {
+            Tipo tipo = new Tipo();
+            TTipo tTipo = new TTipo();
+
+            tipo.descripcion = txtNTipoDesc.Text;
+            tipo.nombre = txtNTipoN.Text;
+
+            tTipo.ingresarTipo(tipo);
+
+        }
+
+        private void listarTipo_Click(object sender, EventArgs e)
+        {
+            dwvTipo.DataSource = TTipo.listarTipo();
+        }
+
+        private void btnBTipo_Click(object sender, EventArgs e)
+        {
+
+            int IdTipo = Int32.Parse(txtBTipo.Text);
+
+            Tipo tipo = new Tipo();
+            TTipo tTipo = new TTipo();
+            tipo.idTipo = IdTipo;
+            tTipo.modBuscar(tipo);
+
+            txtMNTIpo.Text = tipo.nombre;
+            txtMdtipo.Text = tipo.descripcion;
+
+        }
+
+        private void btnMTipo_Click(object sender, EventArgs e)
+        {
+            int IdTipo = Int32.Parse(txtBTipo.Text);
+
+            Tipo tipo = new Tipo();
+            TTipo tTipo = new TTipo();
+                  tipo.idTipo = IdTipo;
+
+            tipo.nombre = txtMNTIpo.Text;
+            tipo.descripcion= txtMdtipo.Text;
+            tTipo.modificarTipo(tipo);
 
         }
     }

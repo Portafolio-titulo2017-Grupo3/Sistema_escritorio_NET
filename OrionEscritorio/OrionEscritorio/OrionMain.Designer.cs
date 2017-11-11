@@ -130,7 +130,20 @@
             this.metroTabPage17 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl6 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage18 = new MetroFramework.Controls.MetroTabPage();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtNTipoN = new System.Windows.Forms.TextBox();
+            this.btnNTipo = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtNTipoDesc = new System.Windows.Forms.TextBox();
             this.metroTabPage19 = new MetroFramework.Controls.MetroTabPage();
+            this.listarTipo = new System.Windows.Forms.Button();
+            this.btnMTipo = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtMdtipo = new System.Windows.Forms.TextBox();
+            this.txtBTipo = new System.Windows.Forms.TextBox();
+            this.btnBTipo = new System.Windows.Forms.Button();
+            this.dwvTipo = new System.Windows.Forms.DataGridView();
             this.metroTabPage20 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage21 = new MetroFramework.Controls.MetroTabPage();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
@@ -138,6 +151,8 @@
             this.btnOscuro = new MetroFramework.Controls.MetroButton();
             this.StyleMain = new MetroFramework.Components.MetroStyleManager(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.label25 = new System.Windows.Forms.Label();
+            this.txtMNTIpo = new System.Windows.Forms.TextBox();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabControl2.SuspendLayout();
@@ -169,6 +184,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             this.metroTabPage17.SuspendLayout();
             this.metroTabControl6.SuspendLayout();
+            this.metroTabPage18.SuspendLayout();
+            this.metroTabPage19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dwvTipo)).BeginInit();
             this.metroTabPage21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StyleMain)).BeginInit();
             this.SuspendLayout();
@@ -183,7 +201,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage21);
             this.metroTabControl1.Location = new System.Drawing.Point(8, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.SelectedIndex = 4;
             this.metroTabControl1.Size = new System.Drawing.Size(721, 350);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
@@ -210,7 +228,7 @@
             this.metroTabControl2.Controls.Add(this.metroTabPage7);
             this.metroTabControl2.Location = new System.Drawing.Point(3, 3);
             this.metroTabControl2.Name = "metroTabControl2";
-            this.metroTabControl2.SelectedIndex = 2;
+            this.metroTabControl2.SelectedIndex = 0;
             this.metroTabControl2.Size = new System.Drawing.Size(715, 308);
             this.metroTabControl2.TabIndex = 2;
             this.metroTabControl2.UseSelectable = true;
@@ -753,7 +771,7 @@
             this.metroTabControl4.Controls.Add(this.metroTabPage13);
             this.metroTabControl4.Location = new System.Drawing.Point(0, -2);
             this.metroTabControl4.Name = "metroTabControl4";
-            this.metroTabControl4.SelectedIndex = 1;
+            this.metroTabControl4.SelectedIndex = 0;
             this.metroTabControl4.Size = new System.Drawing.Size(877, 409);
             this.metroTabControl4.TabIndex = 3;
             this.metroTabControl4.UseSelectable = true;
@@ -1220,13 +1238,19 @@
             this.metroTabControl6.Controls.Add(this.metroTabPage20);
             this.metroTabControl6.Location = new System.Drawing.Point(0, -2);
             this.metroTabControl6.Name = "metroTabControl6";
-            this.metroTabControl6.SelectedIndex = 0;
+            this.metroTabControl6.SelectedIndex = 1;
             this.metroTabControl6.Size = new System.Drawing.Size(880, 409);
             this.metroTabControl6.TabIndex = 3;
             this.metroTabControl6.UseSelectable = true;
             // 
             // metroTabPage18
             // 
+            this.metroTabPage18.Controls.Add(this.label24);
+            this.metroTabPage18.Controls.Add(this.txtNTipoN);
+            this.metroTabPage18.Controls.Add(this.btnNTipo);
+            this.metroTabPage18.Controls.Add(this.label15);
+            this.metroTabPage18.Controls.Add(this.label17);
+            this.metroTabPage18.Controls.Add(this.txtNTipoDesc);
             this.metroTabPage18.HorizontalScrollbarBarColor = true;
             this.metroTabPage18.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage18.HorizontalScrollbarSize = 10;
@@ -1239,8 +1263,71 @@
             this.metroTabPage18.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage18.VerticalScrollbarSize = 10;
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(54, 107);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(229, 22);
+            this.label24.TabIndex = 19;
+            this.label24.Text = "Nombre del tipo de permiso";
+            // 
+            // txtNTipoN
+            // 
+            this.txtNTipoN.Location = new System.Drawing.Point(300, 109);
+            this.txtNTipoN.Name = "txtNTipoN";
+            this.txtNTipoN.Size = new System.Drawing.Size(136, 20);
+            this.txtNTipoN.TabIndex = 18;
+            // 
+            // btnNTipo
+            // 
+            this.btnNTipo.Location = new System.Drawing.Point(300, 189);
+            this.btnNTipo.Name = "btnNTipo";
+            this.btnNTipo.Size = new System.Drawing.Size(136, 24);
+            this.btnNTipo.TabIndex = 17;
+            this.btnNTipo.Text = "Crear Nuevo Tipo";
+            this.btnNTipo.UseVisualStyleBackColor = true;
+            this.btnNTipo.Click += new System.EventHandler(this.btnNTipo_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(233, 59);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(265, 25);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "Crear nuevo Tipo de permiso";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(45, 141);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(238, 22);
+            this.label17.TabIndex = 15;
+            this.label17.Text = "Descripcion Tipo de permiso";
+            // 
+            // txtNTipoDesc
+            // 
+            this.txtNTipoDesc.Location = new System.Drawing.Point(300, 143);
+            this.txtNTipoDesc.Name = "txtNTipoDesc";
+            this.txtNTipoDesc.Size = new System.Drawing.Size(136, 20);
+            this.txtNTipoDesc.TabIndex = 14;
+            // 
             // metroTabPage19
             // 
+            this.metroTabPage19.Controls.Add(this.label25);
+            this.metroTabPage19.Controls.Add(this.txtMNTIpo);
+            this.metroTabPage19.Controls.Add(this.listarTipo);
+            this.metroTabPage19.Controls.Add(this.btnMTipo);
+            this.metroTabPage19.Controls.Add(this.label8);
+            this.metroTabPage19.Controls.Add(this.txtMdtipo);
+            this.metroTabPage19.Controls.Add(this.txtBTipo);
+            this.metroTabPage19.Controls.Add(this.btnBTipo);
+            this.metroTabPage19.Controls.Add(this.dwvTipo);
             this.metroTabPage19.HorizontalScrollbarBarColor = true;
             this.metroTabPage19.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage19.HorizontalScrollbarSize = 10;
@@ -1252,6 +1339,67 @@
             this.metroTabPage19.VerticalScrollbarBarColor = true;
             this.metroTabPage19.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage19.VerticalScrollbarSize = 10;
+            // 
+            // listarTipo
+            // 
+            this.listarTipo.Location = new System.Drawing.Point(101, 3);
+            this.listarTipo.Name = "listarTipo";
+            this.listarTipo.Size = new System.Drawing.Size(75, 23);
+            this.listarTipo.TabIndex = 24;
+            this.listarTipo.Text = "Listar Tipo";
+            this.listarTipo.UseVisualStyleBackColor = true;
+            this.listarTipo.Click += new System.EventHandler(this.listarTipo_Click);
+            // 
+            // btnMTipo
+            // 
+            this.btnMTipo.Location = new System.Drawing.Point(277, 251);
+            this.btnMTipo.Name = "btnMTipo";
+            this.btnMTipo.Size = new System.Drawing.Size(100, 23);
+            this.btnMTipo.TabIndex = 23;
+            this.btnMTipo.Text = "Modificar Tipo";
+            this.btnMTipo.UseVisualStyleBackColor = true;
+            this.btnMTipo.Click += new System.EventHandler(this.btnMTipo_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(157, 213);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(87, 13);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Descripcion Tipo";
+            // 
+            // txtMdtipo
+            // 
+            this.txtMdtipo.Location = new System.Drawing.Point(277, 210);
+            this.txtMdtipo.Name = "txtMdtipo";
+            this.txtMdtipo.Size = new System.Drawing.Size(100, 20);
+            this.txtMdtipo.TabIndex = 21;
+            // 
+            // txtBTipo
+            // 
+            this.txtBTipo.Location = new System.Drawing.Point(401, 118);
+            this.txtBTipo.Name = "txtBTipo";
+            this.txtBTipo.Size = new System.Drawing.Size(100, 20);
+            this.txtBTipo.TabIndex = 20;
+            // 
+            // btnBTipo
+            // 
+            this.btnBTipo.Location = new System.Drawing.Point(507, 116);
+            this.btnBTipo.Name = "btnBTipo";
+            this.btnBTipo.Size = new System.Drawing.Size(134, 23);
+            this.btnBTipo.TabIndex = 19;
+            this.btnBTipo.Text = "Seleccionar ID TIPO";
+            this.btnBTipo.UseVisualStyleBackColor = true;
+            this.btnBTipo.Click += new System.EventHandler(this.btnBTipo_Click);
+            // 
+            // dwvTipo
+            // 
+            this.dwvTipo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dwvTipo.Location = new System.Drawing.Point(101, 32);
+            this.dwvTipo.Name = "dwvTipo";
+            this.dwvTipo.Size = new System.Drawing.Size(516, 78);
+            this.dwvTipo.TabIndex = 18;
             // 
             // metroTabPage20
             // 
@@ -1324,6 +1472,22 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "add.png");
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(157, 184);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(66, 13);
+            this.label25.TabIndex = 26;
+            this.label25.Text = "nombre Tipo";
+            // 
+            // txtMNTIpo
+            // 
+            this.txtMNTIpo.Location = new System.Drawing.Point(277, 181);
+            this.txtMNTIpo.Name = "txtMNTIpo";
+            this.txtMNTIpo.Size = new System.Drawing.Size(100, 20);
+            this.txtMNTIpo.TabIndex = 25;
+            // 
             // OrionMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1377,6 +1541,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             this.metroTabPage17.ResumeLayout(false);
             this.metroTabControl6.ResumeLayout(false);
+            this.metroTabPage18.ResumeLayout(false);
+            this.metroTabPage18.PerformLayout();
+            this.metroTabPage19.ResumeLayout(false);
+            this.metroTabPage19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dwvTipo)).EndInit();
             this.metroTabPage21.ResumeLayout(false);
             this.metroTabPage21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StyleMain)).EndInit();
@@ -1494,5 +1663,20 @@
         private System.Windows.Forms.DataGridView dataGridView7;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.ComboBox cbxModPerfil;
+        private System.Windows.Forms.Button btnNTipo;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtNTipoDesc;
+        private System.Windows.Forms.Button listarTipo;
+        private System.Windows.Forms.Button btnMTipo;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtMdtipo;
+        private System.Windows.Forms.TextBox txtBTipo;
+        private System.Windows.Forms.Button btnBTipo;
+        private System.Windows.Forms.DataGridView dwvTipo;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox txtNTipoN;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox txtMNTIpo;
     }
 }

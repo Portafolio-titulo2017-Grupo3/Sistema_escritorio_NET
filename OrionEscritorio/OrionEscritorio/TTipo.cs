@@ -20,8 +20,8 @@ namespace OrionEscritorio
                 Tipo tipo = new Tipo();
 
                 tipo.idTipo = lector.GetInt32(0);
-                tipo.nombre = lector.GetString(1);
-                tipo.descripcion = lector.GetString(2);
+                tipo.descripcion = lector.GetString(1);
+                tipo.nombre = lector.GetString(2);
                 //tipo.permiso_id = lector.GetInt32(3);
 
                 lista.Add(tipo);
@@ -33,7 +33,7 @@ namespace OrionEscritorio
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();
-            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO TIPO(ID_TIPO, NOMBRE_TIPO, DESCRIPCION_TIPO, PERMISO_ID_PERMISO) VALUES('{0}', '{1}', '{2}', NULL)", tipo.idTipo, tipo.nombre, tipo.descripcion), conexion);
+            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO TIPO(DESCRIPCION_TIPO,NOMBRE_TIPO) VALUES('{0}','{1}')", tipo.descripcion,tipo.nombre), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
             return resp;
@@ -43,7 +43,7 @@ namespace OrionEscritorio
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();//Singleton  
-            OracleCommand orden = new OracleCommand(string.Format("UPDATE TIPO SET NOMBRE_TIPO='{0}',DESCRIPCION_TIPO={1} WHERE ID_TIPO='{2}'", tipo.nombre, tipo.descripcion, tipo.idTipo), conexion);
+            OracleCommand orden = new OracleCommand(string.Format("UPDATE TIPO SET NOMBRE_TIPO='{0}',DESCRIPCION_TIPO='{1}' WHERE ID_TIPO='{2}'", tipo.nombre,tipo.descripcion, tipo.idTipo), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
             return resp;
@@ -61,23 +61,25 @@ namespace OrionEscritorio
 
 
         //Queries
-        public Tipo buscarTipo(int idTipo)
+        public int modBuscar(Tipo dpto)
         {
-            Tipo tipo = new Tipo();
+            int resp = 0;
+
+
             OracleConnection conexion = Conexion.abrirConexion();
-            OracleCommand orden = new OracleCommand(String.Format("SELECT * FROM TIPO WHERE ID_TIPO=@idTipo"), conexion);
-            orden.Parameters.Add("@ID_TIPO", idTipo);
+            OracleCommand orden = new OracleCommand(String.Format("select * from tipo where ID_TIPO =" + "'" + dpto.idTipo + "'"), conexion);
             OracleDataReader lector = orden.ExecuteReader();
             if (lector.Read())
             {
-                tipo.idTipo = lector.GetInt32(0);
-                tipo.nombre = lector.GetString(1);
-                tipo.descripcion = lector.GetString(2);
-                //motivo.permiso_id = lector.GetInt32(3);
-
+                dpto.descripcion = lector.GetString(1);
+                dpto.nombre = lector.GetString(2);
+                
             }
-            conexion.Close();
-            return tipo;
+
+
+            return resp;
+
         }
     }
-}
+    }
+

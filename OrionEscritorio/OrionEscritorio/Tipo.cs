@@ -10,20 +10,21 @@ namespace OrionEscritorio
     class Tipo
     {
         public int idTipo { get; set; }
-        public string nombre { get; set; }
+      
         public string descripcion { get; set; }
-        public int permiso_id { get; set; }
 
+        public string nombre { get; set; }
         public Tipo()
         {
 
         }
 
-        public Tipo(int idTipo, string nombre, string descripcion)
+        public Tipo(int idTipo, string descripcion,string nombre)
         {
             this.idTipo = idTipo;
-            this.nombre = nombre;
+    
             this.descripcion = descripcion;
+            this.nombre = nombre;
         }
     }
 
