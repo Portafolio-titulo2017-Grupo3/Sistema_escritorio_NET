@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Oracle.DataAccess.Client;
 using System.Data;
+using System.Windows.Forms;
 
 namespace OrionEscritorio
 {
@@ -54,7 +55,7 @@ namespace OrionEscritorio
 
             OracleConnection conexion = Conexion.abrirConexion();
             
-            OracleCommand orden3 = new OracleCommand(string.Format("INSERT INTO USUARIO(CLAVE_USUARIO, NOMBRE_USUARIO, FUNCIONARIO_RUT_FUNCIONARIO, PERFIL_ID_PERFIL) VALUES('{0}', '{1}', '{2}', '{3}','{4}')", usu.clave, usu.nombre, usu.rut_funcionario, usu.perfil_id), conexion);
+            OracleCommand orden3 = new OracleCommand(string.Format("INSERT INTO USUARIO(CLAVE_USUARIO, NOMBRE_USUARIO, FUNCIONARIO_RUT_FUNCIONARIO, PERFIL_ID_PERFIL) VALUES('{0}', '{1}', '{2}', '{3}')", usu.clave, usu.nombre, usu.rut_funcionario, usu.perfil_id), conexion);
             resp = orden3.ExecuteNonQuery();
 
             conexion.Close();
@@ -72,8 +73,13 @@ namespace OrionEscritorio
             OracleDataReader lector = orden.ExecuteReader();
             if (lector.Read())
             {
-                usu.nombre = lector.GetString(1);
-                usu.clave = lector.GetString(2);
+                
+                usu.clave = lector.GetString(1);
+                usu.nombre = lector.GetString(2);
+            }
+            else
+            {
+                MessageBox.Show("ID DE USUARIO NO ENCONTRADA");
             }
 
 
@@ -88,7 +94,12 @@ namespace OrionEscritorio
             OracleCommand orden = new OracleCommand(string.Format("UPDATE USUARIO SET CLAVE_USUARIO='{0}',PERFIL_ID_PERFIL='{1}' WHERE ID_USUARIO='{2}'", usu.clave, usu.perfil_id,usu.idUsuario), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
+            
+
+            MessageBox.Show("USUARIO MODIFICADO CORRECTAMENTE");
+           
             return resp;
+
         }
 
         public int eliminarUsuario(string user)

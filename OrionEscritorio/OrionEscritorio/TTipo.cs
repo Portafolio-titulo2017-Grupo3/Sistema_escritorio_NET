@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Oracle.DataAccess.Client;
+using System.Windows.Forms;
 
 namespace OrionEscritorio
 {
@@ -73,7 +74,11 @@ namespace OrionEscritorio
             {
                 dpto.descripcion = lector.GetString(1);
                 dpto.nombre = lector.GetString(2);
-                
+
+            }
+            else
+            {
+                MessageBox.Show("ID DE TIPO NO ENCONTRADA");
             }
 
 

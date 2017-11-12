@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Oracle.DataAccess.Client;
+using System.Windows.Forms;
 
 namespace OrionEscritorio
 {
@@ -59,6 +60,7 @@ namespace OrionEscritorio
             
             OracleCommand orden2 = new OracleCommand(string.Format("INSERT INTO PERFIL(DESCRIPCION_PERFIL,NOMBRE_PERFIL) VALUES('{0}', '{1}')", perfil.descripcion, perfil.nombre), conexion);
             resp = orden2.ExecuteNonQuery();
+            MessageBox.Show("PERFIL CREADO CORRECTAMENTE");
             conexion.Close();
             return resp;
         }

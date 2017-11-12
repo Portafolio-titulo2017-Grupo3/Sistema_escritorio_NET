@@ -34,6 +34,10 @@
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl2 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
+            this.lblFuncionario = new System.Windows.Forms.Label();
+            this.lblpass = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtFuncionario = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,10 +49,12 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.metroTabPage6 = new MetroFramework.Controls.MetroTabPage();
+            this.lblusuclave = new System.Windows.Forms.Label();
+            this.btnModUsu = new System.Windows.Forms.Button();
+            this.label26 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.cbxModPerfil = new System.Windows.Forms.ComboBox();
             this.BtnListar = new System.Windows.Forms.Button();
-            this.btnModUsu = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtModUsuPass = new System.Windows.Forms.TextBox();
@@ -64,11 +70,14 @@
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl3 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage8 = new MetroFramework.Controls.MetroTabPage();
+            this.lbldepart = new System.Windows.Forms.Label();
             this.CrearNDepto = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.txtNDpto = new System.Windows.Forms.TextBox();
             this.metroTabPage9 = new MetroFramework.Controls.MetroTabPage();
+            this.lbldepM = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.ListModDpto = new System.Windows.Forms.Button();
             this.btnMDpto = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -84,11 +93,14 @@
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl4 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage11 = new MetroFramework.Controls.MetroTabPage();
+            this.lblmotivo = new System.Windows.Forms.Label();
             this.CrearNMotivo = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.txtDmotivo = new System.Windows.Forms.TextBox();
             this.metroTabPage12 = new MetroFramework.Controls.MetroTabPage();
+            this.lblmotivodesc = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.txtModMot = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
@@ -104,6 +116,8 @@
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl5 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage14 = new MetroFramework.Controls.MetroTabPage();
+            this.lblperfildesc = new System.Windows.Forms.Label();
+            this.lblperfilname = new System.Windows.Forms.Label();
             this.btnNPerfil = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.txtDPerfil = new System.Windows.Forms.TextBox();
@@ -111,6 +125,8 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.metroTabPage15 = new MetroFramework.Controls.MetroTabPage();
+            this.lblperfilMdesc = new System.Windows.Forms.Label();
+            this.lblperfilMname = new System.Windows.Forms.Label();
             this.listarPerfil = new System.Windows.Forms.Button();
             this.btnModPerfil = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
@@ -128,6 +144,8 @@
             this.metroTabPage17 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl6 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage18 = new MetroFramework.Controls.MetroTabPage();
+            this.lbltipoD = new System.Windows.Forms.Label();
+            this.lbltipon = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.txtNTipoN = new System.Windows.Forms.TextBox();
             this.btnNTipo = new System.Windows.Forms.Button();
@@ -151,6 +169,9 @@
             this.btnOscuro = new MetroFramework.Controls.MetroButton();
             this.StyleMain = new MetroFramework.Components.MetroStyleManager(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.label29 = new System.Windows.Forms.Label();
+            this.lblmtipod = new System.Windows.Forms.Label();
+            this.lblmtiponame = new System.Windows.Forms.Label();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabControl2.SuspendLayout();
@@ -199,8 +220,8 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage21);
             this.metroTabControl1.Location = new System.Drawing.Point(8, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
-            this.metroTabControl1.Size = new System.Drawing.Size(721, 350);
+            this.metroTabControl1.SelectedIndex = 4;
+            this.metroTabControl1.Size = new System.Drawing.Size(721, 385);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
             // 
@@ -212,7 +233,7 @@
             this.metroTabPage1.HorizontalScrollbarSize = 10;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(713, 308);
+            this.metroTabPage1.Size = new System.Drawing.Size(713, 343);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Usuario";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
@@ -227,12 +248,16 @@
             this.metroTabControl2.Location = new System.Drawing.Point(3, 3);
             this.metroTabControl2.Name = "metroTabControl2";
             this.metroTabControl2.SelectedIndex = 0;
-            this.metroTabControl2.Size = new System.Drawing.Size(715, 308);
+            this.metroTabControl2.Size = new System.Drawing.Size(764, 356);
             this.metroTabControl2.TabIndex = 2;
             this.metroTabControl2.UseSelectable = true;
             // 
             // metroTabPage5
             // 
+            this.metroTabPage5.Controls.Add(this.lblFuncionario);
+            this.metroTabPage5.Controls.Add(this.lblpass);
+            this.metroTabPage5.Controls.Add(this.lblUsuario);
+            this.metroTabPage5.Controls.Add(this.label11);
             this.metroTabPage5.Controls.Add(this.label5);
             this.metroTabPage5.Controls.Add(this.txtFuncionario);
             this.metroTabPage5.Controls.Add(this.label4);
@@ -248,17 +273,58 @@
             this.metroTabPage5.HorizontalScrollbarSize = 10;
             this.metroTabPage5.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage5.Name = "metroTabPage5";
-            this.metroTabPage5.Size = new System.Drawing.Size(707, 266);
+            this.metroTabPage5.Size = new System.Drawing.Size(756, 314);
             this.metroTabPage5.TabIndex = 0;
             this.metroTabPage5.Text = "Ingresar";
             this.metroTabPage5.VerticalScrollbarBarColor = true;
             this.metroTabPage5.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage5.VerticalScrollbarSize = 10;
             // 
+            // lblFuncionario
+            // 
+            this.lblFuncionario.AutoSize = true;
+            this.lblFuncionario.ForeColor = System.Drawing.Color.Red;
+            this.lblFuncionario.Location = new System.Drawing.Point(410, 124);
+            this.lblFuncionario.Name = "lblFuncionario";
+            this.lblFuncionario.Size = new System.Drawing.Size(215, 13);
+            this.lblFuncionario.TabIndex = 28;
+            this.lblFuncionario.Text = "*INGRESE EL RUT DE UN FUNCIONARIO";
+            this.lblFuncionario.Visible = false;
+            // 
+            // lblpass
+            // 
+            this.lblpass.AutoSize = true;
+            this.lblpass.ForeColor = System.Drawing.Color.Red;
+            this.lblpass.Location = new System.Drawing.Point(410, 95);
+            this.lblpass.Name = "lblpass";
+            this.lblpass.Size = new System.Drawing.Size(162, 13);
+            this.lblpass.TabIndex = 27;
+            this.lblpass.Text = "*INGRESE UNA CONTRASEÑA";
+            this.lblpass.Visible = false;
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.ForeColor = System.Drawing.Color.Red;
+            this.lblUsuario.Location = new System.Drawing.Point(409, 66);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(130, 13);
+            this.lblUsuario.TabIndex = 26;
+            this.lblUsuario.Text = "*INGRESE UN USUARIO";
+            this.lblUsuario.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(433, 125);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(0, 13);
+            this.label11.TabIndex = 25;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(252, 158);
+            this.label5.Location = new System.Drawing.Point(210, 148);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 13);
             this.label5.TabIndex = 24;
@@ -266,15 +332,16 @@
             // 
             // txtFuncionario
             // 
-            this.txtFuncionario.Location = new System.Drawing.Point(309, 129);
+            this.txtFuncionario.Location = new System.Drawing.Point(267, 119);
             this.txtFuncionario.Name = "txtFuncionario";
             this.txtFuncionario.Size = new System.Drawing.Size(136, 20);
             this.txtFuncionario.TabIndex = 23;
+            this.txtFuncionario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFuncionario_KeyPress);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(215, 132);
+            this.label4.Location = new System.Drawing.Point(173, 122);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 13);
             this.label4.TabIndex = 22;
@@ -286,7 +353,7 @@
             this.cbxPerfil.Items.AddRange(new object[] {
             "Seleccione un perfil",
             "Seleccione un perfil"});
-            this.cbxPerfil.Location = new System.Drawing.Point(309, 155);
+            this.cbxPerfil.Location = new System.Drawing.Point(267, 145);
             this.cbxPerfil.Name = "cbxPerfil";
             this.cbxPerfil.Size = new System.Drawing.Size(136, 21);
             this.cbxPerfil.TabIndex = 21;
@@ -294,7 +361,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(236, 106);
+            this.label3.Location = new System.Drawing.Point(194, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 13);
             this.label3.TabIndex = 20;
@@ -303,7 +370,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(236, 73);
+            this.label2.Location = new System.Drawing.Point(194, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 19;
@@ -312,7 +379,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(334, 31);
+            this.label1.Location = new System.Drawing.Point(292, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 18;
@@ -320,7 +387,7 @@
             // 
             // btnCUsuario
             // 
-            this.btnCUsuario.Location = new System.Drawing.Point(309, 197);
+            this.btnCUsuario.Location = new System.Drawing.Point(267, 187);
             this.btnCUsuario.Name = "btnCUsuario";
             this.btnCUsuario.Size = new System.Drawing.Size(136, 24);
             this.btnCUsuario.TabIndex = 17;
@@ -330,24 +397,28 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(309, 99);
+            this.txtPassword.Location = new System.Drawing.Point(267, 89);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(136, 20);
             this.txtPassword.TabIndex = 16;
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword_KeyPress);
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(309, 73);
+            this.txtUsuario.Location = new System.Drawing.Point(267, 63);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(136, 20);
             this.txtUsuario.TabIndex = 15;
+            this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
             // 
             // metroTabPage6
             // 
+            this.metroTabPage6.Controls.Add(this.lblusuclave);
+            this.metroTabPage6.Controls.Add(this.btnModUsu);
+            this.metroTabPage6.Controls.Add(this.label26);
             this.metroTabPage6.Controls.Add(this.label23);
             this.metroTabPage6.Controls.Add(this.cbxModPerfil);
             this.metroTabPage6.Controls.Add(this.BtnListar);
-            this.metroTabPage6.Controls.Add(this.btnModUsu);
             this.metroTabPage6.Controls.Add(this.label7);
             this.metroTabPage6.Controls.Add(this.label6);
             this.metroTabPage6.Controls.Add(this.txtModUsuPass);
@@ -360,17 +431,48 @@
             this.metroTabPage6.HorizontalScrollbarSize = 10;
             this.metroTabPage6.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage6.Name = "metroTabPage6";
-            this.metroTabPage6.Size = new System.Drawing.Size(707, 266);
+            this.metroTabPage6.Size = new System.Drawing.Size(756, 314);
             this.metroTabPage6.TabIndex = 1;
             this.metroTabPage6.Text = "Modificar";
             this.metroTabPage6.VerticalScrollbarBarColor = true;
             this.metroTabPage6.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage6.VerticalScrollbarSize = 10;
             // 
+            // lblusuclave
+            // 
+            this.lblusuclave.AutoSize = true;
+            this.lblusuclave.ForeColor = System.Drawing.Color.Red;
+            this.lblusuclave.Location = new System.Drawing.Point(408, 216);
+            this.lblusuclave.Name = "lblusuclave";
+            this.lblusuclave.Size = new System.Drawing.Size(122, 13);
+            this.lblusuclave.TabIndex = 21;
+            this.lblusuclave.Text = "*INGRESE UNA CLAVE";
+            this.lblusuclave.Visible = false;
+            // 
+            // btnModUsu
+            // 
+            this.btnModUsu.Enabled = false;
+            this.btnModUsu.Location = new System.Drawing.Point(297, 266);
+            this.btnModUsu.Name = "btnModUsu";
+            this.btnModUsu.Size = new System.Drawing.Size(100, 23);
+            this.btnModUsu.TabIndex = 16;
+            this.btnModUsu.Text = "Modificar Usuario";
+            this.btnModUsu.UseVisualStyleBackColor = true;
+            this.btnModUsu.Click += new System.EventHandler(this.btnModUsu_Click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(191, 132);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(152, 13);
+            this.label26.TabIndex = 20;
+            this.label26.Text = "Seleccione la ID de un usuario";
+            // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(108, 193);
+            this.label23.Location = new System.Drawing.Point(173, 220);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(88, 13);
             this.label23.TabIndex = 19;
@@ -378,8 +480,9 @@
             // 
             // cbxModPerfil
             // 
+            this.cbxModPerfil.Enabled = false;
             this.cbxModPerfil.FormattingEnabled = true;
-            this.cbxModPerfil.Location = new System.Drawing.Point(211, 212);
+            this.cbxModPerfil.Location = new System.Drawing.Point(276, 239);
             this.cbxModPerfil.Name = "cbxModPerfil";
             this.cbxModPerfil.Size = new System.Drawing.Size(121, 21);
             this.cbxModPerfil.TabIndex = 18;
@@ -394,20 +497,10 @@
             this.BtnListar.UseVisualStyleBackColor = true;
             this.BtnListar.Click += new System.EventHandler(this.BtnListar_Click);
             // 
-            // btnModUsu
-            // 
-            this.btnModUsu.Location = new System.Drawing.Point(211, 241);
-            this.btnModUsu.Name = "btnModUsu";
-            this.btnModUsu.Size = new System.Drawing.Size(100, 23);
-            this.btnModUsu.TabIndex = 16;
-            this.btnModUsu.Text = "Modificar Usuario";
-            this.btnModUsu.UseVisualStyleBackColor = true;
-            this.btnModUsu.Click += new System.EventHandler(this.btnModUsu_Click);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(110, 220);
+            this.label7.Location = new System.Drawing.Point(175, 247);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(86, 13);
             this.label7.TabIndex = 15;
@@ -416,7 +509,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(113, 166);
+            this.label6.Location = new System.Drawing.Point(178, 193);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(83, 13);
             this.label6.TabIndex = 14;
@@ -424,15 +517,17 @@
             // 
             // txtModUsuPass
             // 
-            this.txtModUsuPass.Location = new System.Drawing.Point(211, 186);
+            this.txtModUsuPass.Enabled = false;
+            this.txtModUsuPass.Location = new System.Drawing.Point(276, 213);
             this.txtModUsuPass.Name = "txtModUsuPass";
             this.txtModUsuPass.Size = new System.Drawing.Size(121, 20);
             this.txtModUsuPass.TabIndex = 13;
+            this.txtModUsuPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtModUsuPass_KeyPress);
             // 
             // txtModUsu
             // 
             this.txtModUsu.Enabled = false;
-            this.txtModUsu.Location = new System.Drawing.Point(211, 159);
+            this.txtModUsu.Location = new System.Drawing.Point(276, 186);
             this.txtModUsu.Name = "txtModUsu";
             this.txtModUsu.Size = new System.Drawing.Size(121, 20);
             this.txtModUsu.TabIndex = 12;
@@ -443,6 +538,7 @@
             this.txtBUser.Name = "txtBUser";
             this.txtBUser.Size = new System.Drawing.Size(100, 20);
             this.txtBUser.TabIndex = 11;
+            this.txtBUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBUser_KeyPress);
             // 
             // btnBuscarUsu
             // 
@@ -450,7 +546,7 @@
             this.btnBuscarUsu.Name = "btnBuscarUsu";
             this.btnBuscarUsu.Size = new System.Drawing.Size(154, 23);
             this.btnBuscarUsu.TabIndex = 10;
-            this.btnBuscarUsu.Text = "Seleccionar ID del Usuario";
+            this.btnBuscarUsu.Text = "Buscar Usuario";
             this.btnBuscarUsu.UseVisualStyleBackColor = true;
             this.btnBuscarUsu.Click += new System.EventHandler(this.btnBuscarUsu_Click);
             // 
@@ -473,7 +569,7 @@
             this.metroTabPage7.HorizontalScrollbarSize = 10;
             this.metroTabPage7.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage7.Name = "metroTabPage7";
-            this.metroTabPage7.Size = new System.Drawing.Size(707, 266);
+            this.metroTabPage7.Size = new System.Drawing.Size(756, 314);
             this.metroTabPage7.TabIndex = 2;
             this.metroTabPage7.Text = "Desactivar";
             this.metroTabPage7.VerticalScrollbarBarColor = true;
@@ -521,7 +617,7 @@
             this.metroTabPage2.HorizontalScrollbarSize = 10;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(713, 308);
+            this.metroTabPage2.Size = new System.Drawing.Size(713, 343);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Departamento";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
@@ -535,13 +631,14 @@
             this.metroTabControl3.Controls.Add(this.metroTabPage10);
             this.metroTabControl3.Location = new System.Drawing.Point(3, 3);
             this.metroTabControl3.Name = "metroTabControl3";
-            this.metroTabControl3.SelectedIndex = 0;
+            this.metroTabControl3.SelectedIndex = 1;
             this.metroTabControl3.Size = new System.Drawing.Size(701, 299);
             this.metroTabControl3.TabIndex = 3;
             this.metroTabControl3.UseSelectable = true;
             // 
             // metroTabPage8
             // 
+            this.metroTabPage8.Controls.Add(this.lbldepart);
             this.metroTabPage8.Controls.Add(this.CrearNDepto);
             this.metroTabPage8.Controls.Add(this.label10);
             this.metroTabPage8.Controls.Add(this.label12);
@@ -558,9 +655,20 @@
             this.metroTabPage8.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage8.VerticalScrollbarSize = 10;
             // 
+            // lbldepart
+            // 
+            this.lbldepart.AutoSize = true;
+            this.lbldepart.ForeColor = System.Drawing.Color.Red;
+            this.lbldepart.Location = new System.Drawing.Point(429, 81);
+            this.lbldepart.Name = "lbldepart";
+            this.lbldepart.Size = new System.Drawing.Size(258, 13);
+            this.lbldepart.TabIndex = 14;
+            this.lbldepart.Text = "*INGRESE UN NOMBRE DE AL MENOS 5 LETRAS";
+            this.lbldepart.Visible = false;
+            // 
             // CrearNDepto
             // 
-            this.CrearNDepto.Location = new System.Drawing.Point(269, 159);
+            this.CrearNDepto.Location = new System.Drawing.Point(278, 116);
             this.CrearNDepto.Name = "CrearNDepto";
             this.CrearNDepto.Size = new System.Drawing.Size(169, 24);
             this.CrearNDepto.TabIndex = 13;
@@ -594,9 +702,12 @@
             this.txtNDpto.Name = "txtNDpto";
             this.txtNDpto.Size = new System.Drawing.Size(136, 20);
             this.txtNDpto.TabIndex = 8;
+            this.txtNDpto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNDpto_KeyPress);
             // 
             // metroTabPage9
             // 
+            this.metroTabPage9.Controls.Add(this.lbldepM);
+            this.metroTabPage9.Controls.Add(this.label27);
             this.metroTabPage9.Controls.Add(this.ListModDpto);
             this.metroTabPage9.Controls.Add(this.btnMDpto);
             this.metroTabPage9.Controls.Add(this.label9);
@@ -616,9 +727,29 @@
             this.metroTabPage9.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage9.VerticalScrollbarSize = 10;
             // 
+            // lbldepM
+            // 
+            this.lbldepM.AutoSize = true;
+            this.lbldepM.ForeColor = System.Drawing.Color.Red;
+            this.lbldepM.Location = new System.Drawing.Point(533, 198);
+            this.lbldepM.Name = "lbldepM";
+            this.lbldepM.Size = new System.Drawing.Size(128, 13);
+            this.lbldepM.TabIndex = 22;
+            this.lbldepM.Text = "*INGRESE UN NOMBRE";
+            this.lbldepM.Visible = false;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(184, 134);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(170, 13);
+            this.label27.TabIndex = 21;
+            this.label27.Text = "Seleccione la ID del departamento";
+            // 
             // ListModDpto
             // 
-            this.ListModDpto.Location = new System.Drawing.Point(119, 3);
+            this.ListModDpto.Location = new System.Drawing.Point(86, 4);
             this.ListModDpto.Name = "ListModDpto";
             this.ListModDpto.Size = new System.Drawing.Size(75, 23);
             this.ListModDpto.TabIndex = 17;
@@ -628,7 +759,8 @@
             // 
             // btnMDpto
             // 
-            this.btnMDpto.Location = new System.Drawing.Point(220, 198);
+            this.btnMDpto.Enabled = false;
+            this.btnMDpto.Location = new System.Drawing.Point(360, 221);
             this.btnMDpto.Name = "btnMDpto";
             this.btnMDpto.Size = new System.Drawing.Size(131, 23);
             this.btnMDpto.TabIndex = 16;
@@ -639,7 +771,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(99, 175);
+            this.label9.Location = new System.Drawing.Point(204, 198);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(131, 13);
             this.label9.TabIndex = 14;
@@ -647,32 +779,35 @@
             // 
             // txtMDptoNom
             // 
-            this.txtMDptoNom.Location = new System.Drawing.Point(236, 172);
+            this.txtMDptoNom.Enabled = false;
+            this.txtMDptoNom.Location = new System.Drawing.Point(341, 195);
             this.txtMDptoNom.Name = "txtMDptoNom";
-            this.txtMDptoNom.Size = new System.Drawing.Size(100, 20);
+            this.txtMDptoNom.Size = new System.Drawing.Size(186, 20);
             this.txtMDptoNom.TabIndex = 12;
+            this.txtMDptoNom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMDptoNom_KeyPress);
             // 
             // txtBuscarDpto
             // 
-            this.txtBuscarDpto.Location = new System.Drawing.Point(419, 118);
+            this.txtBuscarDpto.Location = new System.Drawing.Point(360, 132);
             this.txtBuscarDpto.Name = "txtBuscarDpto";
-            this.txtBuscarDpto.Size = new System.Drawing.Size(100, 20);
+            this.txtBuscarDpto.Size = new System.Drawing.Size(139, 20);
             this.txtBuscarDpto.TabIndex = 11;
+            this.txtBuscarDpto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscarDpto_KeyPress);
             // 
             // BuscarDepartamento
             // 
-            this.BuscarDepartamento.Location = new System.Drawing.Point(525, 116);
+            this.BuscarDepartamento.Location = new System.Drawing.Point(505, 129);
             this.BuscarDepartamento.Name = "BuscarDepartamento";
-            this.BuscarDepartamento.Size = new System.Drawing.Size(110, 23);
+            this.BuscarDepartamento.Size = new System.Drawing.Size(149, 23);
             this.BuscarDepartamento.TabIndex = 10;
-            this.BuscarDepartamento.Text = "Seleccionar Dpto";
+            this.BuscarDepartamento.Text = "Buscar Departamento";
             this.BuscarDepartamento.UseVisualStyleBackColor = true;
             this.BuscarDepartamento.Click += new System.EventHandler(this.BuscarDepartamento_Click);
             // 
             // dgvDepto
             // 
             this.dgvDepto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDepto.Location = new System.Drawing.Point(119, 32);
+            this.dgvDepto.Location = new System.Drawing.Point(86, 33);
             this.dgvDepto.Name = "dgvDepto";
             this.dgvDepto.Size = new System.Drawing.Size(516, 78);
             this.dgvDepto.TabIndex = 9;
@@ -736,7 +871,7 @@
             this.metroTabPage3.HorizontalScrollbarSize = 10;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(713, 308);
+            this.metroTabPage3.Size = new System.Drawing.Size(713, 343);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "Motivo";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
@@ -750,13 +885,14 @@
             this.metroTabControl4.Controls.Add(this.metroTabPage13);
             this.metroTabControl4.Location = new System.Drawing.Point(0, -2);
             this.metroTabControl4.Name = "metroTabControl4";
-            this.metroTabControl4.SelectedIndex = 0;
+            this.metroTabControl4.SelectedIndex = 1;
             this.metroTabControl4.Size = new System.Drawing.Size(877, 409);
             this.metroTabControl4.TabIndex = 3;
             this.metroTabControl4.UseSelectable = true;
             // 
             // metroTabPage11
             // 
+            this.metroTabPage11.Controls.Add(this.lblmotivo);
             this.metroTabPage11.Controls.Add(this.CrearNMotivo);
             this.metroTabPage11.Controls.Add(this.label13);
             this.metroTabPage11.Controls.Add(this.label14);
@@ -773,9 +909,20 @@
             this.metroTabPage11.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage11.VerticalScrollbarSize = 10;
             // 
+            // lblmotivo
+            // 
+            this.lblmotivo.AutoSize = true;
+            this.lblmotivo.ForeColor = System.Drawing.Color.Red;
+            this.lblmotivo.Location = new System.Drawing.Point(470, 108);
+            this.lblmotivo.Name = "lblmotivo";
+            this.lblmotivo.Size = new System.Drawing.Size(123, 13);
+            this.lblmotivo.TabIndex = 15;
+            this.lblmotivo.Text = "*INGRESE UN MOTIVO";
+            this.lblmotivo.Visible = false;
+            // 
             // CrearNMotivo
             // 
-            this.CrearNMotivo.Location = new System.Drawing.Point(328, 151);
+            this.CrearNMotivo.Location = new System.Drawing.Point(328, 145);
             this.CrearNMotivo.Name = "CrearNMotivo";
             this.CrearNMotivo.Size = new System.Drawing.Size(136, 24);
             this.CrearNMotivo.TabIndex = 13;
@@ -809,9 +956,12 @@
             this.txtDmotivo.Name = "txtDmotivo";
             this.txtDmotivo.Size = new System.Drawing.Size(136, 20);
             this.txtDmotivo.TabIndex = 9;
+            this.txtDmotivo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDmotivo_KeyPress);
             // 
             // metroTabPage12
             // 
+            this.metroTabPage12.Controls.Add(this.lblmotivodesc);
+            this.metroTabPage12.Controls.Add(this.label28);
             this.metroTabPage12.Controls.Add(this.button4);
             this.metroTabPage12.Controls.Add(this.txtModMot);
             this.metroTabPage12.Controls.Add(this.label16);
@@ -831,9 +981,29 @@
             this.metroTabPage12.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage12.VerticalScrollbarSize = 10;
             // 
+            // lblmotivodesc
+            // 
+            this.lblmotivodesc.AutoSize = true;
+            this.lblmotivodesc.ForeColor = System.Drawing.Color.Red;
+            this.lblmotivodesc.Location = new System.Drawing.Point(394, 213);
+            this.lblmotivodesc.Name = "lblmotivodesc";
+            this.lblmotivodesc.Size = new System.Drawing.Size(161, 13);
+            this.lblmotivodesc.TabIndex = 23;
+            this.lblmotivodesc.Text = "*INGRESE UNA DESCRIPCION";
+            this.lblmotivodesc.Visible = false;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(269, 121);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(137, 13);
+            this.label28.TabIndex = 22;
+            this.label28.Text = "Seleccione la ID del Motivo";
+            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(112, 3);
+            this.button4.Location = new System.Drawing.Point(171, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 17;
@@ -843,7 +1013,8 @@
             // 
             // txtModMot
             // 
-            this.txtModMot.Location = new System.Drawing.Point(288, 251);
+            this.txtModMot.Enabled = false;
+            this.txtModMot.Location = new System.Drawing.Point(288, 245);
             this.txtModMot.Name = "txtModMot";
             this.txtModMot.Size = new System.Drawing.Size(100, 23);
             this.txtModMot.TabIndex = 16;
@@ -862,10 +1033,12 @@
             // 
             // txtModMotivo
             // 
+            this.txtModMotivo.Enabled = false;
             this.txtModMotivo.Location = new System.Drawing.Point(288, 210);
             this.txtModMotivo.Name = "txtModMotivo";
             this.txtModMotivo.Size = new System.Drawing.Size(100, 20);
             this.txtModMotivo.TabIndex = 13;
+            this.txtModMotivo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtModMotivo_KeyPress);
             // 
             // txtbuscarMotivo
             // 
@@ -873,6 +1046,7 @@
             this.txtbuscarMotivo.Name = "txtbuscarMotivo";
             this.txtbuscarMotivo.Size = new System.Drawing.Size(100, 20);
             this.txtbuscarMotivo.TabIndex = 11;
+            this.txtbuscarMotivo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbuscarMotivO_KeyPress);
             // 
             // BuscarMotivo
             // 
@@ -880,16 +1054,16 @@
             this.BuscarMotivo.Name = "BuscarMotivo";
             this.BuscarMotivo.Size = new System.Drawing.Size(110, 23);
             this.BuscarMotivo.TabIndex = 10;
-            this.BuscarMotivo.Text = "Seleccionar Motivo";
+            this.BuscarMotivo.Text = "Buscar Motivo";
             this.BuscarMotivo.UseVisualStyleBackColor = true;
             this.BuscarMotivo.Click += new System.EventHandler(this.BuscarMotivo_Click);
             // 
             // dgwMotivo
             // 
             this.dgwMotivo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwMotivo.Location = new System.Drawing.Point(112, 32);
+            this.dgwMotivo.Location = new System.Drawing.Point(171, 32);
             this.dgwMotivo.Name = "dgwMotivo";
-            this.dgwMotivo.Size = new System.Drawing.Size(516, 78);
+            this.dgwMotivo.Size = new System.Drawing.Size(317, 78);
             this.dgwMotivo.TabIndex = 9;
             // 
             // metroTabPage13
@@ -951,7 +1125,7 @@
             this.metroTabPage4.HorizontalScrollbarSize = 10;
             this.metroTabPage4.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage4.Name = "metroTabPage4";
-            this.metroTabPage4.Size = new System.Drawing.Size(713, 308);
+            this.metroTabPage4.Size = new System.Drawing.Size(713, 343);
             this.metroTabPage4.TabIndex = 3;
             this.metroTabPage4.Text = "Perfil";
             this.metroTabPage4.VerticalScrollbarBarColor = true;
@@ -972,6 +1146,8 @@
             // 
             // metroTabPage14
             // 
+            this.metroTabPage14.Controls.Add(this.lblperfildesc);
+            this.metroTabPage14.Controls.Add(this.lblperfilname);
             this.metroTabPage14.Controls.Add(this.btnNPerfil);
             this.metroTabPage14.Controls.Add(this.label18);
             this.metroTabPage14.Controls.Add(this.txtDPerfil);
@@ -990,9 +1166,31 @@
             this.metroTabPage14.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage14.VerticalScrollbarSize = 10;
             // 
+            // lblperfildesc
+            // 
+            this.lblperfildesc.AutoSize = true;
+            this.lblperfildesc.ForeColor = System.Drawing.Color.Red;
+            this.lblperfildesc.Location = new System.Drawing.Point(390, 117);
+            this.lblperfildesc.Name = "lblperfildesc";
+            this.lblperfildesc.Size = new System.Drawing.Size(161, 13);
+            this.lblperfildesc.TabIndex = 28;
+            this.lblperfildesc.Text = "*INGRESE UNA DESCRIPCION";
+            this.lblperfildesc.Visible = false;
+            // 
+            // lblperfilname
+            // 
+            this.lblperfilname.AutoSize = true;
+            this.lblperfilname.ForeColor = System.Drawing.Color.Red;
+            this.lblperfilname.Location = new System.Drawing.Point(390, 90);
+            this.lblperfilname.Name = "lblperfilname";
+            this.lblperfilname.Size = new System.Drawing.Size(128, 13);
+            this.lblperfilname.TabIndex = 27;
+            this.lblperfilname.Text = "*INGRESE UN NOMBRE";
+            this.lblperfilname.Visible = false;
+            // 
             // btnNPerfil
             // 
-            this.btnNPerfil.Location = new System.Drawing.Point(284, 153);
+            this.btnNPerfil.Location = new System.Drawing.Point(284, 149);
             this.btnNPerfil.Name = "btnNPerfil";
             this.btnNPerfil.Size = new System.Drawing.Size(107, 23);
             this.btnNPerfil.TabIndex = 13;
@@ -1016,6 +1214,7 @@
             this.txtDPerfil.Name = "txtDPerfil";
             this.txtDPerfil.Size = new System.Drawing.Size(100, 20);
             this.txtDPerfil.TabIndex = 11;
+            this.txtDPerfil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDPerfil_KeyPress);
             // 
             // txtNPerfil
             // 
@@ -1023,6 +1222,7 @@
             this.txtNPerfil.Name = "txtNPerfil";
             this.txtNPerfil.Size = new System.Drawing.Size(100, 20);
             this.txtNPerfil.TabIndex = 10;
+            this.txtNPerfil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNPerfil_KeyPress);
             // 
             // label19
             // 
@@ -1044,6 +1244,8 @@
             // 
             // metroTabPage15
             // 
+            this.metroTabPage15.Controls.Add(this.lblperfilMdesc);
+            this.metroTabPage15.Controls.Add(this.lblperfilMname);
             this.metroTabPage15.Controls.Add(this.listarPerfil);
             this.metroTabPage15.Controls.Add(this.btnModPerfil);
             this.metroTabPage15.Controls.Add(this.label21);
@@ -1065,6 +1267,28 @@
             this.metroTabPage15.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage15.VerticalScrollbarSize = 10;
             // 
+            // lblperfilMdesc
+            // 
+            this.lblperfilMdesc.AutoSize = true;
+            this.lblperfilMdesc.ForeColor = System.Drawing.Color.Red;
+            this.lblperfilMdesc.Location = new System.Drawing.Point(355, 213);
+            this.lblperfilMdesc.Name = "lblperfilMdesc";
+            this.lblperfilMdesc.Size = new System.Drawing.Size(161, 13);
+            this.lblperfilMdesc.TabIndex = 30;
+            this.lblperfilMdesc.Text = "*INGRESE UNA DESCRIPCION";
+            this.lblperfilMdesc.Visible = false;
+            // 
+            // lblperfilMname
+            // 
+            this.lblperfilMname.AutoSize = true;
+            this.lblperfilMname.ForeColor = System.Drawing.Color.Red;
+            this.lblperfilMname.Location = new System.Drawing.Point(355, 175);
+            this.lblperfilMname.Name = "lblperfilMname";
+            this.lblperfilMname.Size = new System.Drawing.Size(128, 13);
+            this.lblperfilMname.TabIndex = 29;
+            this.lblperfilMname.Text = "*INGRESE UN NOMBRE";
+            this.lblperfilMname.Visible = false;
+            // 
             // listarPerfil
             // 
             this.listarPerfil.Location = new System.Drawing.Point(132, 3);
@@ -1077,6 +1301,7 @@
             // 
             // btnModPerfil
             // 
+            this.btnModPerfil.Enabled = false;
             this.btnModPerfil.Location = new System.Drawing.Point(249, 236);
             this.btnModPerfil.Name = "btnModPerfil";
             this.btnModPerfil.Size = new System.Drawing.Size(100, 23);
@@ -1105,17 +1330,21 @@
             // 
             // txtModDescPerfil
             // 
+            this.txtModDescPerfil.Enabled = false;
             this.txtModDescPerfil.Location = new System.Drawing.Point(249, 210);
             this.txtModDescPerfil.Name = "txtModDescPerfil";
             this.txtModDescPerfil.Size = new System.Drawing.Size(100, 20);
             this.txtModDescPerfil.TabIndex = 22;
+            this.txtModDescPerfil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtModDescPerfil_KeyPress);
             // 
             // txtModNomPerfil
             // 
+            this.txtModNomPerfil.Enabled = false;
             this.txtModNomPerfil.Location = new System.Drawing.Point(249, 172);
             this.txtModNomPerfil.Name = "txtModNomPerfil";
             this.txtModNomPerfil.Size = new System.Drawing.Size(100, 20);
             this.txtModNomPerfil.TabIndex = 21;
+            this.txtModNomPerfil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtModNomPerfil_KeyPress);
             // 
             // txtBPerfil
             // 
@@ -1123,6 +1352,7 @@
             this.txtBPerfil.Name = "txtBPerfil";
             this.txtBPerfil.Size = new System.Drawing.Size(100, 20);
             this.txtBPerfil.TabIndex = 20;
+            this.txtBPerfil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBPerfil_KeyPress);
             // 
             // btnBuscarPerfil
             // 
@@ -1203,7 +1433,7 @@
             this.metroTabPage17.HorizontalScrollbarSize = 10;
             this.metroTabPage17.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage17.Name = "metroTabPage17";
-            this.metroTabPage17.Size = new System.Drawing.Size(713, 308);
+            this.metroTabPage17.Size = new System.Drawing.Size(713, 343);
             this.metroTabPage17.TabIndex = 4;
             this.metroTabPage17.Text = "Tipo";
             this.metroTabPage17.VerticalScrollbarBarColor = true;
@@ -1224,6 +1454,8 @@
             // 
             // metroTabPage18
             // 
+            this.metroTabPage18.Controls.Add(this.lbltipoD);
+            this.metroTabPage18.Controls.Add(this.lbltipon);
             this.metroTabPage18.Controls.Add(this.label24);
             this.metroTabPage18.Controls.Add(this.txtNTipoN);
             this.metroTabPage18.Controls.Add(this.btnNTipo);
@@ -1242,6 +1474,28 @@
             this.metroTabPage18.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage18.VerticalScrollbarSize = 10;
             // 
+            // lbltipoD
+            // 
+            this.lbltipoD.AutoSize = true;
+            this.lbltipoD.ForeColor = System.Drawing.Color.Red;
+            this.lbltipoD.Location = new System.Drawing.Point(442, 150);
+            this.lbltipoD.Name = "lbltipoD";
+            this.lbltipoD.Size = new System.Drawing.Size(161, 13);
+            this.lbltipoD.TabIndex = 32;
+            this.lbltipoD.Text = "*INGRESE UNA DESCRIPCION";
+            this.lbltipoD.Visible = false;
+            // 
+            // lbltipon
+            // 
+            this.lbltipon.AutoSize = true;
+            this.lbltipon.ForeColor = System.Drawing.Color.Red;
+            this.lbltipon.Location = new System.Drawing.Point(442, 112);
+            this.lbltipon.Name = "lbltipon";
+            this.lbltipon.Size = new System.Drawing.Size(128, 13);
+            this.lbltipon.TabIndex = 31;
+            this.lbltipon.Text = "*INGRESE UN NOMBRE";
+            this.lbltipon.Visible = false;
+            // 
             // label24
             // 
             this.label24.AutoSize = true;
@@ -1258,6 +1512,7 @@
             this.txtNTipoN.Name = "txtNTipoN";
             this.txtNTipoN.Size = new System.Drawing.Size(136, 20);
             this.txtNTipoN.TabIndex = 18;
+            this.txtNTipoN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNTipoN_KeyPress);
             // 
             // btnNTipo
             // 
@@ -1295,9 +1550,13 @@
             this.txtNTipoDesc.Name = "txtNTipoDesc";
             this.txtNTipoDesc.Size = new System.Drawing.Size(136, 20);
             this.txtNTipoDesc.TabIndex = 14;
+            this.txtNTipoDesc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNTipoDesc_KeyPress);
             // 
             // metroTabPage19
             // 
+            this.metroTabPage19.Controls.Add(this.lblmtipod);
+            this.metroTabPage19.Controls.Add(this.lblmtiponame);
+            this.metroTabPage19.Controls.Add(this.label29);
             this.metroTabPage19.Controls.Add(this.label25);
             this.metroTabPage19.Controls.Add(this.txtMNTIpo);
             this.metroTabPage19.Controls.Add(this.listarTipo);
@@ -1330,10 +1589,12 @@
             // 
             // txtMNTIpo
             // 
+            this.txtMNTIpo.Enabled = false;
             this.txtMNTIpo.Location = new System.Drawing.Point(277, 181);
             this.txtMNTIpo.Name = "txtMNTIpo";
             this.txtMNTIpo.Size = new System.Drawing.Size(100, 20);
             this.txtMNTIpo.TabIndex = 25;
+            this.txtMNTIpo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMNTIpo_KeyPress);
             // 
             // listarTipo
             // 
@@ -1347,6 +1608,7 @@
             // 
             // btnMTipo
             // 
+            this.btnMTipo.Enabled = false;
             this.btnMTipo.Location = new System.Drawing.Point(277, 251);
             this.btnMTipo.Name = "btnMTipo";
             this.btnMTipo.Size = new System.Drawing.Size(100, 23);
@@ -1366,10 +1628,12 @@
             // 
             // txtMdtipo
             // 
+            this.txtMdtipo.Enabled = false;
             this.txtMdtipo.Location = new System.Drawing.Point(277, 210);
             this.txtMdtipo.Name = "txtMdtipo";
             this.txtMdtipo.Size = new System.Drawing.Size(100, 20);
             this.txtMdtipo.TabIndex = 21;
+            this.txtMdtipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMdtipo_KeyPress);
             // 
             // txtBTipo
             // 
@@ -1377,6 +1641,7 @@
             this.txtBTipo.Name = "txtBTipo";
             this.txtBTipo.Size = new System.Drawing.Size(100, 20);
             this.txtBTipo.TabIndex = 20;
+            this.txtBTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBTipo_KeyPress);
             // 
             // btnBTipo
             // 
@@ -1384,7 +1649,7 @@
             this.btnBTipo.Name = "btnBTipo";
             this.btnBTipo.Size = new System.Drawing.Size(134, 23);
             this.btnBTipo.TabIndex = 19;
-            this.btnBTipo.Text = "Seleccionar ID TIPO";
+            this.btnBTipo.Text = "Buscar Tipo ";
             this.btnBTipo.UseVisualStyleBackColor = true;
             this.btnBTipo.Click += new System.EventHandler(this.btnBTipo_Click);
             // 
@@ -1420,7 +1685,7 @@
             this.metroTabPage21.HorizontalScrollbarSize = 10;
             this.metroTabPage21.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage21.Name = "metroTabPage21";
-            this.metroTabPage21.Size = new System.Drawing.Size(713, 308);
+            this.metroTabPage21.Size = new System.Drawing.Size(713, 343);
             this.metroTabPage21.TabIndex = 5;
             this.metroTabPage21.Text = "Configuración";
             this.metroTabPage21.VerticalScrollbarBarColor = true;
@@ -1467,11 +1732,42 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "add.png");
             // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(272, 121);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(123, 13);
+            this.label29.TabIndex = 27;
+            this.label29.Text = "Seleccionar ID DE TIPO";
+            // 
+            // lblmtipod
+            // 
+            this.lblmtipod.AutoSize = true;
+            this.lblmtipod.ForeColor = System.Drawing.Color.Red;
+            this.lblmtipod.Location = new System.Drawing.Point(383, 219);
+            this.lblmtipod.Name = "lblmtipod";
+            this.lblmtipod.Size = new System.Drawing.Size(161, 13);
+            this.lblmtipod.TabIndex = 32;
+            this.lblmtipod.Text = "*INGRESE UNA DESCRIPCION";
+            this.lblmtipod.Visible = false;
+            // 
+            // lblmtiponame
+            // 
+            this.lblmtiponame.AutoSize = true;
+            this.lblmtiponame.ForeColor = System.Drawing.Color.Red;
+            this.lblmtiponame.Location = new System.Drawing.Point(383, 181);
+            this.lblmtiponame.Name = "lblmtiponame";
+            this.lblmtiponame.Size = new System.Drawing.Size(128, 13);
+            this.lblmtiponame.TabIndex = 31;
+            this.lblmtiponame.Text = "*INGRESE UN NOMBRE";
+            this.lblmtiponame.Visible = false;
+            // 
             // OrionMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 426);
+            this.ClientSize = new System.Drawing.Size(740, 454);
             this.Controls.Add(this.metroTabControl1);
             this.Name = "OrionMain";
             this.Style = MetroFramework.MetroColorStyle.Orange;
@@ -1655,5 +1951,26 @@
         private System.Windows.Forms.TextBox txtNTipoN;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox txtMNTIpo;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblFuncionario;
+        private System.Windows.Forms.Label lblpass;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label lblusuclave;
+        private System.Windows.Forms.Label lbldepart;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lbldepM;
+        private System.Windows.Forms.Label lblmotivo;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label lblmotivodesc;
+        private System.Windows.Forms.Label lblperfildesc;
+        private System.Windows.Forms.Label lblperfilname;
+        private System.Windows.Forms.Label lblperfilMdesc;
+        private System.Windows.Forms.Label lblperfilMname;
+        private System.Windows.Forms.Label lbltipoD;
+        private System.Windows.Forms.Label lbltipon;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label lblmtipod;
+        private System.Windows.Forms.Label lblmtiponame;
     }
 }

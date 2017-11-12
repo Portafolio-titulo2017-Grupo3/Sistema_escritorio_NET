@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Oracle.DataAccess.Client;
+using System.Windows.Forms;
 //using System.Data.OracleClient;
 
 namespace OrionEscritorio
@@ -47,6 +48,7 @@ namespace OrionEscritorio
             OracleCommand orden = new OracleCommand(string.Format("INSERT INTO DEPARTAMENTO(ID_DEPTO,NOMBRE_DEPTO) VALUES('{0}','{1}')", dpto.idDepto, dpto.nombre), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
+            MessageBox.Show("DEPARTAMENTO CREADO CORRECTAMENTE");
             return resp;
         }
 
@@ -57,6 +59,7 @@ namespace OrionEscritorio
             OracleCommand orden = new OracleCommand(string.Format("UPDATE DEPARTAMENTO SET NOMBRE_DEPTO='{0}' WHERE ID_DEPTO='{1}'", dpto.nombre, dpto.idDepto), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
+            MessageBox.Show("DEPARTAMENTO MODIFICADO CORRECTAMENTE");
             return resp;
         }
 
@@ -99,6 +102,10 @@ namespace OrionEscritorio
             if (lector.Read())
             {
                 dpto.nombre = lector.GetString(1);
+            }
+            else
+            {
+                MessageBox.Show("ID DEL DEPARTAMENTO NO ENCONTRADA");
             }
 
 

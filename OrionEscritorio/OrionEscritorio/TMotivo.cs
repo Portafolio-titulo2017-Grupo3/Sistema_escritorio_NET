@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace OrionEscritorio
 {
@@ -34,6 +35,7 @@ namespace OrionEscritorio
             OracleCommand orden = new OracleCommand(string.Format("INSERT INTO MOTIVO(DESCRIPCION_MOTIVO) VALUES('{0}')", motivo.descripcion), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
+            MessageBox.Show("MOTIVO CREADO EXITOSAMENTE");
             return resp;
         }
 
@@ -44,6 +46,7 @@ namespace OrionEscritorio
             OracleCommand orden = new OracleCommand(string.Format("UPDATE MOTIVO SET DESCRIPCION_MOTIVO='{0}' WHERE ID_MOTIVO='{1}'", motivo.descripcion, motivo.idMotivo), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
+            MessageBox.Show("MOTIVO MODIFICADO CORRECTAMENTE");
             return resp;
         }
 
@@ -68,6 +71,10 @@ namespace OrionEscritorio
             {
                 motivo.idMotivo = lector.GetInt32(0);
                 motivo.descripcion = lector.GetString(1);
+            }
+            else
+            {
+                MessageBox.Show("ID DE MOTIVO NO ENCONTRADA");
             }
             conexion.Close();
             return motivo;
