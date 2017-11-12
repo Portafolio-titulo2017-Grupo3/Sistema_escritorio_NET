@@ -31,9 +31,20 @@ namespace OrionEscritorio
 
         public int ingresarDepartamento(Departamento dpto)
         {
+
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();
-            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO DEPARTAMENTO(NOMBRE_DEPTO) VALUES('{0}')", dpto.nombre), conexion);
+
+            OracleCommand orden2 = new OracleCommand(String.Format("select MAX(ID_DEPTO) from DEPARTAMENTO"), conexion);
+            OracleDataReader lector = orden2.ExecuteReader();
+            if (lector.Read())
+            {
+                dpto.idDepto = lector.GetInt32(0) + 1;
+            }
+
+
+
+            OracleCommand orden = new OracleCommand(string.Format("INSERT INTO DEPARTAMENTO(ID_DEPTO,NOMBRE_DEPTO) VALUES('{0}','{1}')", dpto.idDepto, dpto.nombre), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
             return resp;

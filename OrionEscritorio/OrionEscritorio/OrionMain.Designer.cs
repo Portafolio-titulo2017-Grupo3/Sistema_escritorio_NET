@@ -66,9 +66,7 @@
             this.metroTabPage8 = new MetroFramework.Controls.MetroTabPage();
             this.CrearNDepto = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtDDpto = new System.Windows.Forms.TextBox();
             this.txtNDpto = new System.Windows.Forms.TextBox();
             this.metroTabPage9 = new MetroFramework.Controls.MetroTabPage();
             this.ListModDpto = new System.Windows.Forms.Button();
@@ -137,6 +135,8 @@
             this.label17 = new System.Windows.Forms.Label();
             this.txtNTipoDesc = new System.Windows.Forms.TextBox();
             this.metroTabPage19 = new MetroFramework.Controls.MetroTabPage();
+            this.label25 = new System.Windows.Forms.Label();
+            this.txtMNTIpo = new System.Windows.Forms.TextBox();
             this.listarTipo = new System.Windows.Forms.Button();
             this.btnMTipo = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -151,8 +151,6 @@
             this.btnOscuro = new MetroFramework.Controls.MetroButton();
             this.StyleMain = new MetroFramework.Components.MetroStyleManager(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.label25 = new System.Windows.Forms.Label();
-            this.txtMNTIpo = new System.Windows.Forms.TextBox();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabControl2.SuspendLayout();
@@ -201,7 +199,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage21);
             this.metroTabControl1.Location = new System.Drawing.Point(8, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 4;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(721, 350);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
@@ -537,7 +535,7 @@
             this.metroTabControl3.Controls.Add(this.metroTabPage10);
             this.metroTabControl3.Location = new System.Drawing.Point(3, 3);
             this.metroTabControl3.Name = "metroTabControl3";
-            this.metroTabControl3.SelectedIndex = 1;
+            this.metroTabControl3.SelectedIndex = 0;
             this.metroTabControl3.Size = new System.Drawing.Size(701, 299);
             this.metroTabControl3.TabIndex = 3;
             this.metroTabControl3.UseSelectable = true;
@@ -546,9 +544,7 @@
             // 
             this.metroTabPage8.Controls.Add(this.CrearNDepto);
             this.metroTabPage8.Controls.Add(this.label10);
-            this.metroTabPage8.Controls.Add(this.label11);
             this.metroTabPage8.Controls.Add(this.label12);
-            this.metroTabPage8.Controls.Add(this.txtDDpto);
             this.metroTabPage8.Controls.Add(this.txtNDpto);
             this.metroTabPage8.HorizontalScrollbarBarColor = true;
             this.metroTabPage8.HorizontalScrollbarHighlightOnWheel = false;
@@ -582,16 +578,6 @@
             this.label10.TabIndex = 12;
             this.label10.Text = "Crear Nuevo Departamento";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(90, 111);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(157, 22);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Descripcion Depto";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -601,13 +587,6 @@
             this.label12.Size = new System.Drawing.Size(191, 22);
             this.label12.TabIndex = 10;
             this.label12.Text = "Nombre Departamento";
-            // 
-            // txtDDpto
-            // 
-            this.txtDDpto.Location = new System.Drawing.Point(287, 111);
-            this.txtDDpto.Name = "txtDDpto";
-            this.txtDDpto.Size = new System.Drawing.Size(136, 20);
-            this.txtDDpto.TabIndex = 9;
             // 
             // txtNDpto
             // 
@@ -1340,6 +1319,22 @@
             this.metroTabPage19.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage19.VerticalScrollbarSize = 10;
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(157, 184);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(66, 13);
+            this.label25.TabIndex = 26;
+            this.label25.Text = "nombre Tipo";
+            // 
+            // txtMNTIpo
+            // 
+            this.txtMNTIpo.Location = new System.Drawing.Point(277, 181);
+            this.txtMNTIpo.Name = "txtMNTIpo";
+            this.txtMNTIpo.Size = new System.Drawing.Size(100, 20);
+            this.txtMNTIpo.TabIndex = 25;
+            // 
             // listarTipo
             // 
             this.listarTipo.Location = new System.Drawing.Point(101, 3);
@@ -1472,22 +1467,6 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "add.png");
             // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(157, 184);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(66, 13);
-            this.label25.TabIndex = 26;
-            this.label25.Text = "nombre Tipo";
-            // 
-            // txtMNTIpo
-            // 
-            this.txtMNTIpo.Location = new System.Drawing.Point(277, 181);
-            this.txtMNTIpo.Name = "txtMNTIpo";
-            this.txtMNTIpo.Size = new System.Drawing.Size(100, 20);
-            this.txtMNTIpo.TabIndex = 25;
-            // 
             // OrionMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1619,9 +1598,7 @@
         private System.Windows.Forms.DataGridView dgvDepto;
         private System.Windows.Forms.Button CrearNDepto;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtDDpto;
         private System.Windows.Forms.TextBox txtNDpto;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
