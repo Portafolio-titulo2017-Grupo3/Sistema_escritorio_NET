@@ -56,6 +56,14 @@ namespace OrionEscritorio
             OracleConnection conexion = Conexion.abrirConexion();//Singleton
             OracleCommand orden = new OracleCommand(string.Format("DELETE FROM TIPO WHERE ID_TIPO='{0}'", idTipo), conexion);
             resp = orden.ExecuteNonQuery();
+            if (resp != 0)
+            {
+                MessageBox.Show("TIPO ELIMINADO CORRECTAMENTE");
+            }
+            else
+            {
+                MessageBox.Show("TIPO NO ELIMINADO");
+            }
             conexion.Close();
             return resp;
         }

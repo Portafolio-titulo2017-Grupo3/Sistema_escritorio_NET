@@ -34,6 +34,7 @@
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl2 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblFuncionario = new System.Windows.Forms.Label();
             this.lblpass = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
@@ -63,10 +64,10 @@
             this.btnBuscarUsu = new System.Windows.Forms.Button();
             this.dataListar = new System.Windows.Forms.DataGridView();
             this.metroTabPage7 = new MetroFramework.Controls.MetroTabPage();
-            this.BtnListUsuDesc = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.btnDesacUsu = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.BtnListEliminarUsu = new System.Windows.Forms.Button();
+            this.txtEliminarUsu = new System.Windows.Forms.TextBox();
+            this.btnEliminarUsu = new System.Windows.Forms.Button();
+            this.gridEliminarUsu = new System.Windows.Forms.DataGridView();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl3 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage8 = new MetroFramework.Controls.MetroTabPage();
@@ -86,10 +87,10 @@
             this.BuscarDepartamento = new System.Windows.Forms.Button();
             this.dgvDepto = new System.Windows.Forms.DataGridView();
             this.metroTabPage10 = new MetroFramework.Controls.MetroTabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.btnListarEliminarDpto = new System.Windows.Forms.Button();
+            this.txtEliminarDpto = new System.Windows.Forms.TextBox();
+            this.btnEliminarDpto = new System.Windows.Forms.Button();
+            this.gridEliminarDpto = new System.Windows.Forms.DataGridView();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl4 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage11 = new MetroFramework.Controls.MetroTabPage();
@@ -109,10 +110,10 @@
             this.BuscarMotivo = new System.Windows.Forms.Button();
             this.dgwMotivo = new System.Windows.Forms.DataGridView();
             this.metroTabPage13 = new MetroFramework.Controls.MetroTabPage();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.btnListarEliminarMotivo = new System.Windows.Forms.Button();
+            this.txtEliminarMotivo = new System.Windows.Forms.TextBox();
+            this.btnEliminarMotivo = new System.Windows.Forms.Button();
+            this.gridEliminarMotivo = new System.Windows.Forms.DataGridView();
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl5 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage14 = new MetroFramework.Controls.MetroTabPage();
@@ -137,10 +138,10 @@
             this.btnBuscarPerfil = new System.Windows.Forms.Button();
             this.dgwPerfil = new System.Windows.Forms.DataGridView();
             this.metroTabPage16 = new MetroFramework.Controls.MetroTabPage();
-            this.listPerfilDesac = new System.Windows.Forms.Button();
-            this.txtPerfilDesac = new System.Windows.Forms.TextBox();
-            this.btnBuscarPerfilDesac = new System.Windows.Forms.Button();
-            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.btnListarEliminarPerfil = new System.Windows.Forms.Button();
+            this.txtEliminarPerfil = new System.Windows.Forms.TextBox();
+            this.btnEliminarPerfil = new System.Windows.Forms.Button();
+            this.gridEliminarPerfil = new System.Windows.Forms.DataGridView();
             this.metroTabPage17 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl6 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage18 = new MetroFramework.Controls.MetroTabPage();
@@ -153,6 +154,9 @@
             this.label17 = new System.Windows.Forms.Label();
             this.txtNTipoDesc = new System.Windows.Forms.TextBox();
             this.metroTabPage19 = new MetroFramework.Controls.MetroTabPage();
+            this.lblmtipod = new System.Windows.Forms.Label();
+            this.lblmtiponame = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.txtMNTIpo = new System.Windows.Forms.TextBox();
             this.listarTipo = new System.Windows.Forms.Button();
@@ -169,45 +173,49 @@
             this.btnOscuro = new MetroFramework.Controls.MetroButton();
             this.StyleMain = new MetroFramework.Components.MetroStyleManager(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.label29 = new System.Windows.Forms.Label();
-            this.lblmtipod = new System.Windows.Forms.Label();
-            this.lblmtiponame = new System.Windows.Forms.Label();
+            this.btnListarEliminarTipo = new System.Windows.Forms.Button();
+            this.txtEliminarTipo = new System.Windows.Forms.TextBox();
+            this.btnEliminarTipo = new System.Windows.Forms.Button();
+            this.gridEliminarTipo = new System.Windows.Forms.DataGridView();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabControl2.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.metroTabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListar)).BeginInit();
             this.metroTabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEliminarUsu)).BeginInit();
             this.metroTabPage2.SuspendLayout();
             this.metroTabControl3.SuspendLayout();
             this.metroTabPage8.SuspendLayout();
             this.metroTabPage9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDepto)).BeginInit();
             this.metroTabPage10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEliminarDpto)).BeginInit();
             this.metroTabPage3.SuspendLayout();
             this.metroTabControl4.SuspendLayout();
             this.metroTabPage11.SuspendLayout();
             this.metroTabPage12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwMotivo)).BeginInit();
             this.metroTabPage13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEliminarMotivo)).BeginInit();
             this.metroTabPage4.SuspendLayout();
             this.metroTabControl5.SuspendLayout();
             this.metroTabPage14.SuspendLayout();
             this.metroTabPage15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwPerfil)).BeginInit();
             this.metroTabPage16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEliminarPerfil)).BeginInit();
             this.metroTabPage17.SuspendLayout();
             this.metroTabControl6.SuspendLayout();
             this.metroTabPage18.SuspendLayout();
             this.metroTabPage19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dwvTipo)).BeginInit();
+            this.metroTabPage20.SuspendLayout();
             this.metroTabPage21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StyleMain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEliminarTipo)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -245,15 +253,16 @@
             this.metroTabControl2.Controls.Add(this.metroTabPage5);
             this.metroTabControl2.Controls.Add(this.metroTabPage6);
             this.metroTabControl2.Controls.Add(this.metroTabPage7);
-            this.metroTabControl2.Location = new System.Drawing.Point(3, 3);
+            this.metroTabControl2.Location = new System.Drawing.Point(3, 0);
             this.metroTabControl2.Name = "metroTabControl2";
-            this.metroTabControl2.SelectedIndex = 0;
-            this.metroTabControl2.Size = new System.Drawing.Size(764, 356);
+            this.metroTabControl2.SelectedIndex = 2;
+            this.metroTabControl2.Size = new System.Drawing.Size(714, 340);
             this.metroTabControl2.TabIndex = 2;
             this.metroTabControl2.UseSelectable = true;
             // 
             // metroTabPage5
             // 
+            this.metroTabPage5.Controls.Add(this.pictureBox1);
             this.metroTabPage5.Controls.Add(this.lblFuncionario);
             this.metroTabPage5.Controls.Add(this.lblpass);
             this.metroTabPage5.Controls.Add(this.lblUsuario);
@@ -273,12 +282,23 @@
             this.metroTabPage5.HorizontalScrollbarSize = 10;
             this.metroTabPage5.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage5.Name = "metroTabPage5";
-            this.metroTabPage5.Size = new System.Drawing.Size(756, 314);
+            this.metroTabPage5.Size = new System.Drawing.Size(706, 298);
             this.metroTabPage5.TabIndex = 0;
             this.metroTabPage5.Text = "Ingresar";
             this.metroTabPage5.VerticalScrollbarBarColor = true;
             this.metroTabPage5.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage5.VerticalScrollbarSize = 10;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(670, 265);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // lblFuncionario
             // 
@@ -431,7 +451,7 @@
             this.metroTabPage6.HorizontalScrollbarSize = 10;
             this.metroTabPage6.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage6.Name = "metroTabPage6";
-            this.metroTabPage6.Size = new System.Drawing.Size(756, 314);
+            this.metroTabPage6.Size = new System.Drawing.Size(706, 298);
             this.metroTabPage6.TabIndex = 1;
             this.metroTabPage6.Text = "Modificar";
             this.metroTabPage6.VerticalScrollbarBarColor = true;
@@ -560,54 +580,56 @@
             // 
             // metroTabPage7
             // 
-            this.metroTabPage7.Controls.Add(this.BtnListUsuDesc);
-            this.metroTabPage7.Controls.Add(this.textBox3);
-            this.metroTabPage7.Controls.Add(this.btnDesacUsu);
-            this.metroTabPage7.Controls.Add(this.dataGridView1);
+            this.metroTabPage7.Controls.Add(this.BtnListEliminarUsu);
+            this.metroTabPage7.Controls.Add(this.txtEliminarUsu);
+            this.metroTabPage7.Controls.Add(this.btnEliminarUsu);
+            this.metroTabPage7.Controls.Add(this.gridEliminarUsu);
             this.metroTabPage7.HorizontalScrollbarBarColor = true;
             this.metroTabPage7.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage7.HorizontalScrollbarSize = 10;
             this.metroTabPage7.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage7.Name = "metroTabPage7";
-            this.metroTabPage7.Size = new System.Drawing.Size(756, 314);
+            this.metroTabPage7.Size = new System.Drawing.Size(706, 298);
             this.metroTabPage7.TabIndex = 2;
-            this.metroTabPage7.Text = "Desactivar";
+            this.metroTabPage7.Text = "Eliminar";
             this.metroTabPage7.VerticalScrollbarBarColor = true;
             this.metroTabPage7.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage7.VerticalScrollbarSize = 10;
             // 
-            // BtnListUsuDesc
+            // BtnListEliminarUsu
             // 
-            this.BtnListUsuDesc.Location = new System.Drawing.Point(134, 41);
-            this.BtnListUsuDesc.Name = "BtnListUsuDesc";
-            this.BtnListUsuDesc.Size = new System.Drawing.Size(95, 23);
-            this.BtnListUsuDesc.TabIndex = 26;
-            this.BtnListUsuDesc.Text = "Listar Usuario";
-            this.BtnListUsuDesc.UseVisualStyleBackColor = true;
+            this.BtnListEliminarUsu.Location = new System.Drawing.Point(134, 41);
+            this.BtnListEliminarUsu.Name = "BtnListEliminarUsu";
+            this.BtnListEliminarUsu.Size = new System.Drawing.Size(95, 23);
+            this.BtnListEliminarUsu.TabIndex = 26;
+            this.BtnListEliminarUsu.Text = "Listar Usuario";
+            this.BtnListEliminarUsu.UseVisualStyleBackColor = true;
+            this.BtnListEliminarUsu.Click += new System.EventHandler(this.BtnListEliminarUsu_Click);
             // 
-            // textBox3
+            // txtEliminarUsu
             // 
-            this.textBox3.Location = new System.Drawing.Point(343, 165);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 20;
+            this.txtEliminarUsu.Location = new System.Drawing.Point(343, 165);
+            this.txtEliminarUsu.Name = "txtEliminarUsu";
+            this.txtEliminarUsu.Size = new System.Drawing.Size(100, 20);
+            this.txtEliminarUsu.TabIndex = 20;
             // 
-            // btnDesacUsu
+            // btnEliminarUsu
             // 
-            this.btnDesacUsu.Location = new System.Drawing.Point(449, 163);
-            this.btnDesacUsu.Name = "btnDesacUsu";
-            this.btnDesacUsu.Size = new System.Drawing.Size(110, 23);
-            this.btnDesacUsu.TabIndex = 19;
-            this.btnDesacUsu.Text = "Desactivar Usuario";
-            this.btnDesacUsu.UseVisualStyleBackColor = true;
+            this.btnEliminarUsu.Location = new System.Drawing.Point(449, 163);
+            this.btnEliminarUsu.Name = "btnEliminarUsu";
+            this.btnEliminarUsu.Size = new System.Drawing.Size(110, 23);
+            this.btnEliminarUsu.TabIndex = 19;
+            this.btnEliminarUsu.Text = "Eliminar Usuario";
+            this.btnEliminarUsu.UseVisualStyleBackColor = true;
+            this.btnEliminarUsu.Click += new System.EventHandler(this.btnEliminarUsu_Click);
             // 
-            // dataGridView1
+            // gridEliminarUsu
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(134, 70);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(422, 78);
-            this.dataGridView1.TabIndex = 18;
+            this.gridEliminarUsu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridEliminarUsu.Location = new System.Drawing.Point(134, 70);
+            this.gridEliminarUsu.Name = "gridEliminarUsu";
+            this.gridEliminarUsu.Size = new System.Drawing.Size(422, 78);
+            this.gridEliminarUsu.TabIndex = 18;
             // 
             // metroTabPage2
             // 
@@ -629,9 +651,9 @@
             this.metroTabControl3.Controls.Add(this.metroTabPage8);
             this.metroTabControl3.Controls.Add(this.metroTabPage9);
             this.metroTabControl3.Controls.Add(this.metroTabPage10);
-            this.metroTabControl3.Location = new System.Drawing.Point(3, 3);
+            this.metroTabControl3.Location = new System.Drawing.Point(3, 0);
             this.metroTabControl3.Name = "metroTabControl3";
-            this.metroTabControl3.SelectedIndex = 1;
+            this.metroTabControl3.SelectedIndex = 2;
             this.metroTabControl3.Size = new System.Drawing.Size(701, 299);
             this.metroTabControl3.TabIndex = 3;
             this.metroTabControl3.UseSelectable = true;
@@ -814,10 +836,10 @@
             // 
             // metroTabPage10
             // 
-            this.metroTabPage10.Controls.Add(this.button2);
-            this.metroTabPage10.Controls.Add(this.textBox1);
-            this.metroTabPage10.Controls.Add(this.button3);
-            this.metroTabPage10.Controls.Add(this.dataGridView3);
+            this.metroTabPage10.Controls.Add(this.btnListarEliminarDpto);
+            this.metroTabPage10.Controls.Add(this.txtEliminarDpto);
+            this.metroTabPage10.Controls.Add(this.btnEliminarDpto);
+            this.metroTabPage10.Controls.Add(this.gridEliminarDpto);
             this.metroTabPage10.HorizontalScrollbarBarColor = true;
             this.metroTabPage10.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage10.HorizontalScrollbarSize = 10;
@@ -825,43 +847,45 @@
             this.metroTabPage10.Name = "metroTabPage10";
             this.metroTabPage10.Size = new System.Drawing.Size(693, 257);
             this.metroTabPage10.TabIndex = 2;
-            this.metroTabPage10.Text = "Desactivar";
+            this.metroTabPage10.Text = "Eliminar";
             this.metroTabPage10.VerticalScrollbarBarColor = true;
             this.metroTabPage10.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage10.VerticalScrollbarSize = 10;
             // 
-            // button2
+            // btnListarEliminarDpto
             // 
-            this.button2.Location = new System.Drawing.Point(121, 22);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Listar Dpto";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnListarEliminarDpto.Location = new System.Drawing.Point(121, 22);
+            this.btnListarEliminarDpto.Name = "btnListarEliminarDpto";
+            this.btnListarEliminarDpto.Size = new System.Drawing.Size(75, 23);
+            this.btnListarEliminarDpto.TabIndex = 21;
+            this.btnListarEliminarDpto.Text = "Listar Dpto";
+            this.btnListarEliminarDpto.UseVisualStyleBackColor = true;
+            this.btnListarEliminarDpto.Click += new System.EventHandler(this.btnListarEliminarDpto_Click);
             // 
-            // textBox1
+            // txtEliminarDpto
             // 
-            this.textBox1.Location = new System.Drawing.Point(421, 137);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 20;
+            this.txtEliminarDpto.Location = new System.Drawing.Point(421, 137);
+            this.txtEliminarDpto.Name = "txtEliminarDpto";
+            this.txtEliminarDpto.Size = new System.Drawing.Size(100, 20);
+            this.txtEliminarDpto.TabIndex = 20;
             // 
-            // button3
+            // btnEliminarDpto
             // 
-            this.button3.Location = new System.Drawing.Point(527, 135);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 23);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "Seleccionar Dpto";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEliminarDpto.Location = new System.Drawing.Point(527, 135);
+            this.btnEliminarDpto.Name = "btnEliminarDpto";
+            this.btnEliminarDpto.Size = new System.Drawing.Size(110, 23);
+            this.btnEliminarDpto.TabIndex = 19;
+            this.btnEliminarDpto.Text = "Eliminar Dpto";
+            this.btnEliminarDpto.UseVisualStyleBackColor = true;
+            this.btnEliminarDpto.Click += new System.EventHandler(this.btnEliminarDpto_Click);
             // 
-            // dataGridView3
+            // gridEliminarDpto
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(121, 51);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(516, 78);
-            this.dataGridView3.TabIndex = 18;
+            this.gridEliminarDpto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridEliminarDpto.Location = new System.Drawing.Point(121, 51);
+            this.gridEliminarDpto.Name = "gridEliminarDpto";
+            this.gridEliminarDpto.Size = new System.Drawing.Size(516, 78);
+            this.gridEliminarDpto.TabIndex = 18;
             // 
             // metroTabPage3
             // 
@@ -883,10 +907,10 @@
             this.metroTabControl4.Controls.Add(this.metroTabPage11);
             this.metroTabControl4.Controls.Add(this.metroTabPage12);
             this.metroTabControl4.Controls.Add(this.metroTabPage13);
-            this.metroTabControl4.Location = new System.Drawing.Point(0, -2);
+            this.metroTabControl4.Location = new System.Drawing.Point(3, 0);
             this.metroTabControl4.Name = "metroTabControl4";
-            this.metroTabControl4.SelectedIndex = 1;
-            this.metroTabControl4.Size = new System.Drawing.Size(877, 409);
+            this.metroTabControl4.SelectedIndex = 2;
+            this.metroTabControl4.Size = new System.Drawing.Size(717, 349);
             this.metroTabControl4.TabIndex = 3;
             this.metroTabControl4.UseSelectable = true;
             // 
@@ -902,7 +926,7 @@
             this.metroTabPage11.HorizontalScrollbarSize = 10;
             this.metroTabPage11.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage11.Name = "metroTabPage11";
-            this.metroTabPage11.Size = new System.Drawing.Size(869, 367);
+            this.metroTabPage11.Size = new System.Drawing.Size(709, 307);
             this.metroTabPage11.TabIndex = 0;
             this.metroTabPage11.Text = "Ingresar";
             this.metroTabPage11.VerticalScrollbarBarColor = true;
@@ -974,7 +998,7 @@
             this.metroTabPage12.HorizontalScrollbarSize = 10;
             this.metroTabPage12.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage12.Name = "metroTabPage12";
-            this.metroTabPage12.Size = new System.Drawing.Size(869, 367);
+            this.metroTabPage12.Size = new System.Drawing.Size(709, 307);
             this.metroTabPage12.TabIndex = 1;
             this.metroTabPage12.Text = "Modificar";
             this.metroTabPage12.VerticalScrollbarBarColor = true;
@@ -1068,54 +1092,56 @@
             // 
             // metroTabPage13
             // 
-            this.metroTabPage13.Controls.Add(this.button6);
-            this.metroTabPage13.Controls.Add(this.textBox6);
-            this.metroTabPage13.Controls.Add(this.button7);
-            this.metroTabPage13.Controls.Add(this.dataGridView5);
+            this.metroTabPage13.Controls.Add(this.btnListarEliminarMotivo);
+            this.metroTabPage13.Controls.Add(this.txtEliminarMotivo);
+            this.metroTabPage13.Controls.Add(this.btnEliminarMotivo);
+            this.metroTabPage13.Controls.Add(this.gridEliminarMotivo);
             this.metroTabPage13.HorizontalScrollbarBarColor = true;
             this.metroTabPage13.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage13.HorizontalScrollbarSize = 10;
             this.metroTabPage13.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage13.Name = "metroTabPage13";
-            this.metroTabPage13.Size = new System.Drawing.Size(869, 367);
+            this.metroTabPage13.Size = new System.Drawing.Size(709, 307);
             this.metroTabPage13.TabIndex = 2;
-            this.metroTabPage13.Text = "Desactivar";
+            this.metroTabPage13.Text = "Eliminar";
             this.metroTabPage13.VerticalScrollbarBarColor = true;
             this.metroTabPage13.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage13.VerticalScrollbarSize = 10;
             // 
-            // button6
+            // btnListarEliminarMotivo
             // 
-            this.button6.Location = new System.Drawing.Point(109, 21);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 21;
-            this.button6.Text = "Listar Motivo";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnListarEliminarMotivo.Location = new System.Drawing.Point(109, 21);
+            this.btnListarEliminarMotivo.Name = "btnListarEliminarMotivo";
+            this.btnListarEliminarMotivo.Size = new System.Drawing.Size(75, 23);
+            this.btnListarEliminarMotivo.TabIndex = 21;
+            this.btnListarEliminarMotivo.Text = "Listar Motivo";
+            this.btnListarEliminarMotivo.UseVisualStyleBackColor = true;
+            this.btnListarEliminarMotivo.Click += new System.EventHandler(this.btnListarEliminarMotivo_Click);
             // 
-            // textBox6
+            // txtEliminarMotivo
             // 
-            this.textBox6.Location = new System.Drawing.Point(409, 136);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 20;
+            this.txtEliminarMotivo.Location = new System.Drawing.Point(409, 136);
+            this.txtEliminarMotivo.Name = "txtEliminarMotivo";
+            this.txtEliminarMotivo.Size = new System.Drawing.Size(100, 20);
+            this.txtEliminarMotivo.TabIndex = 20;
             // 
-            // button7
+            // btnEliminarMotivo
             // 
-            this.button7.Location = new System.Drawing.Point(515, 134);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(110, 23);
-            this.button7.TabIndex = 19;
-            this.button7.Text = "Seleccionar Motivo";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnEliminarMotivo.Location = new System.Drawing.Point(515, 134);
+            this.btnEliminarMotivo.Name = "btnEliminarMotivo";
+            this.btnEliminarMotivo.Size = new System.Drawing.Size(110, 23);
+            this.btnEliminarMotivo.TabIndex = 19;
+            this.btnEliminarMotivo.Text = "Eliminar Motivo";
+            this.btnEliminarMotivo.UseVisualStyleBackColor = true;
+            this.btnEliminarMotivo.Click += new System.EventHandler(this.btnEliminarMotivo_Click);
             // 
-            // dataGridView5
+            // gridEliminarMotivo
             // 
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(109, 50);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(516, 78);
-            this.dataGridView5.TabIndex = 18;
+            this.gridEliminarMotivo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridEliminarMotivo.Location = new System.Drawing.Point(109, 50);
+            this.gridEliminarMotivo.Name = "gridEliminarMotivo";
+            this.gridEliminarMotivo.Size = new System.Drawing.Size(516, 78);
+            this.gridEliminarMotivo.TabIndex = 18;
             // 
             // metroTabPage4
             // 
@@ -1137,10 +1163,10 @@
             this.metroTabControl5.Controls.Add(this.metroTabPage14);
             this.metroTabControl5.Controls.Add(this.metroTabPage15);
             this.metroTabControl5.Controls.Add(this.metroTabPage16);
-            this.metroTabControl5.Location = new System.Drawing.Point(0, -2);
+            this.metroTabControl5.Location = new System.Drawing.Point(3, 0);
             this.metroTabControl5.Name = "metroTabControl5";
-            this.metroTabControl5.SelectedIndex = 1;
-            this.metroTabControl5.Size = new System.Drawing.Size(880, 409);
+            this.metroTabControl5.SelectedIndex = 2;
+            this.metroTabControl5.Size = new System.Drawing.Size(714, 347);
             this.metroTabControl5.TabIndex = 3;
             this.metroTabControl5.UseSelectable = true;
             // 
@@ -1159,7 +1185,7 @@
             this.metroTabPage14.HorizontalScrollbarSize = 10;
             this.metroTabPage14.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage14.Name = "metroTabPage14";
-            this.metroTabPage14.Size = new System.Drawing.Size(872, 367);
+            this.metroTabPage14.Size = new System.Drawing.Size(706, 305);
             this.metroTabPage14.TabIndex = 0;
             this.metroTabPage14.Text = "Ingresar";
             this.metroTabPage14.VerticalScrollbarBarColor = true;
@@ -1260,7 +1286,7 @@
             this.metroTabPage15.HorizontalScrollbarSize = 10;
             this.metroTabPage15.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage15.Name = "metroTabPage15";
-            this.metroTabPage15.Size = new System.Drawing.Size(872, 367);
+            this.metroTabPage15.Size = new System.Drawing.Size(706, 305);
             this.metroTabPage15.TabIndex = 1;
             this.metroTabPage15.Text = "Modificar";
             this.metroTabPage15.VerticalScrollbarBarColor = true;
@@ -1375,55 +1401,57 @@
             // 
             // metroTabPage16
             // 
-            this.metroTabPage16.Controls.Add(this.listPerfilDesac);
-            this.metroTabPage16.Controls.Add(this.txtPerfilDesac);
-            this.metroTabPage16.Controls.Add(this.btnBuscarPerfilDesac);
-            this.metroTabPage16.Controls.Add(this.dataGridView7);
+            this.metroTabPage16.Controls.Add(this.btnListarEliminarPerfil);
+            this.metroTabPage16.Controls.Add(this.txtEliminarPerfil);
+            this.metroTabPage16.Controls.Add(this.btnEliminarPerfil);
+            this.metroTabPage16.Controls.Add(this.gridEliminarPerfil);
             this.metroTabPage16.HorizontalScrollbarBarColor = true;
             this.metroTabPage16.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage16.HorizontalScrollbarSize = 10;
             this.metroTabPage16.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage16.Name = "metroTabPage16";
-            this.metroTabPage16.Size = new System.Drawing.Size(872, 367);
+            this.metroTabPage16.Size = new System.Drawing.Size(706, 305);
             this.metroTabPage16.TabIndex = 2;
-            this.metroTabPage16.Text = "Desactivar";
+            this.metroTabPage16.Text = "Eliminar";
             this.metroTabPage16.VerticalScrollbarBarColor = true;
             this.metroTabPage16.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage16.VerticalScrollbarSize = 10;
             // 
-            // listPerfilDesac
+            // btnListarEliminarPerfil
             // 
-            this.listPerfilDesac.Location = new System.Drawing.Point(124, 18);
-            this.listPerfilDesac.Name = "listPerfilDesac";
-            this.listPerfilDesac.Size = new System.Drawing.Size(75, 23);
-            this.listPerfilDesac.TabIndex = 30;
-            this.listPerfilDesac.Text = "Listar Perfil";
-            this.listPerfilDesac.UseVisualStyleBackColor = true;
+            this.btnListarEliminarPerfil.Location = new System.Drawing.Point(124, 18);
+            this.btnListarEliminarPerfil.Name = "btnListarEliminarPerfil";
+            this.btnListarEliminarPerfil.Size = new System.Drawing.Size(75, 23);
+            this.btnListarEliminarPerfil.TabIndex = 30;
+            this.btnListarEliminarPerfil.Text = "Listar Perfil";
+            this.btnListarEliminarPerfil.UseVisualStyleBackColor = true;
+            this.btnListarEliminarPerfil.Click += new System.EventHandler(this.btnListarEliminarPerfil_Click);
             // 
-            // txtPerfilDesac
+            // txtEliminarPerfil
             // 
-            this.txtPerfilDesac.Location = new System.Drawing.Point(350, 146);
-            this.txtPerfilDesac.Name = "txtPerfilDesac";
-            this.txtPerfilDesac.Size = new System.Drawing.Size(100, 20);
-            this.txtPerfilDesac.TabIndex = 29;
+            this.txtEliminarPerfil.Location = new System.Drawing.Point(350, 146);
+            this.txtEliminarPerfil.Name = "txtEliminarPerfil";
+            this.txtEliminarPerfil.Size = new System.Drawing.Size(100, 20);
+            this.txtEliminarPerfil.TabIndex = 29;
             // 
-            // btnBuscarPerfilDesac
+            // btnEliminarPerfil
             // 
-            this.btnBuscarPerfilDesac.Location = new System.Drawing.Point(456, 144);
-            this.btnBuscarPerfilDesac.Name = "btnBuscarPerfilDesac";
-            this.btnBuscarPerfilDesac.Size = new System.Drawing.Size(110, 23);
-            this.btnBuscarPerfilDesac.TabIndex = 28;
-            this.btnBuscarPerfilDesac.Text = "Seleccionar Perfil";
-            this.btnBuscarPerfilDesac.UseVisualStyleBackColor = true;
+            this.btnEliminarPerfil.Location = new System.Drawing.Point(456, 144);
+            this.btnEliminarPerfil.Name = "btnEliminarPerfil";
+            this.btnEliminarPerfil.Size = new System.Drawing.Size(110, 23);
+            this.btnEliminarPerfil.TabIndex = 28;
+            this.btnEliminarPerfil.Text = "Eliminar Perfil";
+            this.btnEliminarPerfil.UseVisualStyleBackColor = true;
+            this.btnEliminarPerfil.Click += new System.EventHandler(this.btnEliminarPerfil_Click);
             // 
-            // dataGridView7
+            // gridEliminarPerfil
             // 
-            this.dataGridView7.AllowUserToOrderColumns = true;
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Location = new System.Drawing.Point(124, 47);
-            this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.Size = new System.Drawing.Size(422, 78);
-            this.dataGridView7.TabIndex = 27;
+            this.gridEliminarPerfil.AllowUserToOrderColumns = true;
+            this.gridEliminarPerfil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridEliminarPerfil.Location = new System.Drawing.Point(124, 47);
+            this.gridEliminarPerfil.Name = "gridEliminarPerfil";
+            this.gridEliminarPerfil.Size = new System.Drawing.Size(422, 78);
+            this.gridEliminarPerfil.TabIndex = 27;
             // 
             // metroTabPage17
             // 
@@ -1445,10 +1473,10 @@
             this.metroTabControl6.Controls.Add(this.metroTabPage18);
             this.metroTabControl6.Controls.Add(this.metroTabPage19);
             this.metroTabControl6.Controls.Add(this.metroTabPage20);
-            this.metroTabControl6.Location = new System.Drawing.Point(0, -2);
+            this.metroTabControl6.Location = new System.Drawing.Point(3, 0);
             this.metroTabControl6.Name = "metroTabControl6";
-            this.metroTabControl6.SelectedIndex = 1;
-            this.metroTabControl6.Size = new System.Drawing.Size(880, 409);
+            this.metroTabControl6.SelectedIndex = 2;
+            this.metroTabControl6.Size = new System.Drawing.Size(717, 349);
             this.metroTabControl6.TabIndex = 3;
             this.metroTabControl6.UseSelectable = true;
             // 
@@ -1467,7 +1495,7 @@
             this.metroTabPage18.HorizontalScrollbarSize = 10;
             this.metroTabPage18.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage18.Name = "metroTabPage18";
-            this.metroTabPage18.Size = new System.Drawing.Size(872, 367);
+            this.metroTabPage18.Size = new System.Drawing.Size(709, 307);
             this.metroTabPage18.TabIndex = 0;
             this.metroTabPage18.Text = "Ingresar";
             this.metroTabPage18.VerticalScrollbarBarColor = true;
@@ -1571,12 +1599,43 @@
             this.metroTabPage19.HorizontalScrollbarSize = 10;
             this.metroTabPage19.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage19.Name = "metroTabPage19";
-            this.metroTabPage19.Size = new System.Drawing.Size(872, 367);
+            this.metroTabPage19.Size = new System.Drawing.Size(709, 307);
             this.metroTabPage19.TabIndex = 1;
             this.metroTabPage19.Text = "Modificar";
             this.metroTabPage19.VerticalScrollbarBarColor = true;
             this.metroTabPage19.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage19.VerticalScrollbarSize = 10;
+            // 
+            // lblmtipod
+            // 
+            this.lblmtipod.AutoSize = true;
+            this.lblmtipod.ForeColor = System.Drawing.Color.Red;
+            this.lblmtipod.Location = new System.Drawing.Point(383, 219);
+            this.lblmtipod.Name = "lblmtipod";
+            this.lblmtipod.Size = new System.Drawing.Size(161, 13);
+            this.lblmtipod.TabIndex = 32;
+            this.lblmtipod.Text = "*INGRESE UNA DESCRIPCION";
+            this.lblmtipod.Visible = false;
+            // 
+            // lblmtiponame
+            // 
+            this.lblmtiponame.AutoSize = true;
+            this.lblmtiponame.ForeColor = System.Drawing.Color.Red;
+            this.lblmtiponame.Location = new System.Drawing.Point(383, 181);
+            this.lblmtiponame.Name = "lblmtiponame";
+            this.lblmtiponame.Size = new System.Drawing.Size(128, 13);
+            this.lblmtiponame.TabIndex = 31;
+            this.lblmtiponame.Text = "*INGRESE UN NOMBRE";
+            this.lblmtiponame.Visible = false;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(272, 121);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(123, 13);
+            this.label29.TabIndex = 27;
+            this.label29.Text = "Seleccionar ID DE TIPO";
             // 
             // label25
             // 
@@ -1663,14 +1722,18 @@
             // 
             // metroTabPage20
             // 
+            this.metroTabPage20.Controls.Add(this.btnListarEliminarTipo);
+            this.metroTabPage20.Controls.Add(this.txtEliminarTipo);
+            this.metroTabPage20.Controls.Add(this.btnEliminarTipo);
+            this.metroTabPage20.Controls.Add(this.gridEliminarTipo);
             this.metroTabPage20.HorizontalScrollbarBarColor = true;
             this.metroTabPage20.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage20.HorizontalScrollbarSize = 10;
             this.metroTabPage20.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage20.Name = "metroTabPage20";
-            this.metroTabPage20.Size = new System.Drawing.Size(872, 367);
+            this.metroTabPage20.Size = new System.Drawing.Size(709, 307);
             this.metroTabPage20.TabIndex = 2;
-            this.metroTabPage20.Text = "Desactivar";
+            this.metroTabPage20.Text = "Eliminar";
             this.metroTabPage20.VerticalScrollbarBarColor = true;
             this.metroTabPage20.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage20.VerticalScrollbarSize = 10;
@@ -1732,36 +1795,41 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "add.png");
             // 
-            // label29
+            // btnListarEliminarTipo
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(272, 121);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(123, 13);
-            this.label29.TabIndex = 27;
-            this.label29.Text = "Seleccionar ID DE TIPO";
+            this.btnListarEliminarTipo.Location = new System.Drawing.Point(136, 15);
+            this.btnListarEliminarTipo.Name = "btnListarEliminarTipo";
+            this.btnListarEliminarTipo.Size = new System.Drawing.Size(75, 23);
+            this.btnListarEliminarTipo.TabIndex = 34;
+            this.btnListarEliminarTipo.Text = "Listar Tipo";
+            this.btnListarEliminarTipo.UseVisualStyleBackColor = true;
+            this.btnListarEliminarTipo.Click += new System.EventHandler(this.btnListarEliminarTipo_Click);
             // 
-            // lblmtipod
+            // txtEliminarTipo
             // 
-            this.lblmtipod.AutoSize = true;
-            this.lblmtipod.ForeColor = System.Drawing.Color.Red;
-            this.lblmtipod.Location = new System.Drawing.Point(383, 219);
-            this.lblmtipod.Name = "lblmtipod";
-            this.lblmtipod.Size = new System.Drawing.Size(161, 13);
-            this.lblmtipod.TabIndex = 32;
-            this.lblmtipod.Text = "*INGRESE UNA DESCRIPCION";
-            this.lblmtipod.Visible = false;
+            this.txtEliminarTipo.Location = new System.Drawing.Point(362, 143);
+            this.txtEliminarTipo.Name = "txtEliminarTipo";
+            this.txtEliminarTipo.Size = new System.Drawing.Size(100, 20);
+            this.txtEliminarTipo.TabIndex = 33;
             // 
-            // lblmtiponame
+            // btnEliminarTipo
             // 
-            this.lblmtiponame.AutoSize = true;
-            this.lblmtiponame.ForeColor = System.Drawing.Color.Red;
-            this.lblmtiponame.Location = new System.Drawing.Point(383, 181);
-            this.lblmtiponame.Name = "lblmtiponame";
-            this.lblmtiponame.Size = new System.Drawing.Size(128, 13);
-            this.lblmtiponame.TabIndex = 31;
-            this.lblmtiponame.Text = "*INGRESE UN NOMBRE";
-            this.lblmtiponame.Visible = false;
+            this.btnEliminarTipo.Location = new System.Drawing.Point(468, 141);
+            this.btnEliminarTipo.Name = "btnEliminarTipo";
+            this.btnEliminarTipo.Size = new System.Drawing.Size(110, 23);
+            this.btnEliminarTipo.TabIndex = 32;
+            this.btnEliminarTipo.Text = "Eliminar Tipo";
+            this.btnEliminarTipo.UseVisualStyleBackColor = true;
+            this.btnEliminarTipo.Click += new System.EventHandler(this.btnEliminarTipo_Click);
+            // 
+            // gridEliminarTipo
+            // 
+            this.gridEliminarTipo.AllowUserToOrderColumns = true;
+            this.gridEliminarTipo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridEliminarTipo.Location = new System.Drawing.Point(136, 44);
+            this.gridEliminarTipo.Name = "gridEliminarTipo";
+            this.gridEliminarTipo.Size = new System.Drawing.Size(422, 78);
+            this.gridEliminarTipo.TabIndex = 31;
             // 
             // OrionMain
             // 
@@ -1778,12 +1846,13 @@
             this.metroTabControl2.ResumeLayout(false);
             this.metroTabPage5.ResumeLayout(false);
             this.metroTabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.metroTabPage6.ResumeLayout(false);
             this.metroTabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListar)).EndInit();
             this.metroTabPage7.ResumeLayout(false);
             this.metroTabPage7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEliminarUsu)).EndInit();
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabControl3.ResumeLayout(false);
             this.metroTabPage8.ResumeLayout(false);
@@ -1793,7 +1862,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDepto)).EndInit();
             this.metroTabPage10.ResumeLayout(false);
             this.metroTabPage10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEliminarDpto)).EndInit();
             this.metroTabPage3.ResumeLayout(false);
             this.metroTabControl4.ResumeLayout(false);
             this.metroTabPage11.ResumeLayout(false);
@@ -1803,7 +1872,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgwMotivo)).EndInit();
             this.metroTabPage13.ResumeLayout(false);
             this.metroTabPage13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEliminarMotivo)).EndInit();
             this.metroTabPage4.ResumeLayout(false);
             this.metroTabControl5.ResumeLayout(false);
             this.metroTabPage14.ResumeLayout(false);
@@ -1813,7 +1882,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgwPerfil)).EndInit();
             this.metroTabPage16.ResumeLayout(false);
             this.metroTabPage16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEliminarPerfil)).EndInit();
             this.metroTabPage17.ResumeLayout(false);
             this.metroTabControl6.ResumeLayout(false);
             this.metroTabPage18.ResumeLayout(false);
@@ -1821,9 +1890,12 @@
             this.metroTabPage19.ResumeLayout(false);
             this.metroTabPage19.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dwvTipo)).EndInit();
+            this.metroTabPage20.ResumeLayout(false);
+            this.metroTabPage20.PerformLayout();
             this.metroTabPage21.ResumeLayout(false);
             this.metroTabPage21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StyleMain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEliminarTipo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1881,10 +1953,10 @@
         private System.Windows.Forms.TextBox txtBUser;
         private System.Windows.Forms.Button btnBuscarUsu;
         private System.Windows.Forms.DataGridView dataListar;
-        private System.Windows.Forms.Button BtnListUsuDesc;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button btnDesacUsu;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button BtnListEliminarUsu;
+        private System.Windows.Forms.TextBox txtEliminarUsu;
+        private System.Windows.Forms.Button btnEliminarUsu;
+        private System.Windows.Forms.DataGridView gridEliminarUsu;
         private System.Windows.Forms.Button ListModDpto;
         private System.Windows.Forms.Button btnMDpto;
         private System.Windows.Forms.Label label9;
@@ -1896,10 +1968,10 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtNDpto;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Button btnListarEliminarDpto;
+        private System.Windows.Forms.TextBox txtEliminarDpto;
+        private System.Windows.Forms.Button btnEliminarDpto;
+        private System.Windows.Forms.DataGridView gridEliminarDpto;
         private System.Windows.Forms.Button CrearNMotivo;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
@@ -1911,10 +1983,10 @@
         private System.Windows.Forms.TextBox txtbuscarMotivo;
         private System.Windows.Forms.Button BuscarMotivo;
         private System.Windows.Forms.DataGridView dgwMotivo;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.Button btnListarEliminarMotivo;
+        private System.Windows.Forms.TextBox txtEliminarMotivo;
+        private System.Windows.Forms.Button btnEliminarMotivo;
+        private System.Windows.Forms.DataGridView gridEliminarMotivo;
         private System.Windows.Forms.Button btnNPerfil;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txtDPerfil;
@@ -1930,10 +2002,10 @@
         private System.Windows.Forms.TextBox txtBPerfil;
         private System.Windows.Forms.Button btnBuscarPerfil;
         private System.Windows.Forms.DataGridView dgwPerfil;
-        private System.Windows.Forms.Button listPerfilDesac;
-        private System.Windows.Forms.TextBox txtPerfilDesac;
-        private System.Windows.Forms.Button btnBuscarPerfilDesac;
-        private System.Windows.Forms.DataGridView dataGridView7;
+        private System.Windows.Forms.Button btnListarEliminarPerfil;
+        private System.Windows.Forms.TextBox txtEliminarPerfil;
+        private System.Windows.Forms.Button btnEliminarPerfil;
+        private System.Windows.Forms.DataGridView gridEliminarPerfil;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.ComboBox cbxModPerfil;
         private System.Windows.Forms.Button btnNTipo;
@@ -1972,5 +2044,10 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label lblmtipod;
         private System.Windows.Forms.Label lblmtiponame;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnListarEliminarTipo;
+        private System.Windows.Forms.TextBox txtEliminarTipo;
+        private System.Windows.Forms.Button btnEliminarTipo;
+        private System.Windows.Forms.DataGridView gridEliminarTipo;
     }
 }

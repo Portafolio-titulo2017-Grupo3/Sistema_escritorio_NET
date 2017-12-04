@@ -69,6 +69,14 @@ namespace OrionEscritorio
             OracleConnection conexion = Conexion.abrirConexion();//Singleton
             OracleCommand orden = new OracleCommand(string.Format("DELETE FROM DEPARTAMENTO WHERE ID_DEPTO='{0}'", idDpto), conexion);
             resp = orden.ExecuteNonQuery();
+            if (resp != 0)
+            {
+                MessageBox.Show("DEPARTAMENTO ELIMINADO CORRECTAMENTE");
+            }
+            else
+            {
+                MessageBox.Show("DEPARTAMENTO NO ELIMINADO");
+            }
             conexion.Close();
             return resp;
         }

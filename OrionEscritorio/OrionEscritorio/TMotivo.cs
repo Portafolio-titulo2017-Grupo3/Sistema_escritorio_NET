@@ -56,6 +56,14 @@ namespace OrionEscritorio
             OracleConnection conexion = Conexion.abrirConexion();//Singleton
             OracleCommand orden = new OracleCommand(string.Format("DELETE FROM MOTIVO WHERE ID_MOTIVO='{0}'", idMotivo), conexion);
             resp = orden.ExecuteNonQuery();
+            if (resp != 0)
+            {
+                MessageBox.Show("MOTIVO ELIMINADO CORRECTAMENTE");
+            }
+            else
+            {
+                MessageBox.Show("MOTIVO NO ELIMINADO");
+            }
             conexion.Close();
             return resp;
         }

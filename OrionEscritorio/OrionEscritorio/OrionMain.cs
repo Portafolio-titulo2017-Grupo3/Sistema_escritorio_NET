@@ -732,5 +732,76 @@ namespace OrionEscritorio
         {
             OrionEscritoriok.validar.soloLetras(e);
         }
+
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("Mensaje de ayuda");
+        }
+
+        private void BtnListEliminarUsu_Click(object sender, EventArgs e)
+        {
+            //dataListar.DataSource = TUsuario.listarUsuario();
+            gridEliminarUsu.DataSource = TUsuario.listarUsuario();
+        }
+
+        private void btnListarEliminarDpto_Click(object sender, EventArgs e)
+        {
+            gridEliminarDpto.DataSource = TDepartamento.listarDepartamento();
+        }
+
+        private void btnListarEliminarMotivo_Click(object sender, EventArgs e)
+        {
+            gridEliminarMotivo.DataSource = TMotivo.listarMotivo();
+        }
+
+        private void btnListarEliminarPerfil_Click(object sender, EventArgs e)
+        {
+            gridEliminarPerfil.DataSource = TPerfil.listarPerfil();
+        }
+
+        private void btnEliminarUsu_Click(object sender, EventArgs e)
+        {
+            int idusurio = Convert.ToInt32(txtEliminarUsu.Text);
+            TUsuario tusuario = new TUsuario();        
+
+            tusuario.eliminarUsuario(idusurio);
+        }
+
+        private void btnEliminarDpto_Click(object sender, EventArgs e)
+        {
+            int idDpto = Convert.ToInt32(txtEliminarDpto.Text);
+            TDepartamento tdpto = new TDepartamento();
+
+            tdpto.eliminarDepartamento(idDpto);
+        }
+
+        private void btnEliminarMotivo_Click(object sender, EventArgs e)
+        {
+            int idMotivo = Convert.ToInt32(txtEliminarMotivo.Text);
+            TMotivo tMotivo = new TMotivo();
+
+            tMotivo.eliminarMotivo(idMotivo);
+        }
+
+        private void btnEliminarPerfil_Click(object sender, EventArgs e)
+        {
+            int idPerfil = Convert.ToInt32(txtEliminarPerfil.Text);
+            TPerfil tPerfil = new TPerfil();
+
+            tPerfil.eliminarPerfil(idPerfil);
+        }
+
+        private void btnListarEliminarTipo_Click(object sender, EventArgs e)
+        {
+            gridEliminarTipo.DataSource = TTipo.listarTipo();
+        }
+
+        private void btnEliminarTipo_Click(object sender, EventArgs e)
+        {
+            int idTipo = Convert.ToInt32(txtEliminarTipo.Text);
+            TTipo tTipo = new TTipo();
+
+            tTipo.eliminarTipo(idTipo);
+        }
     }
 }
