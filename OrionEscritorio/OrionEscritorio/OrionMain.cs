@@ -803,5 +803,20 @@ namespace OrionEscritorio
 
             tTipo.eliminarTipo(idTipo);
         }
+
+        private void label27_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBuscarDpto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEliminarDpto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

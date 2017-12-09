@@ -167,16 +167,17 @@
             this.btnBTipo = new System.Windows.Forms.Button();
             this.dwvTipo = new System.Windows.Forms.DataGridView();
             this.metroTabPage20 = new MetroFramework.Controls.MetroTabPage();
+            this.btnListarEliminarTipo = new System.Windows.Forms.Button();
+            this.txtEliminarTipo = new System.Windows.Forms.TextBox();
+            this.btnEliminarTipo = new System.Windows.Forms.Button();
+            this.gridEliminarTipo = new System.Windows.Forms.DataGridView();
             this.metroTabPage21 = new MetroFramework.Controls.MetroTabPage();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.btnClaro = new MetroFramework.Controls.MetroButton();
             this.btnOscuro = new MetroFramework.Controls.MetroButton();
             this.StyleMain = new MetroFramework.Components.MetroStyleManager(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.btnListarEliminarTipo = new System.Windows.Forms.Button();
-            this.txtEliminarTipo = new System.Windows.Forms.TextBox();
-            this.btnEliminarTipo = new System.Windows.Forms.Button();
-            this.gridEliminarTipo = new System.Windows.Forms.DataGridView();
+            this.label30 = new System.Windows.Forms.Label();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabControl2.SuspendLayout();
@@ -213,9 +214,9 @@
             this.metroTabPage19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dwvTipo)).BeginInit();
             this.metroTabPage20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEliminarTipo)).BeginInit();
             this.metroTabPage21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StyleMain)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridEliminarTipo)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -228,7 +229,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage21);
             this.metroTabControl1.Location = new System.Drawing.Point(8, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 4;
+            this.metroTabControl1.SelectedIndex = 2;
             this.metroTabControl1.Size = new System.Drawing.Size(721, 385);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
@@ -753,7 +754,7 @@
             // 
             this.lbldepM.AutoSize = true;
             this.lbldepM.ForeColor = System.Drawing.Color.Red;
-            this.lbldepM.Location = new System.Drawing.Point(533, 198);
+            this.lbldepM.Location = new System.Drawing.Point(481, 207);
             this.lbldepM.Name = "lbldepM";
             this.lbldepM.Size = new System.Drawing.Size(128, 13);
             this.lbldepM.TabIndex = 22;
@@ -763,15 +764,16 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(184, 134);
+            this.label27.Location = new System.Drawing.Point(124, 147);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(170, 13);
             this.label27.TabIndex = 21;
             this.label27.Text = "Seleccione la ID del departamento";
+            this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // ListModDpto
             // 
-            this.ListModDpto.Location = new System.Drawing.Point(86, 4);
+            this.ListModDpto.Location = new System.Drawing.Point(127, 14);
             this.ListModDpto.Name = "ListModDpto";
             this.ListModDpto.Size = new System.Drawing.Size(75, 23);
             this.ListModDpto.TabIndex = 17;
@@ -782,7 +784,7 @@
             // btnMDpto
             // 
             this.btnMDpto.Enabled = false;
-            this.btnMDpto.Location = new System.Drawing.Point(360, 221);
+            this.btnMDpto.Location = new System.Drawing.Point(316, 230);
             this.btnMDpto.Name = "btnMDpto";
             this.btnMDpto.Size = new System.Drawing.Size(131, 23);
             this.btnMDpto.TabIndex = 16;
@@ -793,7 +795,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(204, 198);
+            this.label9.Location = new System.Drawing.Point(124, 207);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(131, 13);
             this.label9.TabIndex = 14;
@@ -802,7 +804,7 @@
             // txtMDptoNom
             // 
             this.txtMDptoNom.Enabled = false;
-            this.txtMDptoNom.Location = new System.Drawing.Point(341, 195);
+            this.txtMDptoNom.Location = new System.Drawing.Point(261, 204);
             this.txtMDptoNom.Name = "txtMDptoNom";
             this.txtMDptoNom.Size = new System.Drawing.Size(186, 20);
             this.txtMDptoNom.TabIndex = 12;
@@ -810,15 +812,16 @@
             // 
             // txtBuscarDpto
             // 
-            this.txtBuscarDpto.Location = new System.Drawing.Point(360, 132);
+            this.txtBuscarDpto.Location = new System.Drawing.Point(308, 145);
             this.txtBuscarDpto.Name = "txtBuscarDpto";
             this.txtBuscarDpto.Size = new System.Drawing.Size(139, 20);
             this.txtBuscarDpto.TabIndex = 11;
+            this.txtBuscarDpto.TextChanged += new System.EventHandler(this.txtBuscarDpto_TextChanged);
             this.txtBuscarDpto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscarDpto_KeyPress);
             // 
             // BuscarDepartamento
             // 
-            this.BuscarDepartamento.Location = new System.Drawing.Point(505, 129);
+            this.BuscarDepartamento.Location = new System.Drawing.Point(453, 142);
             this.BuscarDepartamento.Name = "BuscarDepartamento";
             this.BuscarDepartamento.Size = new System.Drawing.Size(149, 23);
             this.BuscarDepartamento.TabIndex = 10;
@@ -829,13 +832,14 @@
             // dgvDepto
             // 
             this.dgvDepto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDepto.Location = new System.Drawing.Point(86, 33);
+            this.dgvDepto.Location = new System.Drawing.Point(127, 43);
             this.dgvDepto.Name = "dgvDepto";
-            this.dgvDepto.Size = new System.Drawing.Size(516, 78);
+            this.dgvDepto.Size = new System.Drawing.Size(272, 78);
             this.dgvDepto.TabIndex = 9;
             // 
             // metroTabPage10
             // 
+            this.metroTabPage10.Controls.Add(this.label30);
             this.metroTabPage10.Controls.Add(this.btnListarEliminarDpto);
             this.metroTabPage10.Controls.Add(this.txtEliminarDpto);
             this.metroTabPage10.Controls.Add(this.btnEliminarDpto);
@@ -854,7 +858,7 @@
             // 
             // btnListarEliminarDpto
             // 
-            this.btnListarEliminarDpto.Location = new System.Drawing.Point(121, 22);
+            this.btnListarEliminarDpto.Location = new System.Drawing.Point(205, 42);
             this.btnListarEliminarDpto.Name = "btnListarEliminarDpto";
             this.btnListarEliminarDpto.Size = new System.Drawing.Size(75, 23);
             this.btnListarEliminarDpto.TabIndex = 21;
@@ -864,14 +868,15 @@
             // 
             // txtEliminarDpto
             // 
-            this.txtEliminarDpto.Location = new System.Drawing.Point(421, 137);
+            this.txtEliminarDpto.Location = new System.Drawing.Point(355, 191);
             this.txtEliminarDpto.Name = "txtEliminarDpto";
-            this.txtEliminarDpto.Size = new System.Drawing.Size(100, 20);
+            this.txtEliminarDpto.Size = new System.Drawing.Size(132, 20);
             this.txtEliminarDpto.TabIndex = 20;
+            this.txtEliminarDpto.TextChanged += new System.EventHandler(this.txtEliminarDpto_TextChanged);
             // 
             // btnEliminarDpto
             // 
-            this.btnEliminarDpto.Location = new System.Drawing.Point(527, 135);
+            this.btnEliminarDpto.Location = new System.Drawing.Point(493, 188);
             this.btnEliminarDpto.Name = "btnEliminarDpto";
             this.btnEliminarDpto.Size = new System.Drawing.Size(110, 23);
             this.btnEliminarDpto.TabIndex = 19;
@@ -882,9 +887,9 @@
             // gridEliminarDpto
             // 
             this.gridEliminarDpto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridEliminarDpto.Location = new System.Drawing.Point(121, 51);
+            this.gridEliminarDpto.Location = new System.Drawing.Point(205, 81);
             this.gridEliminarDpto.Name = "gridEliminarDpto";
-            this.gridEliminarDpto.Size = new System.Drawing.Size(516, 78);
+            this.gridEliminarDpto.Size = new System.Drawing.Size(282, 79);
             this.gridEliminarDpto.TabIndex = 18;
             // 
             // metroTabPage3
@@ -909,7 +914,7 @@
             this.metroTabControl4.Controls.Add(this.metroTabPage13);
             this.metroTabControl4.Location = new System.Drawing.Point(3, 0);
             this.metroTabControl4.Name = "metroTabControl4";
-            this.metroTabControl4.SelectedIndex = 2;
+            this.metroTabControl4.SelectedIndex = 1;
             this.metroTabControl4.Size = new System.Drawing.Size(717, 349);
             this.metroTabControl4.TabIndex = 3;
             this.metroTabControl4.UseSelectable = true;
@@ -1009,7 +1014,7 @@
             // 
             this.lblmotivodesc.AutoSize = true;
             this.lblmotivodesc.ForeColor = System.Drawing.Color.Red;
-            this.lblmotivodesc.Location = new System.Drawing.Point(394, 213);
+            this.lblmotivodesc.Location = new System.Drawing.Point(412, 194);
             this.lblmotivodesc.Name = "lblmotivodesc";
             this.lblmotivodesc.Size = new System.Drawing.Size(161, 13);
             this.lblmotivodesc.TabIndex = 23;
@@ -1038,7 +1043,7 @@
             // txtModMot
             // 
             this.txtModMot.Enabled = false;
-            this.txtModMot.Location = new System.Drawing.Point(288, 245);
+            this.txtModMot.Location = new System.Drawing.Point(306, 226);
             this.txtModMot.Name = "txtModMot";
             this.txtModMot.Size = new System.Drawing.Size(100, 23);
             this.txtModMot.TabIndex = 16;
@@ -1049,7 +1054,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(168, 213);
+            this.label16.Location = new System.Drawing.Point(186, 194);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(98, 13);
             this.label16.TabIndex = 15;
@@ -1058,7 +1063,7 @@
             // txtModMotivo
             // 
             this.txtModMotivo.Enabled = false;
-            this.txtModMotivo.Location = new System.Drawing.Point(288, 210);
+            this.txtModMotivo.Location = new System.Drawing.Point(306, 191);
             this.txtModMotivo.Name = "txtModMotivo";
             this.txtModMotivo.Size = new System.Drawing.Size(100, 20);
             this.txtModMotivo.TabIndex = 13;
@@ -1087,7 +1092,7 @@
             this.dgwMotivo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwMotivo.Location = new System.Drawing.Point(171, 32);
             this.dgwMotivo.Name = "dgwMotivo";
-            this.dgwMotivo.Size = new System.Drawing.Size(317, 78);
+            this.dgwMotivo.Size = new System.Drawing.Size(341, 78);
             this.dgwMotivo.TabIndex = 9;
             // 
             // metroTabPage13
@@ -1738,6 +1743,42 @@
             this.metroTabPage20.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage20.VerticalScrollbarSize = 10;
             // 
+            // btnListarEliminarTipo
+            // 
+            this.btnListarEliminarTipo.Location = new System.Drawing.Point(136, 15);
+            this.btnListarEliminarTipo.Name = "btnListarEliminarTipo";
+            this.btnListarEliminarTipo.Size = new System.Drawing.Size(75, 23);
+            this.btnListarEliminarTipo.TabIndex = 34;
+            this.btnListarEliminarTipo.Text = "Listar Tipo";
+            this.btnListarEliminarTipo.UseVisualStyleBackColor = true;
+            this.btnListarEliminarTipo.Click += new System.EventHandler(this.btnListarEliminarTipo_Click);
+            // 
+            // txtEliminarTipo
+            // 
+            this.txtEliminarTipo.Location = new System.Drawing.Point(362, 143);
+            this.txtEliminarTipo.Name = "txtEliminarTipo";
+            this.txtEliminarTipo.Size = new System.Drawing.Size(100, 20);
+            this.txtEliminarTipo.TabIndex = 33;
+            // 
+            // btnEliminarTipo
+            // 
+            this.btnEliminarTipo.Location = new System.Drawing.Point(468, 141);
+            this.btnEliminarTipo.Name = "btnEliminarTipo";
+            this.btnEliminarTipo.Size = new System.Drawing.Size(110, 23);
+            this.btnEliminarTipo.TabIndex = 32;
+            this.btnEliminarTipo.Text = "Eliminar Tipo";
+            this.btnEliminarTipo.UseVisualStyleBackColor = true;
+            this.btnEliminarTipo.Click += new System.EventHandler(this.btnEliminarTipo_Click);
+            // 
+            // gridEliminarTipo
+            // 
+            this.gridEliminarTipo.AllowUserToOrderColumns = true;
+            this.gridEliminarTipo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridEliminarTipo.Location = new System.Drawing.Point(136, 44);
+            this.gridEliminarTipo.Name = "gridEliminarTipo";
+            this.gridEliminarTipo.Size = new System.Drawing.Size(422, 78);
+            this.gridEliminarTipo.TabIndex = 31;
+            // 
             // metroTabPage21
             // 
             this.metroTabPage21.Controls.Add(this.metroLabel1);
@@ -1795,41 +1836,14 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "add.png");
             // 
-            // btnListarEliminarTipo
+            // label30
             // 
-            this.btnListarEliminarTipo.Location = new System.Drawing.Point(136, 15);
-            this.btnListarEliminarTipo.Name = "btnListarEliminarTipo";
-            this.btnListarEliminarTipo.Size = new System.Drawing.Size(75, 23);
-            this.btnListarEliminarTipo.TabIndex = 34;
-            this.btnListarEliminarTipo.Text = "Listar Tipo";
-            this.btnListarEliminarTipo.UseVisualStyleBackColor = true;
-            this.btnListarEliminarTipo.Click += new System.EventHandler(this.btnListarEliminarTipo_Click);
-            // 
-            // txtEliminarTipo
-            // 
-            this.txtEliminarTipo.Location = new System.Drawing.Point(362, 143);
-            this.txtEliminarTipo.Name = "txtEliminarTipo";
-            this.txtEliminarTipo.Size = new System.Drawing.Size(100, 20);
-            this.txtEliminarTipo.TabIndex = 33;
-            // 
-            // btnEliminarTipo
-            // 
-            this.btnEliminarTipo.Location = new System.Drawing.Point(468, 141);
-            this.btnEliminarTipo.Name = "btnEliminarTipo";
-            this.btnEliminarTipo.Size = new System.Drawing.Size(110, 23);
-            this.btnEliminarTipo.TabIndex = 32;
-            this.btnEliminarTipo.Text = "Eliminar Tipo";
-            this.btnEliminarTipo.UseVisualStyleBackColor = true;
-            this.btnEliminarTipo.Click += new System.EventHandler(this.btnEliminarTipo_Click);
-            // 
-            // gridEliminarTipo
-            // 
-            this.gridEliminarTipo.AllowUserToOrderColumns = true;
-            this.gridEliminarTipo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridEliminarTipo.Location = new System.Drawing.Point(136, 44);
-            this.gridEliminarTipo.Name = "gridEliminarTipo";
-            this.gridEliminarTipo.Size = new System.Drawing.Size(422, 78);
-            this.gridEliminarTipo.TabIndex = 31;
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(179, 194);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(170, 13);
+            this.label30.TabIndex = 22;
+            this.label30.Text = "Seleccione la ID del departamento";
             // 
             // OrionMain
             // 
@@ -1892,10 +1906,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dwvTipo)).EndInit();
             this.metroTabPage20.ResumeLayout(false);
             this.metroTabPage20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEliminarTipo)).EndInit();
             this.metroTabPage21.ResumeLayout(false);
             this.metroTabPage21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StyleMain)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridEliminarTipo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2049,5 +2063,6 @@
         private System.Windows.Forms.TextBox txtEliminarTipo;
         private System.Windows.Forms.Button btnEliminarTipo;
         private System.Windows.Forms.DataGridView gridEliminarTipo;
+        private System.Windows.Forms.Label label30;
     }
 }
