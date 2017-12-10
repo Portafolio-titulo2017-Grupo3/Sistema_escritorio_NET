@@ -34,6 +34,7 @@
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl2 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
+            this.dataGridUsuFUnc = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblFuncionario = new System.Windows.Forms.Label();
             this.lblpass = new System.Windows.Forms.Label();
@@ -87,6 +88,7 @@
             this.BuscarDepartamento = new System.Windows.Forms.Button();
             this.dgvDepto = new System.Windows.Forms.DataGridView();
             this.metroTabPage10 = new MetroFramework.Controls.MetroTabPage();
+            this.label30 = new System.Windows.Forms.Label();
             this.btnListarEliminarDpto = new System.Windows.Forms.Button();
             this.txtEliminarDpto = new System.Windows.Forms.TextBox();
             this.btnEliminarDpto = new System.Windows.Forms.Button();
@@ -177,11 +179,11 @@
             this.btnOscuro = new MetroFramework.Controls.MetroButton();
             this.StyleMain = new MetroFramework.Components.MetroStyleManager(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.label30 = new System.Windows.Forms.Label();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabControl2.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuFUnc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.metroTabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListar)).BeginInit();
@@ -229,7 +231,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage21);
             this.metroTabControl1.Location = new System.Drawing.Point(8, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(721, 385);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
@@ -256,13 +258,14 @@
             this.metroTabControl2.Controls.Add(this.metroTabPage7);
             this.metroTabControl2.Location = new System.Drawing.Point(3, 0);
             this.metroTabControl2.Name = "metroTabControl2";
-            this.metroTabControl2.SelectedIndex = 2;
+            this.metroTabControl2.SelectedIndex = 0;
             this.metroTabControl2.Size = new System.Drawing.Size(714, 340);
             this.metroTabControl2.TabIndex = 2;
             this.metroTabControl2.UseSelectable = true;
             // 
             // metroTabPage5
             // 
+            this.metroTabPage5.Controls.Add(this.dataGridUsuFUnc);
             this.metroTabPage5.Controls.Add(this.pictureBox1);
             this.metroTabPage5.Controls.Add(this.lblFuncionario);
             this.metroTabPage5.Controls.Add(this.lblpass);
@@ -290,6 +293,14 @@
             this.metroTabPage5.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage5.VerticalScrollbarSize = 10;
             // 
+            // dataGridUsuFUnc
+            // 
+            this.dataGridUsuFUnc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridUsuFUnc.Location = new System.Drawing.Point(101, 3);
+            this.dataGridUsuFUnc.Name = "dataGridUsuFUnc";
+            this.dataGridUsuFUnc.Size = new System.Drawing.Size(463, 79);
+            this.dataGridUsuFUnc.TabIndex = 30;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -305,7 +316,7 @@
             // 
             this.lblFuncionario.AutoSize = true;
             this.lblFuncionario.ForeColor = System.Drawing.Color.Red;
-            this.lblFuncionario.Location = new System.Drawing.Point(410, 124);
+            this.lblFuncionario.Location = new System.Drawing.Point(402, 202);
             this.lblFuncionario.Name = "lblFuncionario";
             this.lblFuncionario.Size = new System.Drawing.Size(215, 13);
             this.lblFuncionario.TabIndex = 28;
@@ -316,7 +327,7 @@
             // 
             this.lblpass.AutoSize = true;
             this.lblpass.ForeColor = System.Drawing.Color.Red;
-            this.lblpass.Location = new System.Drawing.Point(410, 95);
+            this.lblpass.Location = new System.Drawing.Point(402, 173);
             this.lblpass.Name = "lblpass";
             this.lblpass.Size = new System.Drawing.Size(162, 13);
             this.lblpass.TabIndex = 27;
@@ -327,7 +338,7 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.ForeColor = System.Drawing.Color.Red;
-            this.lblUsuario.Location = new System.Drawing.Point(409, 66);
+            this.lblUsuario.Location = new System.Drawing.Point(401, 144);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(130, 13);
             this.lblUsuario.TabIndex = 26;
@@ -345,7 +356,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(210, 148);
+            this.label5.Location = new System.Drawing.Point(202, 226);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 13);
             this.label5.TabIndex = 24;
@@ -353,7 +364,7 @@
             // 
             // txtFuncionario
             // 
-            this.txtFuncionario.Location = new System.Drawing.Point(267, 119);
+            this.txtFuncionario.Location = new System.Drawing.Point(259, 197);
             this.txtFuncionario.Name = "txtFuncionario";
             this.txtFuncionario.Size = new System.Drawing.Size(136, 20);
             this.txtFuncionario.TabIndex = 23;
@@ -362,7 +373,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(173, 122);
+            this.label4.Location = new System.Drawing.Point(165, 200);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 13);
             this.label4.TabIndex = 22;
@@ -374,7 +385,7 @@
             this.cbxPerfil.Items.AddRange(new object[] {
             "Seleccione un perfil",
             "Seleccione un perfil"});
-            this.cbxPerfil.Location = new System.Drawing.Point(267, 145);
+            this.cbxPerfil.Location = new System.Drawing.Point(259, 223);
             this.cbxPerfil.Name = "cbxPerfil";
             this.cbxPerfil.Size = new System.Drawing.Size(136, 21);
             this.cbxPerfil.TabIndex = 21;
@@ -382,7 +393,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(194, 96);
+            this.label3.Location = new System.Drawing.Point(186, 174);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 13);
             this.label3.TabIndex = 20;
@@ -391,7 +402,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(194, 70);
+            this.label2.Location = new System.Drawing.Point(186, 148);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 19;
@@ -400,7 +411,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(292, 21);
+            this.label1.Location = new System.Drawing.Point(284, 99);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 18;
@@ -408,7 +419,7 @@
             // 
             // btnCUsuario
             // 
-            this.btnCUsuario.Location = new System.Drawing.Point(267, 187);
+            this.btnCUsuario.Location = new System.Drawing.Point(259, 265);
             this.btnCUsuario.Name = "btnCUsuario";
             this.btnCUsuario.Size = new System.Drawing.Size(136, 24);
             this.btnCUsuario.TabIndex = 17;
@@ -418,7 +429,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(267, 89);
+            this.txtPassword.Location = new System.Drawing.Point(259, 167);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(136, 20);
             this.txtPassword.TabIndex = 16;
@@ -426,7 +437,7 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(267, 63);
+            this.txtUsuario.Location = new System.Drawing.Point(259, 141);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(136, 20);
             this.txtUsuario.TabIndex = 15;
@@ -856,6 +867,15 @@
             this.metroTabPage10.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage10.VerticalScrollbarSize = 10;
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(179, 194);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(170, 13);
+            this.label30.TabIndex = 22;
+            this.label30.Text = "Seleccione la ID del departamento";
+            // 
             // btnListarEliminarDpto
             // 
             this.btnListarEliminarDpto.Location = new System.Drawing.Point(205, 42);
@@ -914,7 +934,7 @@
             this.metroTabControl4.Controls.Add(this.metroTabPage13);
             this.metroTabControl4.Location = new System.Drawing.Point(3, 0);
             this.metroTabControl4.Name = "metroTabControl4";
-            this.metroTabControl4.SelectedIndex = 1;
+            this.metroTabControl4.SelectedIndex = 0;
             this.metroTabControl4.Size = new System.Drawing.Size(717, 349);
             this.metroTabControl4.TabIndex = 3;
             this.metroTabControl4.UseSelectable = true;
@@ -1836,15 +1856,6 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "add.png");
             // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(179, 194);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(170, 13);
-            this.label30.TabIndex = 22;
-            this.label30.Text = "Seleccione la ID del departamento";
-            // 
             // OrionMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1860,6 +1871,7 @@
             this.metroTabControl2.ResumeLayout(false);
             this.metroTabPage5.ResumeLayout(false);
             this.metroTabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuFUnc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.metroTabPage6.ResumeLayout(false);
             this.metroTabPage6.PerformLayout();
@@ -2064,5 +2076,6 @@
         private System.Windows.Forms.Button btnEliminarTipo;
         private System.Windows.Forms.DataGridView gridEliminarTipo;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.DataGridView dataGridUsuFUnc;
     }
 }

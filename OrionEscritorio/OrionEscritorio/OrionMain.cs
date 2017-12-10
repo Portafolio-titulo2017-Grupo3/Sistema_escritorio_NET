@@ -25,6 +25,9 @@ namespace OrionEscritorio
             cbxModPerfil.DisplayMember = "NOMBRE_PERFIL"; //campo que queres mostrar
             cbxModPerfil.ValueMember = "ID_PERFIL"; //valor que capturas
 
+            dataGridUsuFUnc.DataSource = TUsuario.listarDatosfuncionario();
+            dataGridUsuFUnc.AutoResizeColumns();
+            dataGridUsuFUnc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
         
         protected override CreateParams CreateParams {

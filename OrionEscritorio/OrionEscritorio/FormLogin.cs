@@ -16,14 +16,19 @@ namespace OrionEscritorio
         public FormLogin()
         {
             InitializeComponent();
-        }
 
+        }
+        
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            
+            int costParameter = 12;
+      
+
             Boolean existe;
             Login login = new Login();
             existe = login.validarUsuario(txtUsuario.Text, txtClave.Text);
+            
+
             if (existe)
             {
                 this.Hide();

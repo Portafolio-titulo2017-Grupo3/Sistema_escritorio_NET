@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Oracle.DataAccess.Client;
 using System.Data;
 using System.Windows.Forms;
-
+using MySql.Data.MySqlClient;
 namespace OrionEscritorio
 {
     class TUsuario
@@ -37,7 +37,7 @@ namespace OrionEscritorio
 
         public DataTable listarDatos()
         {
-          
+
             DataTable dt = new DataTable();
             OracleConnection conexion = Conexion.abrirConexion();
             String query = "select * from perfil order by ID_PERFIL";
@@ -54,7 +54,7 @@ namespace OrionEscritorio
 
 
             OracleConnection conexion = Conexion.abrirConexion();
-            
+
             OracleCommand orden3 = new OracleCommand(string.Format("INSERT INTO USUARIO(CLAVE_USUARIO, NOMBRE_USUARIO, FUNCIONARIO_RUT_FUNCIONARIO, PERFIL_ID_PERFIL) VALUES('{0}', '{1}', '{2}', '{3}')", usu.clave, usu.nombre, usu.rut_funcionario, usu.perfil_id), conexion);
             resp = orden3.ExecuteNonQuery();
 
@@ -69,11 +69,11 @@ namespace OrionEscritorio
 
 
             OracleConnection conexion = Conexion.abrirConexion();
-            OracleCommand orden = new OracleCommand(String.Format("select * from Usuario where ID_USUARIO =" + "'" + usu.idUsuario+"'"), conexion);
+            OracleCommand orden = new OracleCommand(String.Format("select * from Usuario where ID_USUARIO =" + "'" + usu.idUsuario + "'"), conexion);
             OracleDataReader lector = orden.ExecuteReader();
             if (lector.Read())
             {
-                
+
                 usu.clave = lector.GetString(1);
                 usu.nombre = lector.GetString(2);
             }
@@ -91,13 +91,13 @@ namespace OrionEscritorio
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();//Singleton  
-            OracleCommand orden = new OracleCommand(string.Format("UPDATE USUARIO SET CLAVE_USUARIO='{0}',PERFIL_ID_PERFIL='{1}' WHERE ID_USUARIO='{2}'", usu.clave, usu.perfil_id,usu.idUsuario), conexion);
+            OracleCommand orden = new OracleCommand(string.Format("UPDATE USUARIO SET CLAVE_USUARIO='{0}',PERFIL_ID_PERFIL='{1}' WHERE ID_USUARIO='{2}'", usu.clave, usu.perfil_id, usu.idUsuario), conexion);
             resp = orden.ExecuteNonQuery();
             conexion.Close();
-            
+
 
             MessageBox.Show("USUARIO MODIFICADO CORRECTAMENTE");
-           
+
             return resp;
 
         }
@@ -108,7 +108,7 @@ namespace OrionEscritorio
             OracleConnection conexion = Conexion.abrirConexion();//Singleton
             OracleCommand orden = new OracleCommand(string.Format("DELETE FROM USUARIO WHERE ID_USUARIO='{0}'", idUsuario), conexion);
             resp = orden.ExecuteNonQuery();
-            if (resp!=0)
+            if (resp != 0)
             {
                 MessageBox.Show("USUARIO ELIMINADO CORRECTAMENTE");
             }
@@ -134,11 +134,23 @@ namespace OrionEscritorio
                 usu.idUsuario = lector.GetInt32(0);
                 usu.nombre = lector.GetString(1);
                 usu.clave = lector.GetString(2);
-                usu.rut_funcionario= lector.GetString(3);
+                usu.rut_funcionario = lector.GetString(3);
 
             }
             conexion.Close();
             return usu;
+        }
+
+        public static DataTable listarDatosfuncionario()
+        {
+
+            DataTable dt = new DataTable();
+            MySqlConnection conexion = Conexion.abrirConexionmsql();
+            String query = "SELECT rut_funcionario, primer_nombre,primer_apellido,segundo_apellido FROM funcionario;";
+            MySqlCommand command = new MySqlCommand(query, conexion);
+            MySqlDataAdapter da = new MySqlDataAdapter(command);
+            da.Fill(dt);
+            return dt;
         }
     }
 }
