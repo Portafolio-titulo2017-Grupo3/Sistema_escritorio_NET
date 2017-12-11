@@ -78,18 +78,20 @@ namespace OrionEscritorio
         public int eliminarPerfil(int idPerfil)
         {
             int resp = 0;
-            OracleConnection conexion = Conexion.abrirConexion();//Singleton
-            OracleCommand orden = new OracleCommand(string.Format("DELETE FROM PERFIL WHERE ID_PERFIL='{0}'", idPerfil), conexion);
-            resp = orden.ExecuteNonQuery();
-            if (resp != 0)
+            OracleConnection conexion = Conexion.abrirConexion();//Singleton     
+
+            try
             {
+                OracleCommand orden = new OracleCommand(string.Format("DELETE FROM PERFIL WHERE ID_PERFIL='{0}'", idPerfil), conexion);
+                resp = orden.ExecuteNonQuery();
                 MessageBox.Show("PERFIL ELIMINADO CORRECTAMENTE");
+                conexion.Close();
             }
-            else
+            catch (Exception e)
             {
-                MessageBox.Show("PERFIL NO ELIMINADO");
+                    MessageBox.Show("PERFIL NO ELIMINADO");
+                    conexion.Close();
             }
-            conexion.Close();
             return resp;
         }
 

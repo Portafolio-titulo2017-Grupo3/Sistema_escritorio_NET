@@ -105,18 +105,22 @@ namespace OrionEscritorio
         public int eliminarUsuario(int idUsuario)
         {
             int resp = 0;
-            OracleConnection conexion = Conexion.abrirConexion();//Singleton
-            OracleCommand orden = new OracleCommand(string.Format("DELETE FROM USUARIO WHERE ID_USUARIO='{0}'", idUsuario), conexion);
-            resp = orden.ExecuteNonQuery();
-            if (resp != 0)
+
+            OracleConnection conexion = Conexion.abrirConexion();
+
+            try
             {
+                OracleCommand orden = new OracleCommand(string.Format("DELETE FROM USUARIO WHERE ID_USUARIO='{0}'", idUsuario), conexion);
+                resp = orden.ExecuteNonQuery();
                 MessageBox.Show("USUARIO ELIMINADO CORRECTAMENTE");
+                conexion.Close();
             }
-            else
+            catch (Exception e)
             {
-                MessageBox.Show("USUARIO NO ELIMINADO");
+                MessageBox.Show("OCURRIÓ UN ERROR, USUARIO NO ELIMINADO");
+                conexion.Close();
             }
-            conexion.Close();
+            
             return resp;
         }
 

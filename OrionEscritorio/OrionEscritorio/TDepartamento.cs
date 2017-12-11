@@ -67,17 +67,19 @@ namespace OrionEscritorio
         {
             int resp = 0;
             OracleConnection conexion = Conexion.abrirConexion();//Singleton
-            OracleCommand orden = new OracleCommand(string.Format("DELETE FROM DEPARTAMENTO WHERE ID_DEPTO='{0}'", idDpto), conexion);
-            resp = orden.ExecuteNonQuery();
-            if (resp != 0)
+
+            try
             {
+                OracleCommand orden = new OracleCommand(string.Format("DELETE FROM DEPARTAMENTO WHERE ID_DEPTO='{0}'", idDpto), conexion);
+                resp = orden.ExecuteNonQuery();
                 MessageBox.Show("DEPARTAMENTO ELIMINADO CORRECTAMENTE");
+                conexion.Close();
             }
-            else
+            catch (Exception e)
             {
-                MessageBox.Show("DEPARTAMENTO NO ELIMINADO");
+                    MessageBox.Show("DEPARTAMENTO NO ELIMINADO");
+                    conexion.Close();
             }
-            conexion.Close();
             return resp;
         }
 
