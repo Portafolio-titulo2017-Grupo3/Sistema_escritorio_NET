@@ -27,7 +27,9 @@ namespace OrionEscritorio
             Boolean existe;
             Login login = new Login();
             existe = login.validarUsuario(txtUsuario.Text, txtClave.Text);
+            //existe = login.validarUsuario(txtUsuario.Text, cifradoBCrypt.HashPassword(txtClave.Text));
             
+
 
             if (existe)
             {

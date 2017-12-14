@@ -94,7 +94,7 @@ namespace OrionEscritorio
                         TUsuario tusuario = new TUsuario();
                         Usuario usuario = new Usuario();
                         usuario.nombre = txtUsuario.Text;
-                        usuario.clave = txtPassword.Text;
+                        usuario.clave = cifradoBCrypt.HashPassword(txtPassword.Text);//Se integra el cifrado por BCrypt
                         usuario.rut_funcionario = txtFuncionario.Text;
                         usuario.perfil_id = perfil;
                         tusuario.ingresarUsuario(usuario);
@@ -159,7 +159,7 @@ namespace OrionEscritorio
                 TUsuario tusuario = new TUsuario();
                 Usuario usuario = new Usuario();
 
-                usuario.clave = txtModUsuPass.Text;
+                usuario.clave = cifradoBCrypt.HashPassword(txtModUsuPass.Text);
                 usuario.perfil_id = perfil;
                 usuario.idUsuario = idusurio;
 
@@ -195,7 +195,7 @@ namespace OrionEscritorio
                 usuario.idUsuario = idusuario;
                 buscaUsu.modBuscar(usuario);
                 txtModUsu.Text = usuario.nombre;
-                txtModUsuPass.Text = usuario.clave;
+                //txtModUsuPass.Text = usuario.clave;
 
                 if (txtModUsu.Text.Length > 1)
                 {
@@ -764,34 +764,66 @@ namespace OrionEscritorio
 
         private void btnEliminarUsu_Click(object sender, EventArgs e)
         {
-            int idusurio = Convert.ToInt32(txtEliminarUsu.Text);
-            TUsuario tusuario = new TUsuario();        
+            try
+            {
+                int idusurio = Convert.ToInt32(txtEliminarUsu.Text);
+                TUsuario tusuario = new TUsuario();
 
-            tusuario.eliminarUsuario(idusurio);
+                tusuario.eliminarUsuario(idusurio);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Ocurrió un error: " + ex.Message);
+            }
         }
 
         private void btnEliminarDpto_Click(object sender, EventArgs e)
         {
-            int idDpto = Convert.ToInt32(txtEliminarDpto.Text);
-            TDepartamento tdpto = new TDepartamento();
+            try
+            {
+                int idDpto = Convert.ToInt32(txtEliminarDpto.Text);
+                TDepartamento tdpto = new TDepartamento();
 
-            tdpto.eliminarDepartamento(idDpto);
+                tdpto.eliminarDepartamento(idDpto);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Ocurrió un error: " + ex.Message);
+            }
         }
 
         private void btnEliminarMotivo_Click(object sender, EventArgs e)
         {
-            int idMotivo = Convert.ToInt32(txtEliminarMotivo.Text);
-            TMotivo tMotivo = new TMotivo();
+            try
+            {
+                int idMotivo = Convert.ToInt32(txtEliminarMotivo.Text);
+                TMotivo tMotivo = new TMotivo();
 
-            tMotivo.eliminarMotivo(idMotivo);
+                tMotivo.eliminarMotivo(idMotivo);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Ocurrió un error: " + ex.Message);
+            }
         }
 
         private void btnEliminarPerfil_Click(object sender, EventArgs e)
         {
-            int idPerfil = Convert.ToInt32(txtEliminarPerfil.Text);
-            TPerfil tPerfil = new TPerfil();
+            try
+            {
+                int idPerfil = Convert.ToInt32(txtEliminarPerfil.Text);
+                TPerfil tPerfil = new TPerfil();
 
-            tPerfil.eliminarPerfil(idPerfil);
+                tPerfil.eliminarPerfil(idPerfil);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Ocurrió un error: " + ex.Message);
+            }
         }
 
         private void btnListarEliminarTipo_Click(object sender, EventArgs e)
@@ -801,10 +833,18 @@ namespace OrionEscritorio
 
         private void btnEliminarTipo_Click(object sender, EventArgs e)
         {
-            int idTipo = Convert.ToInt32(txtEliminarTipo.Text);
-            TTipo tTipo = new TTipo();
+            try
+            {
+                int idTipo = Convert.ToInt32(txtEliminarTipo.Text);
+                TTipo tTipo = new TTipo();
 
-            tTipo.eliminarTipo(idTipo);
+                tTipo.eliminarTipo(idTipo);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Ocurrió un error: " + ex.Message);
+            }
         }
 
         private void label27_Click(object sender, EventArgs e)
